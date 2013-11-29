@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block body %}
+<h2>Myopathy search results</h2>
+<ul>
+{% for item in results %}
+        <li>{{item}}</li>
+{% endfor %}
+</ul>
+{% endblock %}
+

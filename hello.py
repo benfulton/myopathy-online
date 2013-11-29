@@ -5,11 +5,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-	return render_template('index.html')
+	return render_template('searchform.html')
 
 @app.route('/search/<term>')
 def profile(term):
-	return "No results for " + term
+	return render_template('searchresults.html', results=[term])
 
 if __name__ == '__main__':
     app.run(debug=True)
