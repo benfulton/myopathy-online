@@ -1,0 +1,1482 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rdf:RDF xmlns="http://purl.uniprot.org/core/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://rdfs.org/ns/void#" xmlns:sd="http://www.w3.org/ns/sparql-service-description#">
+<owl:Ontology rdf:about="">
+<owl:imports rdf:resource="http://purl.uniprot.org/core/"/>
+</owl:Ontology>
+<rdf:Description rdf:about="http://purl.uniprot.org/uniprot/Q3ZAQ7">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Protein"/>
+<reviewed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</reviewed>
+<created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2008-04-29</created>
+<modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-11-13</modified>
+<version rdf:datatype="http://www.w3.org/2001/XMLSchema#int">67</version>
+<mnemonic>VMA21_HUMAN</mnemonic>
+<oldMnemonic>U569_HUMAN</oldMnemonic>
+<replaces rdf:resource="http://purl.uniprot.org/uniprot/A6NKV7"/>
+<replaces rdf:resource="http://purl.uniprot.org/uniprot/B3KUA9"/>
+<citation rdf:resource="http://purl.uniprot.org/citations/14702039" rdf:ID="_51335A415137001"/>
+<citation rdf:resource="http://purl.uniprot.org/citations/15772651" rdf:ID="_51335A415137002"/>
+<citation rdf:resource="http://purl.uniprot.org/citations/15489334" rdf:ID="_51335A415137003"/>
+<citation rdf:resource="http://purl.uniprot.org/citations/19379691" rdf:ID="_51335A415137005"/>
+<citation rdf:resource="http://purl.uniprot.org/citations/20873370" rdf:ID="_51335A415137006"/>
+<citation rdf:resource="http://purl.uniprot.org/citations/21269460" rdf:ID="_51335A415137007"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/embl-cds/BAG53371.1"/>
+<rdfs:seeAlso rdf:resource="#_51335A415137008"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/embl-cds/AAI03702.1"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/embl-cds/AAI03703.1"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/embl-cds/AAI05694.1"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/embl-cds/AAI05695.1"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/embl-cds/AAI10801.1"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/ipi/IPI00146447"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/ipi/IPI00334343"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/refseq/NP_001017980.1"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/unigene/Hs.58633"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/proteinmodelportal/Q3ZAQ7"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/intact/Q3ZAQ7"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/string/9606.ENSP00000333255"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/dmdm/121943063"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/paxdb/Q3ZAQ7"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/pride/Q3ZAQ7"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/dnasu/203547"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/ensembl/ENST00000330374"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/ensembl/ENST00000370361"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/geneid/203547"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/kegg/hsa:203547"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/ucsc/uc004feu.3"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/ctd/203547"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/genecards/GC0XP150564"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/hgnc/22082"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/hpa/HPA010972"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/mim/310440"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/nextprot/NX_Q3ZAQ7"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/orphanet/25980"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/pharmgkb/PA164727498"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/eggnog/NOG287271"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/hogenom/HOG000154822"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/oma/SSDSYFY"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/orthodb/EOG7XWPR8"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/genomernai/203547"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/nextbio/90447"/>
+<rdfs:seeAlso rdf:resource="http://purl.obolibrary.org/obo/PR_Q3ZAQ7"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/bgee/Q3ZAQ7"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/genevestigator/Q3ZAQ7"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/interpro/IPR019013"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/pfam/PF09446" rdf:ID="_51335A415137009"/>
+<recommendedName rdf:resource="http://purl.uniprot.org/SHA-384/27A662E8F0BB931A34ED5448FA0FCBDF8CBA7D6DF1D8988B6362EDC49A05E1E3911A3CE21B8D27AF40DB243CA326809C"/>
+<alternativeName rdf:resource="http://purl.uniprot.org/SHA-384/416DE20CA5CEF42E1DB1042AD8C677DF1C636FF82270AA42F06B7B73465172FE618875A9A70A61963EB9EADAF1899722"/>
+<organism rdf:resource="http://purl.uniprot.org/taxonomy/9606"/>
+<isolatedFrom rdf:resource="http://purl.uniprot.org/tissues/1029" rdf:ID="_51335A41513700C"/>
+<encodedBy rdf:resource="#_51335A41513700D"/>
+<annotation rdf:resource="http://purl.uniprot.org/SHA-384/D74BEEAA3313D0DE21FF347D6E90E64F10D79A9D5328A8089C54C3C513ED996B37B6030F707D9E7240BB060D6755AE8E"/>
+<annotation rdf:resource="http://purl.uniprot.org/SHA-384/6177258C2B6C933C73054E0D5B51739E974C51FDCA6E0982811118C781E7C6C937004A5C19DE2DAE8B69EDA82255BFCD"/>
+<annotation rdf:resource="http://purl.uniprot.org/SHA-384/DF2A617197E66ED862CC349AC40336F812DFAFDCD2743A97D9949F0A7B523423943819B8591B95DFF49BAE62CD333D89"/>
+<annotation rdf:resource="http://purl.uniprot.org/SHA-384/F17666E0610059B7AB2AA5755B13CC9E9A946CEBACB0A6D41A400B1BC02428AEC3EB8948EEC1FA83F1339388F2A3E2B5"/>
+<annotation rdf:resource="http://purl.uniprot.org/SHA-384/F5B720F43F5AD461127F3AD3CB94440ED2993699C3542936E6E56FB6D24743FD4F23EAD82AB243D7990B724E0EDAED1C" rdf:ID="_51335A4151370019"/>
+<annotation rdf:resource="http://purl.uniprot.org/SHA-384/E9918A8775182D428797D33DD630F7B0EDC2145BE4C03D637F356E42726A80AB7AA20E26A01A8784BAB63F957743FE62"/>
+<annotation rdf:resource="http://purl.uniprot.org/SHA-384/557023C4BDD6168D08580BF6004ACCA65214DBBE065D3EE56419D451299FAEA39DBA4543456F5604E2142C189849B791"/>
+<annotation rdf:resource="http://purl.uniprot.org/annotation/PRO_0000331499"/>
+<annotation rdf:resource="http://purl.uniprot.org/SHA-384/98ADE9BADDEBE9165FA1985DACE3B6FC111E9EA2754D58897A17089FEF31611B986F440239EB2078852BD248E2C0408C" rdf:ID="_51335A415137001E"/>
+<annotation rdf:resource="http://purl.uniprot.org/SHA-384/5A61B615F2DBF00F6FC071924481B127C3231C4017D7FA57EBE339A75020540D021952F2B3640A7E39379569E348BA8D" rdf:ID="_51335A4151370021"/>
+<annotation rdf:resource="http://purl.uniprot.org/annotation/VSP_041257"/>
+<annotation rdf:resource="http://purl.uniprot.org/SHA-384/A3965B76DAAF235CA186255A4C96BE772C2E64732331061E9B5FF38855B010F3FDFB76FCF53346A89A265C0A350082D2"/>
+<existence rdf:resource="http://purl.uniprot.org/core/Evidence_at_Protein_Level_Existence"/>
+<classifiedWith rdf:resource="http://purl.uniprot.org/keywords/25"/>
+<classifiedWith rdf:resource="http://purl.uniprot.org/keywords/968"/>
+<classifiedWith rdf:resource="http://purl.uniprot.org/keywords/256"/>
+<classifiedWith rdf:resource="http://purl.uniprot.org/keywords/1185"/>
+<classifiedWith rdf:resource="http://purl.uniprot.org/keywords/1133"/>
+<classifiedWith rdf:resource="http://purl.uniprot.org/go/0030127" rdf:ID="_51335A4151370025"/>
+<classifiedWith rdf:resource="http://purl.uniprot.org/go/0005789" rdf:ID="_51335A4151370027"/>
+<classifiedWith rdf:resource="http://purl.uniprot.org/go/0033116" rdf:ID="_51335A4151370029"/>
+<classifiedWith rdf:resource="http://purl.uniprot.org/go/0016021" rdf:ID="_51335A415137002B"/>
+<classifiedWith rdf:resource="http://purl.uniprot.org/go/0005764" rdf:ID="_51335A415137002D"/>
+<classifiedWith rdf:resource="http://purl.uniprot.org/go/0070072" rdf:ID="_51335A415137002F"/>
+<sequence rdf:resource="http://purl.uniprot.org/isoforms/Q3ZAQ7-1"/>
+<sequence rdf:resource="http://purl.uniprot.org/isoforms/Q3ZAQ7-2"/>
+<attribution rdf:resource="#_51335A4151370026"/>
+<attribution rdf:resource="#_51335A4151370028"/>
+<attribution rdf:resource="#_51335A415137002A"/>
+<attribution rdf:resource="#_51335A415137002C"/>
+<attribution rdf:resource="#_51335A415137002E"/>
+<attribution rdf:resource="#_51335A4151370030"/>
+<attribution rdf:resource="#_51335A4151370010"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/citations/14702039">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Journal_Citation"/>
+<title>Complete sequencing and characterization of 21,243 full-length human cDNAs.</title>
+<author>Ota T.</author>
+<author>Suzuki Y.</author>
+<author>Nishikawa T.</author>
+<author>Otsuki T.</author>
+<author>Sugiyama T.</author>
+<author>Irie R.</author>
+<author>Wakamatsu A.</author>
+<author>Hayashi K.</author>
+<author>Sato H.</author>
+<author>Nagai K.</author>
+<author>Kimura K.</author>
+<author>Makita H.</author>
+<author>Sekine M.</author>
+<author>Obayashi M.</author>
+<author>Nishi T.</author>
+<author>Shibahara T.</author>
+<author>Tanaka T.</author>
+<author>Ishii S.</author>
+<author>Yamamoto J.</author>
+<author>Saito K.</author>
+<author>Kawai Y.</author>
+<author>Isono Y.</author>
+<author>Nakamura Y.</author>
+<author>Nagahari K.</author>
+<author>Murakami K.</author>
+<author>Yasuda T.</author>
+<author>Iwayanagi T.</author>
+<author>Wagatsuma M.</author>
+<author>Shiratori A.</author>
+<author>Sudo H.</author>
+<author>Hosoiri T.</author>
+<author>Kaku Y.</author>
+<author>Kodaira H.</author>
+<author>Kondo H.</author>
+<author>Sugawara M.</author>
+<author>Takahashi M.</author>
+<author>Kanda K.</author>
+<author>Yokoi T.</author>
+<author>Furuya T.</author>
+<author>Kikkawa E.</author>
+<author>Omura Y.</author>
+<author>Abe K.</author>
+<author>Kamihara K.</author>
+<author>Katsuta N.</author>
+<author>Sato K.</author>
+<author>Tanikawa M.</author>
+<author>Yamazaki M.</author>
+<author>Ninomiya K.</author>
+<author>Ishibashi T.</author>
+<author>Yamashita H.</author>
+<author>Murakawa K.</author>
+<author>Fujimori K.</author>
+<author>Tanai H.</author>
+<author>Kimata M.</author>
+<author>Watanabe M.</author>
+<author>Hiraoka S.</author>
+<author>Chiba Y.</author>
+<author>Ishida S.</author>
+<author>Ono Y.</author>
+<author>Takiguchi S.</author>
+<author>Watanabe S.</author>
+<author>Yosida M.</author>
+<author>Hotuta T.</author>
+<author>Kusano J.</author>
+<author>Kanehori K.</author>
+<author>Takahashi-Fujii A.</author>
+<author>Hara H.</author>
+<author>Tanase T.-O.</author>
+<author>Nomura Y.</author>
+<author>Togiya S.</author>
+<author>Komai F.</author>
+<author>Hara R.</author>
+<author>Takeuchi K.</author>
+<author>Arita M.</author>
+<author>Imose N.</author>
+<author>Musashino K.</author>
+<author>Yuuki H.</author>
+<author>Oshima A.</author>
+<author>Sasaki N.</author>
+<author>Aotsuka S.</author>
+<author>Yoshikawa Y.</author>
+<author>Matsunawa H.</author>
+<author>Ichihara T.</author>
+<author>Shiohata N.</author>
+<author>Sano S.</author>
+<author>Moriya S.</author>
+<author>Momiyama H.</author>
+<author>Satoh N.</author>
+<author>Takami S.</author>
+<author>Terashima Y.</author>
+<author>Suzuki O.</author>
+<author>Nakagawa S.</author>
+<author>Senoh A.</author>
+<author>Mizoguchi H.</author>
+<author>Goto Y.</author>
+<author>Shimizu F.</author>
+<author>Wakebe H.</author>
+<author>Hishigaki H.</author>
+<author>Watanabe T.</author>
+<author>Sugiyama A.</author>
+<author>Takemoto M.</author>
+<author>Kawakami B.</author>
+<author>Yamazaki M.'</author>
+<author>Watanabe K.</author>
+<author>Kumagai A.</author>
+<author>Itakura S.</author>
+<author>Fukuzumi Y.</author>
+<author>Fujimori Y.</author>
+<author>Komiyama M.</author>
+<author>Tashiro H.</author>
+<author>Tanigami A.</author>
+<author>Fujiwara T.</author>
+<author>Ono T.</author>
+<author>Yamada K.</author>
+<author>Fujii Y.</author>
+<author>Ozaki K.</author>
+<author>Hirao M.</author>
+<author>Ohmori Y.</author>
+<author>Kawabata A.</author>
+<author>Hikiji T.</author>
+<author>Kobatake N.</author>
+<author>Inagaki H.</author>
+<author>Ikema Y.</author>
+<author>Okamoto S.</author>
+<author>Okitani R.</author>
+<author>Kawakami T.</author>
+<author>Noguchi S.</author>
+<author>Itoh T.</author>
+<author>Shigeta K.</author>
+<author>Senba T.</author>
+<author>Matsumura K.</author>
+<author>Nakajima Y.</author>
+<author>Mizuno T.</author>
+<author>Morinaga M.</author>
+<author>Sasaki M.</author>
+<author>Togashi T.</author>
+<author>Oyama M.</author>
+<author>Hata H.</author>
+<author>Watanabe M.'</author>
+<author>Komatsu T.</author>
+<author>Mizushima-Sugano J.</author>
+<author>Satoh T.</author>
+<author>Shirai Y.</author>
+<author>Takahashi Y.</author>
+<author>Nakagawa K.</author>
+<author>Okumura K.</author>
+<author>Nagase T.</author>
+<author>Nomura N.</author>
+<author>Kikuchi H.</author>
+<author>Masuho Y.</author>
+<author>Yamashita R.</author>
+<author>Nakai K.</author>
+<author>Yada T.</author>
+<author>Nakamura Y.'</author>
+<author>Ohara O.</author>
+<author>Isogai T.</author>
+<author>Sugano S.</author>
+<skos:exactMatch rdf:resource="http://purl.uniprot.org/pubmed/14702039"/>
+<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/14702039"/>
+<dcterms:identifier>doi:10.1038/ng1285</dcterms:identifier>
+<date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2004</date>
+<name>Nat. Genet.</name>
+<volume>36</volume>
+<pages>40-45</pages>
+</rdf:Description>
+<rdf:Description rdf:about="#_51335A415137001">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Citation_Statement"/>
+<scope>NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA] (ISOFORM 1)</scope>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/citations/15772651">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Journal_Citation"/>
+<title>The DNA sequence of the human X chromosome.</title>
+<author>Ross M.T.</author>
+<author>Grafham D.V.</author>
+<author>Coffey A.J.</author>
+<author>Scherer S.</author>
+<author>McLay K.</author>
+<author>Muzny D.</author>
+<author>Platzer M.</author>
+<author>Howell G.R.</author>
+<author>Burrows C.</author>
+<author>Bird C.P.</author>
+<author>Frankish A.</author>
+<author>Lovell F.L.</author>
+<author>Howe K.L.</author>
+<author>Ashurst J.L.</author>
+<author>Fulton R.S.</author>
+<author>Sudbrak R.</author>
+<author>Wen G.</author>
+<author>Jones M.C.</author>
+<author>Hurles M.E.</author>
+<author>Andrews T.D.</author>
+<author>Scott C.E.</author>
+<author>Searle S.</author>
+<author>Ramser J.</author>
+<author>Whittaker A.</author>
+<author>Deadman R.</author>
+<author>Carter N.P.</author>
+<author>Hunt S.E.</author>
+<author>Chen R.</author>
+<author>Cree A.</author>
+<author>Gunaratne P.</author>
+<author>Havlak P.</author>
+<author>Hodgson A.</author>
+<author>Metzker M.L.</author>
+<author>Richards S.</author>
+<author>Scott G.</author>
+<author>Steffen D.</author>
+<author>Sodergren E.</author>
+<author>Wheeler D.A.</author>
+<author>Worley K.C.</author>
+<author>Ainscough R.</author>
+<author>Ambrose K.D.</author>
+<author>Ansari-Lari M.A.</author>
+<author>Aradhya S.</author>
+<author>Ashwell R.I.</author>
+<author>Babbage A.K.</author>
+<author>Bagguley C.L.</author>
+<author>Ballabio A.</author>
+<author>Banerjee R.</author>
+<author>Barker G.E.</author>
+<author>Barlow K.F.</author>
+<author>Barrett I.P.</author>
+<author>Bates K.N.</author>
+<author>Beare D.M.</author>
+<author>Beasley H.</author>
+<author>Beasley O.</author>
+<author>Beck A.</author>
+<author>Bethel G.</author>
+<author>Blechschmidt K.</author>
+<author>Brady N.</author>
+<author>Bray-Allen S.</author>
+<author>Bridgeman A.M.</author>
+<author>Brown A.J.</author>
+<author>Brown M.J.</author>
+<author>Bonnin D.</author>
+<author>Bruford E.A.</author>
+<author>Buhay C.</author>
+<author>Burch P.</author>
+<author>Burford D.</author>
+<author>Burgess J.</author>
+<author>Burrill W.</author>
+<author>Burton J.</author>
+<author>Bye J.M.</author>
+<author>Carder C.</author>
+<author>Carrel L.</author>
+<author>Chako J.</author>
+<author>Chapman J.C.</author>
+<author>Chavez D.</author>
+<author>Chen E.</author>
+<author>Chen G.</author>
+<author>Chen Y.</author>
+<author>Chen Z.</author>
+<author>Chinault C.</author>
+<author>Ciccodicola A.</author>
+<author>Clark S.Y.</author>
+<author>Clarke G.</author>
+<author>Clee C.M.</author>
+<author>Clegg S.</author>
+<author>Clerc-Blankenburg K.</author>
+<author>Clifford K.</author>
+<author>Cobley V.</author>
+<author>Cole C.G.</author>
+<author>Conquer J.S.</author>
+<author>Corby N.</author>
+<author>Connor R.E.</author>
+<author>David R.</author>
+<author>Davies J.</author>
+<author>Davis C.</author>
+<author>Davis J.</author>
+<author>Delgado O.</author>
+<author>Deshazo D.</author>
+<author>Dhami P.</author>
+<author>Ding Y.</author>
+<author>Dinh H.</author>
+<author>Dodsworth S.</author>
+<author>Draper H.</author>
+<author>Dugan-Rocha S.</author>
+<author>Dunham A.</author>
+<author>Dunn M.</author>
+<author>Durbin K.J.</author>
+<author>Dutta I.</author>
+<author>Eades T.</author>
+<author>Ellwood M.</author>
+<author>Emery-Cohen A.</author>
+<author>Errington H.</author>
+<author>Evans K.L.</author>
+<author>Faulkner L.</author>
+<author>Francis F.</author>
+<author>Frankland J.</author>
+<author>Fraser A.E.</author>
+<author>Galgoczy P.</author>
+<author>Gilbert J.</author>
+<author>Gill R.</author>
+<author>Gloeckner G.</author>
+<author>Gregory S.G.</author>
+<author>Gribble S.</author>
+<author>Griffiths C.</author>
+<author>Grocock R.</author>
+<author>Gu Y.</author>
+<author>Gwilliam R.</author>
+<author>Hamilton C.</author>
+<author>Hart E.A.</author>
+<author>Hawes A.</author>
+<author>Heath P.D.</author>
+<author>Heitmann K.</author>
+<author>Hennig S.</author>
+<author>Hernandez J.</author>
+<author>Hinzmann B.</author>
+<author>Ho S.</author>
+<author>Hoffs M.</author>
+<author>Howden P.J.</author>
+<author>Huckle E.J.</author>
+<author>Hume J.</author>
+<author>Hunt P.J.</author>
+<author>Hunt A.R.</author>
+<author>Isherwood J.</author>
+<author>Jacob L.</author>
+<author>Johnson D.</author>
+<author>Jones S.</author>
+<author>de Jong P.J.</author>
+<author>Joseph S.S.</author>
+<author>Keenan S.</author>
+<author>Kelly S.</author>
+<author>Kershaw J.K.</author>
+<author>Khan Z.</author>
+<author>Kioschis P.</author>
+<author>Klages S.</author>
+<author>Knights A.J.</author>
+<author>Kosiura A.</author>
+<author>Kovar-Smith C.</author>
+<author>Laird G.K.</author>
+<author>Langford C.</author>
+<author>Lawlor S.</author>
+<author>Leversha M.</author>
+<author>Lewis L.</author>
+<author>Liu W.</author>
+<author>Lloyd C.</author>
+<author>Lloyd D.M.</author>
+<author>Loulseged H.</author>
+<author>Loveland J.E.</author>
+<author>Lovell J.D.</author>
+<author>Lozado R.</author>
+<author>Lu J.</author>
+<author>Lyne R.</author>
+<author>Ma J.</author>
+<author>Maheshwari M.</author>
+<author>Matthews L.H.</author>
+<author>McDowall J.</author>
+<author>McLaren S.</author>
+<author>McMurray A.</author>
+<author>Meidl P.</author>
+<author>Meitinger T.</author>
+<author>Milne S.</author>
+<author>Miner G.</author>
+<author>Mistry S.L.</author>
+<author>Morgan M.</author>
+<author>Morris S.</author>
+<author>Mueller I.</author>
+<author>Mullikin J.C.</author>
+<author>Nguyen N.</author>
+<author>Nordsiek G.</author>
+<author>Nyakatura G.</author>
+<author>O'dell C.N.</author>
+<author>Okwuonu G.</author>
+<author>Palmer S.</author>
+<author>Pandian R.</author>
+<author>Parker D.</author>
+<author>Parrish J.</author>
+<author>Pasternak S.</author>
+<author>Patel D.</author>
+<author>Pearce A.V.</author>
+<author>Pearson D.M.</author>
+<author>Pelan S.E.</author>
+<author>Perez L.</author>
+<author>Porter K.M.</author>
+<author>Ramsey Y.</author>
+<author>Reichwald K.</author>
+<author>Rhodes S.</author>
+<author>Ridler K.A.</author>
+<author>Schlessinger D.</author>
+<author>Schueler M.G.</author>
+<author>Sehra H.K.</author>
+<author>Shaw-Smith C.</author>
+<author>Shen H.</author>
+<author>Sheridan E.M.</author>
+<author>Shownkeen R.</author>
+<author>Skuce C.D.</author>
+<author>Smith M.L.</author>
+<author>Sotheran E.C.</author>
+<author>Steingruber H.E.</author>
+<author>Steward C.A.</author>
+<author>Storey R.</author>
+<author>Swann R.M.</author>
+<author>Swarbreck D.</author>
+<author>Tabor P.E.</author>
+<author>Taudien S.</author>
+<author>Taylor T.</author>
+<author>Teague B.</author>
+<author>Thomas K.</author>
+<author>Thorpe A.</author>
+<author>Timms K.</author>
+<author>Tracey A.</author>
+<author>Trevanion S.</author>
+<author>Tromans A.C.</author>
+<author>d'Urso M.</author>
+<author>Verduzco D.</author>
+<author>Villasana D.</author>
+<author>Waldron L.</author>
+<author>Wall M.</author>
+<author>Wang Q.</author>
+<author>Warren J.</author>
+<author>Warry G.L.</author>
+<author>Wei X.</author>
+<author>West A.</author>
+<author>Whitehead S.L.</author>
+<author>Whiteley M.N.</author>
+<author>Wilkinson J.E.</author>
+<author>Willey D.L.</author>
+<author>Williams G.</author>
+<author>Williams L.</author>
+<author>Williamson A.</author>
+<author>Williamson H.</author>
+<author>Wilming L.</author>
+<author>Woodmansey R.L.</author>
+<author>Wray P.W.</author>
+<author>Yen J.</author>
+<author>Zhang J.</author>
+<author>Zhou J.</author>
+<author>Zoghbi H.</author>
+<author>Zorilla S.</author>
+<author>Buck D.</author>
+<author>Reinhardt R.</author>
+<author>Poustka A.</author>
+<author>Rosenthal A.</author>
+<author>Lehrach H.</author>
+<author>Meindl A.</author>
+<author>Minx P.J.</author>
+<author>Hillier L.W.</author>
+<author>Willard H.F.</author>
+<author>Wilson R.K.</author>
+<author>Waterston R.H.</author>
+<author>Rice C.M.</author>
+<author>Vaudin M.</author>
+<author>Coulson A.</author>
+<author>Nelson D.L.</author>
+<author>Weinstock G.</author>
+<author>Sulston J.E.</author>
+<author>Durbin R.M.</author>
+<author>Hubbard T.</author>
+<author>Gibbs R.A.</author>
+<author>Beck S.</author>
+<author>Rogers J.</author>
+<author>Bentley D.R.</author>
+<skos:exactMatch rdf:resource="http://purl.uniprot.org/pubmed/15772651"/>
+<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/15772651"/>
+<dcterms:identifier>doi:10.1038/nature03440</dcterms:identifier>
+<date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2005</date>
+<name>Nature</name>
+<volume>434</volume>
+<pages>325-337</pages>
+</rdf:Description>
+<rdf:Description rdf:about="#_51335A415137002">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Citation_Statement"/>
+<scope>NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]</scope>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/citations/15489334">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Journal_Citation"/>
+<title>The status, quality, and expansion of the NIH full-length cDNA project: the Mammalian Gene Collection (MGC).</title>
+<group>The MGC Project Team</group>
+<skos:exactMatch rdf:resource="http://purl.uniprot.org/pubmed/15489334"/>
+<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/15489334"/>
+<dcterms:identifier>doi:10.1101/gr.2596504</dcterms:identifier>
+<date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2004</date>
+<name>Genome Res.</name>
+<volume>14</volume>
+<pages>2121-2127</pages>
+</rdf:Description>
+<rdf:Description rdf:about="#_51335A415137003">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Citation_Statement"/>
+<scope>NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA] (ISOFORM 1)</scope>
+<context rdf:resource="#_51335A415137004"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_51335A415137004">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Tissue"/>
+<rdfs:label>Testis carcinoma</rdfs:label>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/citations/19379691">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Journal_Citation"/>
+<title>VMA21 deficiency causes an autophagic myopathy by compromising V-ATPase activity and lysosomal acidification.</title>
+<author>Ramachandran N.</author>
+<author>Munteanu I.</author>
+<author>Wang P.</author>
+<author>Aubourg P.</author>
+<author>Rilstone J.J.</author>
+<author>Israelian N.</author>
+<author>Naranian T.</author>
+<author>Paroutis P.</author>
+<author>Guo R.</author>
+<author>Ren Z.-P.</author>
+<author>Nishino I.</author>
+<author>Chabrol B.</author>
+<author>Pellissier J.-F.</author>
+<author>Minetti C.</author>
+<author>Udd B.</author>
+<author>Fardeau M.</author>
+<author>Tailor C.S.</author>
+<author>Mahuran D.J.</author>
+<author>Kissel J.T.</author>
+<author>Kalimo H.</author>
+<author>Levy N.</author>
+<author>Manolson M.F.</author>
+<author>Ackerley C.A.</author>
+<author>Minassian B.A.</author>
+<skos:exactMatch rdf:resource="http://purl.uniprot.org/pubmed/19379691"/>
+<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/19379691"/>
+<dcterms:identifier>doi:10.1016/j.cell.2009.01.054</dcterms:identifier>
+<date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2009</date>
+<erratum rdf:resource="http://purl.uniprot.org/citations/20873370"/>
+<name>Cell</name>
+<volume>137</volume>
+<pages>235-246</pages>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/citations/20873370">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Journal_Citation"/>
+<author>Ramachandran N.</author>
+<author>Munteanu I.</author>
+<author>Wang P.</author>
+<author>Aubourg P.</author>
+<author>Rilstone J.J.</author>
+<author>Israelian N.</author>
+<author>Naranian T.</author>
+<author>Paroutis P.</author>
+<author>Guo R.</author>
+<author>Ren Z.-P.</author>
+<author>Nishino I.</author>
+<author>Chabrol B.</author>
+<author>Pellissier J.-F.</author>
+<author>Minetti C.</author>
+<author>Udd B.</author>
+<author>Fardeau M.</author>
+<author>Tailor C.S.</author>
+<author>Mahuran D.J.</author>
+<author>Kissel J.T.</author>
+<author>Kalimo H.</author>
+<author>Levy N.</author>
+<author>Manolson M.F.</author>
+<author>Ackerley C.A.</author>
+<author>Minassian B.A.</author>
+<skos:exactMatch rdf:resource="http://purl.uniprot.org/pubmed/20873370"/>
+<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/20873370"/>
+<date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2010</date>
+<name>Cell</name>
+<volume>142</volume>
+<pages>984</pages>
+</rdf:Description>
+<rdf:Description rdf:about="#_51335A415137005">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Citation_Statement"/>
+<scope>FUNCTION</scope>
+<scope>SUBCELLULAR LOCATION</scope>
+<scope>INVOLVEMENT IN MEAX</scope>
+</rdf:Description>
+<rdf:Description rdf:about="#_51335A415137006">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Citation_Statement"/>
+<scope>RETRACTION</scope>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/citations/21269460">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Journal_Citation"/>
+<title>Initial characterization of the human central proteome.</title>
+<author>Burkard T.R.</author>
+<author>Planyavsky M.</author>
+<author>Kaupe I.</author>
+<author>Breitwieser F.P.</author>
+<author>Buerckstuemmer T.</author>
+<author>Bennett K.L.</author>
+<author>Superti-Furga G.</author>
+<author>Colinge J.</author>
+<skos:exactMatch rdf:resource="http://purl.uniprot.org/pubmed/21269460"/>
+<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/21269460"/>
+<dcterms:identifier>doi:10.1186/1752-0509-5-17</dcterms:identifier>
+<date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2011</date>
+<name>BMC Syst. Biol.</name>
+<volume>5</volume>
+<pages>17</pages>
+</rdf:Description>
+<rdf:Description rdf:about="#_51335A415137007">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Citation_Statement"/>
+<scope>IDENTIFICATION BY MASS SPECTROMETRY [LARGE SCALE ANALYSIS]</scope>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/embl-cds/BAG53371.1">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Nucleotide_Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/EMBL"/>
+<locatedOn rdf:resource="http://purl.uniprot.org/embl/AK096835"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/embl/AK096835">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/MRNA"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_51335A415137008">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Nucleotide_Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/EMBL"/>
+<locatedOn rdf:resource="http://purl.uniprot.org/embl/AF003627"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/embl/AF003627">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Genomic_DNA"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/embl-cds/AAI03702.1">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Nucleotide_Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/EMBL"/>
+<locatedOn rdf:resource="http://purl.uniprot.org/embl/BC103701"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/embl/BC103701">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/MRNA"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/embl-cds/AAI03703.1">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Nucleotide_Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/EMBL"/>
+<locatedOn rdf:resource="http://purl.uniprot.org/embl/BC103702"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/embl/BC103702">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/MRNA"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/embl-cds/AAI05694.1">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Nucleotide_Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/EMBL"/>
+<locatedOn rdf:resource="http://purl.uniprot.org/embl/BC105693"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/embl/BC105693">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/MRNA"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/embl-cds/AAI05695.1">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Nucleotide_Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/EMBL"/>
+<locatedOn rdf:resource="http://purl.uniprot.org/embl/BC105694"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/embl/BC105694">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/MRNA"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/embl-cds/AAI10801.1">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Nucleotide_Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/EMBL"/>
+<locatedOn rdf:resource="http://purl.uniprot.org/embl/BC110800"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/embl/BC110800">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/MRNA"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/ipi/IPI00146447">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/IPI"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/ipi/IPI00334343">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/IPI"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/refseq/NP_001017980.1">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/RefSeq"/>
+<rdfs:comment>NM_001017980.3</rdfs:comment>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/unigene/Hs.58633">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/UniGene"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/proteinmodelportal/Q3ZAQ7">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/ProteinModelPortal"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/intact/Q3ZAQ7">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/IntAct"/>
+<rdfs:comment>1</rdfs:comment>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/string/9606.ENSP00000333255">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/STRING"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/dmdm/121943063">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/DMDM"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/paxdb/Q3ZAQ7">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/PaxDb"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/pride/Q3ZAQ7">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/PRIDE"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/dnasu/203547">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/DNASU"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/ensembl/ENST00000330374">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Transcript_Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/Ensembl"/>
+<translatedTo rdf:resource="http://purl.uniprot.org/ensembl/ENSP00000333255"/>
+<transcribedFrom rdf:resource="http://purl.uniprot.org/ensembl/ENSG00000160131"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/ensembl/ENST00000370361">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Transcript_Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/Ensembl"/>
+<translatedTo rdf:resource="http://purl.uniprot.org/ensembl/ENSP00000359386"/>
+<transcribedFrom rdf:resource="http://purl.uniprot.org/ensembl/ENSG00000160131"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/geneid/203547">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/GeneID"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/kegg/hsa:203547">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/KEGG"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/ucsc/uc004feu.3">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/UCSC"/>
+<rdfs:comment>human</rdfs:comment>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/ctd/203547">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/CTD"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/genecards/GC0XP150564">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/GeneCards"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/hgnc/22082">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/HGNC"/>
+<rdfs:comment>VMA21</rdfs:comment>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/hpa/HPA010972">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/HPA"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/mim/310440">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/MIM"/>
+<rdfs:comment>phenotype</rdfs:comment>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/nextprot/NX_Q3ZAQ7">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/neXtProt"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/orphanet/25980">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/Orphanet"/>
+<rdfs:comment>X-linked myopathy with excessive autophagy</rdfs:comment>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/pharmgkb/PA164727498">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/PharmGKB"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/eggnog/NOG287271">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/eggNOG"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/hogenom/HOG000154822">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/HOGENOM"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/oma/SSDSYFY">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/OMA"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/orthodb/EOG7XWPR8">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/OrthoDB"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/genomernai/203547">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/GenomeRNAi"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/nextbio/90447">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/NextBio"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.obolibrary.org/obo/PR_Q3ZAQ7">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/PRO"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/bgee/Q3ZAQ7">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/Bgee"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/genevestigator/Q3ZAQ7">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/Genevestigator"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/interpro/IPR019013">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/InterPro"/>
+<rdfs:comment>VMA21-like_domain</rdfs:comment>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/pfam/PF09446">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/Pfam"/>
+<rdfs:comment>VMA21</rdfs:comment>
+</rdf:Description>
+<rdf:Description rdf:about="#_51335A415137009">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Domain_Assignment_Statement"/>
+<hits rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hits>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/SHA-384/27A662E8F0BB931A34ED5448FA0FCBDF8CBA7D6DF1D8988B6362EDC49A05E1E3911A3CE21B8D27AF40DB243CA326809C">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Structured_Name"/>
+<fullName>Vacuolar ATPase assembly integral membrane protein VMA21</fullName>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/SHA-384/416DE20CA5CEF42E1DB1042AD8C677DF1C636FF82270AA42F06B7B73465172FE618875A9A70A61963EB9EADAF1899722">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Structured_Name"/>
+<fullName>Myopathy with excessive autophagy protein</fullName>
+</rdf:Description>
+<rdf:Description rdf:about="#_51335A41513700C">
+<citation rdf:resource="http://purl.uniprot.org/citations/15489334"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_51335A41513700D">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Gene"/>
+<skos:prefLabel>VMA21</skos:prefLabel>
+<skos:altLabel>MEAX</skos:altLabel>
+<skos:altLabel>XMEA</skos:altLabel>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/SHA-384/D74BEEAA3313D0DE21FF347D6E90E64F10D79A9D5328A8089C54C3C513ED996B37B6030F707D9E7240BB060D6755AE8E">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Function_Annotation"/>
+<rdfs:comment rdf:ID="_51335A41513700F">Required for the assembly of the V0 complex of the vacuolar ATPase (V-ATPase) in the endoplasmic reticulum.</rdfs:comment>
+</rdf:Description>
+<rdf:Description rdf:about="#_51335A41513700F">
+<attribution rdf:resource="#_51335A4151370010"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/SHA-384/6177258C2B6C933C73054E0D5B51739E974C51FDCA6E0982811118C781E7C6C937004A5C19DE2DAE8B69EDA82255BFCD">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Subunit_Annotation"/>
+<rdfs:comment>Associates with the V0 complex of the vacuolar ATPase (V-ATPase).</rdfs:comment>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/SHA-384/DF2A617197E66ED862CC349AC40336F812DFAFDCD2743A97D9949F0A7B523423943819B8591B95DFF49BAE62CD333D89">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Subcellular_Location_Annotation"/>
+<locatedIn rdf:resource="http://purl.uniprot.org/SHA-384/538FA9F55DCA5B4AE4DA856FD7120261F835ABD4470BB1E33E5D04F33B7B891E7A4C77500A9411604A6060FA3B31BDA3"/>
+<locatedIn rdf:resource="http://purl.uniprot.org/SHA-384/4CE7414EC0F3E0DF0148B5833409FB5DF89453EC41896D477325C124C1477874F2942336968909B15DA88EF5F00A92E7"/>
+<locatedIn rdf:resource="http://purl.uniprot.org/SHA-384/50266CFA347CFAF7E806D36B8FBF1AA485D4EFD1E5F4486BE6EF6D2C6E68B76B9F7C1622D81029222B0085D7DAA1F7A8"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/SHA-384/538FA9F55DCA5B4AE4DA856FD7120261F835ABD4470BB1E33E5D04F33B7B891E7A4C77500A9411604A6060FA3B31BDA3">
+<cellularComponent rdf:resource="http://purl.uniprot.org/locations/97"/>
+<topology rdf:resource="http://purl.uniprot.org/locations/9909"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/SHA-384/4CE7414EC0F3E0DF0148B5833409FB5DF89453EC41896D477325C124C1477874F2942336968909B15DA88EF5F00A92E7">
+<cellularComponent rdf:resource="http://purl.uniprot.org/locations/99"/>
+<topology rdf:resource="http://purl.uniprot.org/locations/9909"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/SHA-384/50266CFA347CFAF7E806D36B8FBF1AA485D4EFD1E5F4486BE6EF6D2C6E68B76B9F7C1622D81029222B0085D7DAA1F7A8">
+<cellularComponent rdf:resource="http://purl.uniprot.org/locations/78"/>
+<topology rdf:resource="http://purl.uniprot.org/locations/9909" rdf:ID="_51335A4151370016"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_51335A4151370016">
+<attribution rdf:resource="#_51335A4151370010"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/SHA-384/F17666E0610059B7AB2AA5755B13CC9E9A946CEBACB0A6D41A400B1BC02428AEC3EB8948EEC1FA83F1339388F2A3E2B5">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Alternative_Splicing_Annotation"/>
+<sequence rdf:resource="http://purl.uniprot.org/isoforms/Q3ZAQ7-1"/>
+<sequence rdf:resource="http://purl.uniprot.org/isoforms/Q3ZAQ7-2"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/SHA-384/F5B720F43F5AD461127F3AD3CB94440ED2993699C3542936E6E56FB6D24743FD4F23EAD82AB243D7990B724E0EDAED1C">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Disease_Annotation"/>
+<rdfs:comment>The gene represented in this entry may be involved in disease pathogenesis. VMA21 deficiency results in an increase of lysosomal pH from 4.7 to 5.2, which reduces lysosomal degradative ability and blocks autophagy. This reduces cellular free amino acids, which upregulates the mTOR pathway and mTOR-dependent macroautophagy, resulting in proliferation of large and ineffective autolysosomes that engulf sections of cytoplasm, merge together, and vacuolate the cell (PubMed:19379691).</rdfs:comment>
+<disease rdf:resource="http://purl.uniprot.org/diseases/2454"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_51335A4151370019">
+<attribution rdf:resource="#_51335A4151370010"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/SHA-384/E9918A8775182D428797D33DD630F7B0EDC2145BE4C03D637F356E42726A80AB7AA20E26A01A8784BAB63F957743FE62">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Similarity_Annotation"/>
+<rdfs:comment>Belongs to the VMA21 family.</rdfs:comment>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/SHA-384/557023C4BDD6168D08580BF6004ACCA65214DBBE065D3EE56419D451299FAEA39DBA4543456F5604E2142C189849B791">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Caution_Annotation"/>
+<rdfs:comment>Protein characterization data are from PubMed:19379691. Due to a number of errors in the figure panels, the article has been retracted but the authors stand by the validity of the main results and conclusions (PubMed:20873370).</rdfs:comment>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/annotation/PRO_0000331499">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Chain_Annotation"/>
+<rdfs:comment>Vacuolar ATPase assembly integral membrane protein VMA21</rdfs:comment>
+<range rdf:resource="http://purl.uniprot.org/range/22855935849477933tt1tt101"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/range/22855935849477933tt1tt101">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Range"/>
+<begin rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</begin>
+<end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">101</end>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/SHA-384/98ADE9BADDEBE9165FA1985DACE3B6FC111E9EA2754D58897A17089FEF31611B986F440239EB2078852BD248E2C0408C">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Transmembrane_Annotation"/>
+<rdfs:comment>Helical;</rdfs:comment>
+<range rdf:resource="http://purl.uniprot.org/range/22855935849477933tt26tt46"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/range/22855935849477933tt26tt46">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Range"/>
+<begin rdf:datatype="http://www.w3.org/2001/XMLSchema#int">26</begin>
+<end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">46</end>
+</rdf:Description>
+<rdf:Description rdf:about="#_51335A415137001E">
+<status rdf:resource="http://purl.uniprot.org/core/Potential"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/SHA-384/5A61B615F2DBF00F6FC071924481B127C3231C4017D7FA57EBE339A75020540D021952F2B3640A7E39379569E348BA8D">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Transmembrane_Annotation"/>
+<rdfs:comment>Helical;</rdfs:comment>
+<range rdf:resource="http://purl.uniprot.org/range/22855935849477933tt66tt86"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/range/22855935849477933tt66tt86">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Range"/>
+<begin rdf:datatype="http://www.w3.org/2001/XMLSchema#int">66</begin>
+<end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">86</end>
+</rdf:Description>
+<rdf:Description rdf:about="#_51335A4151370021">
+<status rdf:resource="http://purl.uniprot.org/core/Potential"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/annotation/VSP_041257">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Alternative_Sequence_Annotation"/>
+<rdfs:comment>In isoform 2.</rdfs:comment>
+<substitution>MLGSPCGPQLSDRDADEDQCSREFRGRRSRRPPRRTMLRGKSRLNVEWLGYSPGLLLEHRPLLAGRTPRSHR</substitution>
+<range rdf:resource="http://purl.uniprot.org/range/22855935849477933tt1tt17"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/range/22855935849477933tt1tt17">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Range"/>
+<begin rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</begin>
+<end rdf:datatype="http://www.w3.org/2001/XMLSchema#int">17</end>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/SHA-384/A3965B76DAAF235CA186255A4C96BE772C2E64732331061E9B5FF38855B010F3FDFB76FCF53346A89A265C0A350082D2">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Caution_Annotation"/>
+<rdfs:comment>No experimental confirmation available.</rdfs:comment>
+<sequence rdf:resource="http://purl.uniprot.org/isoforms/Q3ZAQ7-2"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_51335A4151370025">
+<attribution rdf:resource="#_51335A4151370026"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_51335A4151370027">
+<attribution rdf:resource="#_51335A4151370028"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_51335A4151370029">
+<attribution rdf:resource="#_51335A415137002A"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_51335A415137002B">
+<attribution rdf:resource="#_51335A415137002C"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_51335A415137002D">
+<attribution rdf:resource="#_51335A415137002E"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_51335A415137002F">
+<attribution rdf:resource="#_51335A4151370030"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/isoforms/Q3ZAQ7-1">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Simple_Sequence"/>
+<modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2005-09-27</modified>
+<version rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</version>
+<mass rdf:datatype="http://www.w3.org/2001/XMLSchema#int">11354</mass>
+<crc64Checksum rdf:datatype="http://www.w3.org/2001/XMLSchema#token">9DE436A7FF533443</crc64Checksum>
+<name>1</name>
+<rdf:value>MERPDKAALNALQPPEFRNESSLASTLKTLLFFTALMITVPIGLYFTTKSYIFEGALGMSNRDSYFYAAIVAVVAVHVVLALFVYVAWNEGSRQWREGKQD</rdf:value>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/isoforms/Q3ZAQ7-2">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Modified_Sequence"/>
+<name>2</name>
+<basedOn rdf:resource="http://purl.uniprot.org/isoforms/Q3ZAQ7-1"/>
+<modification rdf:resource="http://purl.uniprot.org/annotation/VSP_041257"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_51335A4151370026">
+<dcterms:creator rdf:resource="http://purl.uniprot.org/goa-projects/UniProtKB"/>
+<manual rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</manual>
+<evidence rdf:resource="http://purl.obolibrary.org/obo/ECO_0000002"/>
+<source rdf:resource="http://purl.uniprot.org/citations/19379691"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_51335A4151370028">
+<dcterms:creator rdf:resource="http://purl.uniprot.org/goa-projects/UniProtKB"/>
+<manual rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</manual>
+<evidence rdf:resource="http://purl.obolibrary.org/obo/ECO_0000002"/>
+<source rdf:resource="http://purl.uniprot.org/citations/19379691"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_51335A415137002A">
+<dcterms:creator rdf:resource="http://purl.uniprot.org/goa-projects/UniProtKB-SubCell"/>
+<evidence rdf:resource="http://purl.obolibrary.org/obo/ECO_0000203"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_51335A415137002C">
+<dcterms:creator rdf:resource="http://purl.uniprot.org/goa-projects/UniProtKB-KW"/>
+<evidence rdf:resource="http://purl.obolibrary.org/obo/ECO_0000203"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_51335A415137002E">
+<dcterms:creator rdf:resource="http://purl.uniprot.org/goa-projects/LIFEdb"/>
+<manual rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</manual>
+<evidence rdf:resource="http://purl.obolibrary.org/obo/ECO_0000002"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_51335A4151370030">
+<dcterms:creator rdf:resource="http://purl.uniprot.org/goa-projects/UniProtKB"/>
+<manual rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</manual>
+<evidence rdf:resource="http://purl.obolibrary.org/obo/ECO_0000002"/>
+<source rdf:resource="http://purl.uniprot.org/citations/19379691"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_51335A4151370010">
+<rdfs:label>1</rdfs:label>
+<manual rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</manual>
+<evidence rdf:resource="http://purl.obolibrary.org/obo/ECO_0000006"/>
+<source rdf:resource="http://purl.uniprot.org/citations/19379691"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/uniprot/Q56R94">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Protein"/>
+<reviewed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</reviewed>
+<created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2005-05-10</created>
+<modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-10-16</modified>
+<version rdf:datatype="http://www.w3.org/2001/XMLSchema#int">34</version>
+<mnemonic>Q56R94_HUMAN</mnemonic>
+<citation rdf:resource="http://purl.uniprot.org/SHA-384/A02DC8E8892976482A5177D6148E6CA69B939021F641329A89F2C12D5ADB94964E513C986EE9AD0AF42A83B239B547F2" rdf:ID="_513536523934002"/>
+<citation rdf:resource="http://purl.uniprot.org/citations/15665378" rdf:ID="_513536523934004"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/embl-cds/AAX07831.1"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/ipi/IPI00643758"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/unigene/Hs.631558"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/proteinmodelportal/Q56R94"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/smr/Q56R94"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/hovergen/HBG052790"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/chitars/TNNT1"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/arrayexpress/Q56R94"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/bgee/Q56R94"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/interpro/IPR027707"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/interpro/IPR001978"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/panther/PTHR11521" rdf:ID="_513536523934005"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/pfam/PF00992" rdf:ID="_513536523934006"/>
+<submittedName rdf:resource="http://purl.uniprot.org/SHA-384/E227F84109550C0F74D19776260E41C8883987946EA1625B0771A81A7C83923C42FE1D0CFEEDA7BBA97281CD2D274063"/>
+<organism rdf:resource="http://purl.uniprot.org/taxonomy/9606" rdf:ID="_513536523934009"/>
+<encodedBy rdf:resource="#_51353652393400A"/>
+<existence rdf:resource="http://purl.uniprot.org/core/Evidence_at_Transcript_Level_Existence"/>
+<classifiedWith rdf:resource="http://purl.uniprot.org/go/0005861" rdf:ID="_51353652393400C"/>
+<classifiedWith rdf:resource="http://purl.uniprot.org/go/0006937" rdf:ID="_51353652393400E"/>
+<classifiedWith rdf:resource="http://purl.uniprot.org/go/0031444" rdf:ID="_5135365239340010"/>
+<sequence rdf:resource="http://purl.uniprot.org/isoforms/Q56R94-1"/>
+<attribution rdf:resource="#_51353652393400D"/>
+<attribution rdf:resource="#_51353652393400F"/>
+<attribution rdf:resource="#_5135365239340011"/>
+<attribution rdf:resource="#_513536523934003"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/SHA-384/A02DC8E8892976482A5177D6148E6CA69B939021F641329A89F2C12D5ADB94964E513C986EE9AD0AF42A83B239B547F2">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Submission_Citation"/>
+<author>Jin J.-P.</author>
+<author>Breckenridge M.T.</author>
+<author>Wang X.</author>
+<author>Huang Q.-Q.</author>
+<author>Chen A.</author>
+<author>Crawford T.O.</author>
+<author>Morton D.H.</author>
+<date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2004-09</date>
+<submittedTo>EMBL/GenBank/DDBJ</submittedTo>
+</rdf:Description>
+<rdf:Description rdf:about="#_513536523934002">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Citation_Statement"/>
+<scope>NUCLEOTIDE SEQUENCE</scope>
+<attribution rdf:resource="#_513536523934003"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/citations/15665378">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Journal_Citation"/>
+<title>Cellular fate of truncated slow skeletal muscle troponin T produced by Glu180 nonsense mutation in amish nemaline myopathy.</title>
+<author>Wang X.</author>
+<author>Huang Q.Q.</author>
+<author>Breckenridge M.T.</author>
+<author>Chen A.</author>
+<author>Crawford T.O.</author>
+<author>Morton D.H.</author>
+<author>Jin J.P.</author>
+<skos:exactMatch rdf:resource="http://purl.uniprot.org/pubmed/15665378"/>
+<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/15665378"/>
+<dcterms:identifier>doi:10.1074/jbc.M413696200</dcterms:identifier>
+<date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2005</date>
+<name>J. Biol. Chem.</name>
+<volume>280</volume>
+<pages>13241-13249</pages>
+</rdf:Description>
+<rdf:Description rdf:about="#_513536523934004">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Citation_Statement"/>
+<scope>NUCLEOTIDE SEQUENCE</scope>
+<attribution rdf:resource="#_513536523934003"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/embl-cds/AAX07831.1">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Nucleotide_Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/EMBL"/>
+<locatedOn rdf:resource="http://purl.uniprot.org/embl/AY762903"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/embl/AY762903">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/MRNA"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/ipi/IPI00643758">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/IPI"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/unigene/Hs.631558">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/UniGene"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/proteinmodelportal/Q56R94">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/ProteinModelPortal"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/smr/Q56R94">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/SMR"/>
+<rdfs:comment>66-99</rdfs:comment>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/hovergen/HBG052790">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/HOVERGEN"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/chitars/TNNT1">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/ChiTaRS"/>
+<rdfs:comment>human</rdfs:comment>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/arrayexpress/Q56R94">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/ArrayExpress"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/bgee/Q56R94">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/Bgee"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/interpro/IPR027707">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/InterPro"/>
+<rdfs:comment>TNNT</rdfs:comment>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/interpro/IPR001978">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/InterPro"/>
+<rdfs:comment>Troponin</rdfs:comment>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/panther/PTHR11521">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/PANTHER"/>
+<rdfs:comment>PTHR11521</rdfs:comment>
+</rdf:Description>
+<rdf:Description rdf:about="#_513536523934005">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Domain_Assignment_Statement"/>
+<hits rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hits>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/pfam/PF00992">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/Pfam"/>
+<rdfs:comment>Troponin</rdfs:comment>
+</rdf:Description>
+<rdf:Description rdf:about="#_513536523934006">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Domain_Assignment_Statement"/>
+<hits rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hits>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/SHA-384/E227F84109550C0F74D19776260E41C8883987946EA1625B0771A81A7C83923C42FE1D0CFEEDA7BBA97281CD2D274063">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Structured_Name"/>
+<fullName rdf:ID="_513536523934008">Nemaline myopathy mutant slow skeletal muscle troponin T high molecular weight variant</fullName>
+</rdf:Description>
+<rdf:Description rdf:about="#_513536523934008">
+<attribution rdf:resource="#_513536523934003"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_513536523934009">
+<attribution rdf:resource="#_513536523934003"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_51353652393400A">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Gene"/>
+<skos:prefLabel rdf:ID="_51353652393400B">TNNT1</skos:prefLabel>
+</rdf:Description>
+<rdf:Description rdf:about="#_51353652393400B">
+<attribution rdf:resource="#_513536523934003"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_51353652393400C">
+<attribution rdf:resource="#_51353652393400D"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_51353652393400E">
+<attribution rdf:resource="#_51353652393400F"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_5135365239340010">
+<attribution rdf:resource="#_5135365239340011"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/isoforms/Q56R94-1">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Simple_Sequence"/>
+<modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2005-05-10</modified>
+<version rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</version>
+<mass rdf:datatype="http://www.w3.org/2001/XMLSchema#int">21327</mass>
+<crc64Checksum rdf:datatype="http://www.w3.org/2001/XMLSchema#token">832ACDBEC1A6FB33</crc64Checksum>
+<rdf:value>MSDTEEQEYEEEQPEEEAAEEEEEAPEEPEPVAEPEEERPKPSRPVVPPLIPPKIPEGERVDFDDIHRKRMEKDLLELQTLIDVHFEQRKKEEEELVALKERIERRRSERAEQQRFRTEKERERQAKLAEEKMRKEEEEAKKRAEDDAKKKKVLSNMGAHFGGYLVKAEQKRGKRQTGR</rdf:value>
+</rdf:Description>
+<rdf:Description rdf:about="#_51353652393400D">
+<dcterms:creator rdf:resource="http://purl.uniprot.org/goa-projects/Ensembl"/>
+<evidence rdf:resource="http://purl.obolibrary.org/obo/ECO_0000203"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_51353652393400F">
+<dcterms:creator rdf:resource="http://purl.uniprot.org/goa-projects/Ensembl"/>
+<evidence rdf:resource="http://purl.obolibrary.org/obo/ECO_0000203"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_5135365239340011">
+<dcterms:creator rdf:resource="http://purl.uniprot.org/goa-projects/Ensembl"/>
+<evidence rdf:resource="http://purl.obolibrary.org/obo/ECO_0000203"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_513536523934003">
+<rdfs:label>1</rdfs:label>
+<evidence rdf:resource="http://purl.obolibrary.org/obo/ECO_0000313"/>
+<source rdf:resource="http://purl.uniprot.org/embl-cds/AAX07831.1"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/uniprot/Q56R93">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Protein"/>
+<reviewed rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</reviewed>
+<created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2005-05-10</created>
+<modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2013-10-16</modified>
+<version rdf:datatype="http://www.w3.org/2001/XMLSchema#int">33</version>
+<mnemonic>Q56R93_HUMAN</mnemonic>
+<citation rdf:resource="http://purl.uniprot.org/SHA-384/A02DC8E8892976482A5177D6148E6CA69B939021F641329A89F2C12D5ADB94964E513C986EE9AD0AF42A83B239B547F2" rdf:ID="_513536523933002"/>
+<citation rdf:resource="http://purl.uniprot.org/citations/15665378" rdf:ID="_513536523933004"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/embl-cds/AAX07832.1"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/ipi/IPI00220467"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/unigene/Hs.631558"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/proteinmodelportal/Q56R93"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/smr/Q56R93"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/hovergen/HBG052790"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/chitars/TNNT1"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/arrayexpress/Q56R93"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/bgee/Q56R93"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/interpro/IPR027707"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/interpro/IPR001978"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/panther/PTHR11521" rdf:ID="_513536523933005"/>
+<rdfs:seeAlso rdf:resource="http://purl.uniprot.org/pfam/PF00992" rdf:ID="_513536523933006"/>
+<submittedName rdf:resource="http://purl.uniprot.org/SHA-384/284F7FC76E84CB039424AD8C38E2236A5366C020366CA4C480EA36959CB249531C2A774F62B62731B805B974E5216AA4"/>
+<organism rdf:resource="http://purl.uniprot.org/taxonomy/9606" rdf:ID="_513536523933009"/>
+<encodedBy rdf:resource="#_51353652393300A"/>
+<existence rdf:resource="http://purl.uniprot.org/core/Evidence_at_Transcript_Level_Existence"/>
+<classifiedWith rdf:resource="http://purl.uniprot.org/go/0005861" rdf:ID="_51353652393300C"/>
+<classifiedWith rdf:resource="http://purl.uniprot.org/go/0006937" rdf:ID="_51353652393300E"/>
+<sequence rdf:resource="http://purl.uniprot.org/isoforms/Q56R93-1"/>
+<attribution rdf:resource="#_51353652393300D"/>
+<attribution rdf:resource="#_51353652393300F"/>
+<attribution rdf:resource="#_513536523933003"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/SHA-384/A02DC8E8892976482A5177D6148E6CA69B939021F641329A89F2C12D5ADB94964E513C986EE9AD0AF42A83B239B547F2">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Submission_Citation"/>
+<author>Jin J.-P.</author>
+<author>Breckenridge M.T.</author>
+<author>Wang X.</author>
+<author>Huang Q.-Q.</author>
+<author>Chen A.</author>
+<author>Crawford T.O.</author>
+<author>Morton D.H.</author>
+<date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYearMonth">2004-09</date>
+<submittedTo>EMBL/GenBank/DDBJ</submittedTo>
+</rdf:Description>
+<rdf:Description rdf:about="#_513536523933002">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Citation_Statement"/>
+<scope>NUCLEOTIDE SEQUENCE</scope>
+<attribution rdf:resource="#_513536523933003"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/citations/15665378">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Journal_Citation"/>
+<title>Cellular fate of truncated slow skeletal muscle troponin T produced by Glu180 nonsense mutation in amish nemaline myopathy.</title>
+<author>Wang X.</author>
+<author>Huang Q.Q.</author>
+<author>Breckenridge M.T.</author>
+<author>Chen A.</author>
+<author>Crawford T.O.</author>
+<author>Morton D.H.</author>
+<author>Jin J.P.</author>
+<skos:exactMatch rdf:resource="http://purl.uniprot.org/pubmed/15665378"/>
+<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/15665378"/>
+<dcterms:identifier>doi:10.1074/jbc.M413696200</dcterms:identifier>
+<date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2005</date>
+<name>J. Biol. Chem.</name>
+<volume>280</volume>
+<pages>13241-13249</pages>
+</rdf:Description>
+<rdf:Description rdf:about="#_513536523933004">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Citation_Statement"/>
+<scope>NUCLEOTIDE SEQUENCE</scope>
+<attribution rdf:resource="#_513536523933003"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/embl-cds/AAX07832.1">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Nucleotide_Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/EMBL"/>
+<locatedOn rdf:resource="http://purl.uniprot.org/embl/AY762904"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/embl/AY762904">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/MRNA"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/ipi/IPI00220467">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/IPI"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/unigene/Hs.631558">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/UniGene"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/proteinmodelportal/Q56R93">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/ProteinModelPortal"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/smr/Q56R93">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/SMR"/>
+<rdfs:comment>55-88</rdfs:comment>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/hovergen/HBG052790">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/HOVERGEN"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/chitars/TNNT1">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/ChiTaRS"/>
+<rdfs:comment>human</rdfs:comment>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/arrayexpress/Q56R93">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/ArrayExpress"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/bgee/Q56R93">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/Bgee"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/interpro/IPR027707">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/InterPro"/>
+<rdfs:comment>TNNT</rdfs:comment>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/interpro/IPR001978">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/InterPro"/>
+<rdfs:comment>Troponin</rdfs:comment>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/panther/PTHR11521">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/PANTHER"/>
+<rdfs:comment>PTHR11521</rdfs:comment>
+</rdf:Description>
+<rdf:Description rdf:about="#_513536523933005">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Domain_Assignment_Statement"/>
+<hits rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hits>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/pfam/PF00992">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Resource"/>
+<database rdf:resource="http://purl.uniprot.org/database/Pfam"/>
+<rdfs:comment>Troponin</rdfs:comment>
+</rdf:Description>
+<rdf:Description rdf:about="#_513536523933006">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Domain_Assignment_Statement"/>
+<hits rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</hits>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/SHA-384/284F7FC76E84CB039424AD8C38E2236A5366C020366CA4C480EA36959CB249531C2A774F62B62731B805B974E5216AA4">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Structured_Name"/>
+<fullName rdf:ID="_513536523933008">Nemaline myopathy mutant slow skeletal muscle troponin T low molecular weight variant</fullName>
+</rdf:Description>
+<rdf:Description rdf:about="#_513536523933008">
+<attribution rdf:resource="#_513536523933003"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_513536523933009">
+<attribution rdf:resource="#_513536523933003"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_51353652393300A">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Gene"/>
+<skos:prefLabel rdf:ID="_51353652393300B">TNNT1</skos:prefLabel>
+</rdf:Description>
+<rdf:Description rdf:about="#_51353652393300B">
+<attribution rdf:resource="#_513536523933003"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_51353652393300C">
+<attribution rdf:resource="#_51353652393300D"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_51353652393300E">
+<attribution rdf:resource="#_51353652393300F"/>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/isoforms/Q56R93-1">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Simple_Sequence"/>
+<modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2005-05-10</modified>
+<version rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</version>
+<mass rdf:datatype="http://www.w3.org/2001/XMLSchema#int">20181</mass>
+<crc64Checksum rdf:datatype="http://www.w3.org/2001/XMLSchema#token">8610AC9615B6FD27</crc64Checksum>
+<rdf:value>MSDTEEQEYEEEQPEEEAAEEEEEEEERPKPSRPVVPPLIPPKIPEGERVDFDDIHRKRMEKDLLELQTLIDVHFEQRKKEEEELVALKERIERRRSERAEQQRFRTEKERERQAKLAEEKMRKEEEEAKKRAEDDAKKKKVLSNMGAHFGGYLVKAEQKRGKRQTGR</rdf:value>
+</rdf:Description>
+<rdf:Description rdf:about="#_51353652393300D">
+<dcterms:creator rdf:resource="http://purl.uniprot.org/goa-projects/InterPro"/>
+<evidence rdf:resource="http://purl.obolibrary.org/obo/ECO_0000203"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_51353652393300F">
+<dcterms:creator rdf:resource="http://purl.uniprot.org/goa-projects/InterPro"/>
+<evidence rdf:resource="http://purl.obolibrary.org/obo/ECO_0000203"/>
+</rdf:Description>
+<rdf:Description rdf:about="#_513536523933003">
+<rdfs:label>1</rdfs:label>
+<evidence rdf:resource="http://purl.obolibrary.org/obo/ECO_0000313"/>
+<source rdf:resource="http://purl.uniprot.org/embl-cds/AAX07832.1"/>
+</rdf:Description>
+</rdf:RDF>

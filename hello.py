@@ -9,7 +9,7 @@ def load_db():
 	global db
 	if db == None:
 		db = rdflib.Graph()
-		db.parse("uniprot-myopathy.rdf.xml", format="xml")
+		db.parse("myopathy.rdf", format="xml")
 	return db
 
 @app.route('/')
