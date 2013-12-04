@@ -14,16 +14,30 @@ def load_db():
 
 @app.route('/')
 def hello():
-	return render_template('searchform.html')
+	return render_template('index.html')
 
-@app.route('/search/<term>')
-def profile(term):
+@app.route('/proteins')
+def proteins():
 	db = load_db()
-	q = """select ?r where { ?d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.uniprot.org/core/Protein>
+	q = """select ?r ?d where { ?d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.uniprot.org/core/Protein>
         . ?d <http://purl.uniprot.org/core/mnemonic> ?r}"""
 	db.query(q)
 	r = db.query(q)
-	return render_template('searchresults.html', results=(rr[0] for rr in r))
+	return render_template('proteins.html', results=r)
+
+@app.route('/articles')
+def articles():
+	db = rdflib.Graph()
+	db.parse("articles.rdf", format="xml")
+	q = """select ?r ?d where { ?d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.uniprot.org/core/Journal_Citation>
+        . ?d <http://purl.uniprot.org/core/title> ?r}"""
+	db.query(q)
+	r = db.query(q)
+	return render_template('articles.html', results=r)
+
+@app.route('/search')
+def search():
+	return render_template('searchform.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -43,20 +43,27 @@ Released   : 20131026
 		</div>
 		<div id="menu" class="container">
 			<ul>
-				<li class="current_page_item"><a href="#" accesskey="1" title="">Homepage</a></li>
-				<li><a href="#" accesskey="1" title="">Proteins</a></li>
-				<li><a href="#" accesskey="2" title="">Journal Articles</a></li>
+{% set navigation_bar = [
+    ('/', 'homepage', 'Homepage'),
+    ('/proteins', 'proteins', 'Proteins'),
+    ('/articles', 'articles', 'Articles')
+] -%}
+{% for href, id, caption in navigation_bar %}
+  <li{% if id == active_page %} class="current_page_item"{% endif%}>
+    <a href="{{ href|e }}">{{ caption|e }}</a>
+  </li>
+{% endfor %}
 			</ul>
 		</div>
 	</div>
 	<div id="page" class="container">
 		<div id="content">
 			<div class="post">
-{% block body %}{% endblock %}
+<h2>{% block title %}Myopathy Online{% endblock %}</h2>
 				<p><img src="static/images/img03.jpg" alt="" class="image image-full" /></p>
-				<p>This is <strong>Reddened </strong>, a free, fully standards-compliant CSS template designed by <a href="http://www.freecsstemplates.org/" rel="nofollow">FreeCSSTemplates.org</a>.  The photo used in this template is from <a href="http://fotogrph.com/">Fotogrph</a>.  This free template is released under a <a href="http://creativecommons.org/licenses/by/3/">Creative Commons Attributions 3.0</a> license, so you’re pretty much free to do whatever you want with it (even use it commercially) provided you keep the links in the footer intact. Aside from that, have fun with it :)</p>
+{% block body %}{% endblock %}
 			</div>
-			<div class="post">
+			<div class="post" style="display:none">
 				<div class="post-title">
 					<h2>Mauris vulputate dolor</h2>
 					<span>Donec pulvinar ullamcorper metus</span>
@@ -64,7 +71,7 @@ Released   : 20131026
 				<p>Pellentesque pede. Donec pulvinar ullamcorper metus. In eu odio at lectus pulvinar mollis. Vestibulum sem magna, elementum ut, vestibulum eu, facilisis quis, arcu. Mauris a dolor. Nulla facilisi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed blandit. Phasellus pellentesque, ante nec iaculis dapibus, eros justo auctor lectus, a lobortis lorem mauris quis nunc. Pellentesque pede. Donec pulvinar ullamcorper metus. In eu odio at lectus pulvinar mollis. </p>
 			</div>
 		</div>
-		<div id="sidebar1">
+		<div id="sidebar1" style="display:none">
 			<div>
 				<h2> mattis condimentum</h2>
 				<ul class="style2">
@@ -88,7 +95,7 @@ Released   : 20131026
 				<a href="#" class="button">Read More</a> </div>
 		</div>
 	</div>
-	<div id="portfolio-wrapper">
+	<div id="portfolio-wrapper"  style="display:none">
 		<div id="portfolio" class="container">
 			<div class="title">
 				<h2>Aenean elementum</h2>
@@ -121,7 +128,7 @@ Released   : 20131026
 	</div>
 </div>
 <div id="footer">
-	<p>Copyright (c) 2013 Sitename.com. All rights reserved. Design by <a href="http://www.freecsstemplates.org/" rel="nofollow">FreeCSSTemplates.org</a>. Photos by <a href="http://fotogrph.com/">Fotogrph</a>.</p>
+	<p>Copyright (c) 2013 myopathy-online. All rights reserved. Design by <a href="http://www.freecsstemplates.org/" rel="nofollow">FreeCSSTemplates.org</a>. Photos by <a href="http://fotogrph.com/">Fotogrph</a>. Code by <a href="http://benfulton.net">Ben Fulton</a></p>
 </div>
 </body>
 </html>

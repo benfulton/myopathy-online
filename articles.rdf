@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rdf:RDF xmlns="http://purl.uniprot.org/core/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://rdfs.org/ns/void#" xmlns:sd="http://www.w3.org/ns/sparql-service-description#">
+<owl:Ontology rdf:about="">
+<owl:imports rdf:resource="http://purl.uniprot.org/core/"/>
+</owl:Ontology>
+<rdf:Description rdf:about="http://purl.uniprot.org/citations/22231866">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Journal_Citation"/>
+<title>Muscle imaging findings in GNE myopathy.</title>
+<author>Tasca G.</author>
+<author>Ricci E.</author>
+<author>Monforte M.</author>
+<author>Laschena F.</author>
+<author>Ottaviani P.</author>
+<author>Rodolico C.</author>
+<author>Barca E.</author>
+<author>Silvestri G.</author>
+<author>Iannaccone E.</author>
+<author>Mirabella M.</author>
+<author>Broccolini A.</author>
+<skos:exactMatch rdf:resource="http://purl.uniprot.org/pubmed/22231866"/>
+<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/22231866"/>
+<dcterms:identifier>doi:10.1007/s00415-011-6357-6</dcterms:identifier>
+<date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2012</date>
+<rdfs:comment>GNE myopathy (MIM 600737) is an autosomal recessive muscle disease caused by mutations in the UDP-N-acetylglucosamine 2-epimerase/N-acetylmannosamine kinase (GNE) gene. Besides the typical phenotype, characterized by the initial involvement of the distal leg muscles that eventually spreads proximally with sparing of the quadriceps, uncommon presentations with a non-canonical clinical phenotype, unusual muscle biopsy findings or both are increasingly recognized. The aim of our study was to characterize the imaging pattern of pelvic and lower limb muscles in GNE myopathy, thus providing additional diagnostic clues useful in the identification of patients with atypical features. We retrospectively evaluated muscle MRI and CT scans of a cohort of 13 patients heterogeneous for GNE mutations and degree of clinical severity. We found that severe involvement of the biceps femoris short head and, to a lesser extent, of the gluteus minimus, tibialis anterior, extensor hallucis and digitorum longus, soleus and gastrocnemius medialis was consistently present even in patients with early or atypical disease. The vastus lateralis, not the entire quadriceps, was the only muscle spared in advanced stages, while the rectus femoris, vastus intermedius and medialis showed variable signs of fatty replacement. Younger patients showed hyperintensities on T2-weighted sequences in muscles with a normal or, more often, abnormal T1-weighted signal. Our results define a pattern of muscle involvement that appears peculiar to GNE myopathy. Although these findings need to be further validated in a larger cohort, we believe that the recognition of this pattern may be instrumental in the initial clinical assessment of patients with possible GNE myopathy.</rdfs:comment>
+<name>J. Neurol.</name>
+<volume>259</volume>
+<pages>1358-1365</pages>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/citations/20718792">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Journal_Citation"/>
+<title>Desmin-related myopathy.</title>
+<author>van Spaendonck-Zwarts K.Y.</author>
+<author>van Hessem L.</author>
+<author>Jongbloed J.D.</author>
+<author>de Walle H.E.</author>
+<author>Capetanaki Y.</author>
+<author>van der Kooi A.J.</author>
+<author>van Langen I.M.</author>
+<author>van den Berg M.P.</author>
+<author>van Tintelen J.P.</author>
+<skos:exactMatch rdf:resource="http://purl.uniprot.org/pubmed/20718792"/>
+<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/20718792"/>
+<dcterms:identifier>doi:10.1111/j.1399-0004.2010.01512.x</dcterms:identifier>
+<date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2011</date>
+<rdfs:comment>Desmin-related myopathy (DRM) is an autosomally inherited skeletal and cardiac myopathy, mainly caused by dominant mutations in the desmin gene (DES). We provide (i) a literature review on DRM, including clinical manifestations, inheritance, molecular genetics, myopathology and management and (ii) a meta-analysis of reported DES mutation carriers, focusing on their clinical characteristics and potential genotype-phenotype correlations. Meta-analysis: DES mutation carriers (n = 159) with 40 different mutations were included. Neurological signs were present in 74% and cardiological signs in 74% of carriers (both neurological and cardiological signs in 49%, isolated neurological signs in 22%, and isolated cardiological signs in 22%). More than 70% of carriers exhibited myopathy or muscular weakness, with normal creatine kinase levels present in one third of them. Up to 50% of carriers had cardiomyopathy and around 60% had cardiac conduction disease or arrhythmias, with atrioventricular block as an important hallmark. Symptoms generally started during the 30s; a quarter of carriers died at a mean age of 49 years. Sudden cardiac death occurred in two patients with a pacemaker, suggesting a ventricular tachyarrhythmia as cause of death. The majority of DES mutations were missense mutations, mostly located in the 2B domain. Mutations in the 2B domain were predominant in patients with an isolated neurological phenotype, whereas head and tail domain mutations were predominant in patients with an isolated cardiological phenotype.</rdfs:comment>
+<name>Clin. Genet.</name>
+<volume>80</volume>
+<pages>354-366</pages>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/citations/21724397">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Journal_Citation"/>
+<title>Nemaline myopathy caused by mutations in the nebulin gene may present as a distal myopathy.</title>
+<author>Lehtokari V.L.</author>
+<author>Pelin K.</author>
+<author>Herczegfalvi A.</author>
+<author>Karcagi V.</author>
+<author>Pouget J.</author>
+<author>Franques J.</author>
+<author>Pellissier J.F.</author>
+<author>Figarella-Branger D.</author>
+<author>von der Hagen M.</author>
+<author>Huebner A.</author>
+<author>Schoser B.</author>
+<author>Lochmuller H.</author>
+<author>Wallgren-Pettersson C.</author>
+<skos:exactMatch rdf:resource="http://purl.uniprot.org/pubmed/21724397"/>
+<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/21724397"/>
+<dcterms:identifier>doi:10.1016/j.nmd.2011.05.012</dcterms:identifier>
+<date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2011</date>
+<rdfs:comment>Mutations in the nebulin gene are the main cause of autosomal recessive nemaline myopathy, with clinical presentations ranging from mild to severe disease. We have previously reported a nonspecific distal myopathy caused by homozygous missense mutations in the nebulin gene in six Finnish patients from four different families. Here we describe three non-Finnish patients in two unrelated families with distal nemaline myopathy caused by four different compound heterozygous nebulin mutations, only one of which is a missense mutation. One of the mutations has previously been identified in one family with the severe form of nemaline myopathy. We conclude that nemaline myopathy and distal myopathy caused by nebulin mutations form a clinical and histological continuum. Nemaline myopathy should be considered as a differential diagnosis in patients presenting with an early-onset predominantly distal myopathy.</rdfs:comment>
+<name>Neuromuscul. Disord.</name>
+<volume>21</volume>
+<pages>556-562</pages>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/citations/18817572">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Journal_Citation"/>
+<title>Centronuclear (myotubular) myopathy.</title>
+<author>Jungbluth H.</author>
+<author>Wallgren-Pettersson C.</author>
+<author>Laporte J.</author>
+<skos:exactMatch rdf:resource="http://purl.uniprot.org/pubmed/18817572"/>
+<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/18817572"/>
+<dcterms:identifier>doi:10.1186/1750-1172-3-26</dcterms:identifier>
+<date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2008</date>
+<rdfs:comment>Centronuclear myopathy (CNM) is an inherited neuromuscular disorder characterised by clinical features of a congenital myopathy and centrally placed nuclei on muscle biopsy.The incidence of X-linked myotubular myopathy is estimated at 2/100000 male births but epidemiological data for other forms are not currently available.The clinical picture is highly variable. The X-linked form usually gives rise to a severe phenotype in males presenting at birth with marked weakness and hypotonia, external ophthalmoplegia and respiratory failure. Signs of antenatal onset comprise reduced foetal movements, polyhydramnios and thinning of the ribs on chest radiographs; birth asphyxia may be the present. Affected infants are often macrosomic, with length above the 90th centile and large head circumference. Testes are frequently undescended. Both autosomal-recessive (AR) and autosomal-dominant (AD) forms differ from the X-linked form regarding age at onset, severity, clinical characteristics and prognosis. In general, AD forms have a later onset and milder course than the X-linked form, and the AR form is intermediate in both respects.Mutations in the myotubularin (MTM1) gene on chromosome Xq28 have been identified in the majority of patients with the X-linked recessive form, whilst AD and AR forms have been associated with mutations in the dynamin 2 (DNM2) gene on chromosome 19p13.2 and the amphiphysin 2 (BIN1) gene on chromosome 2q14, respectively. Single cases with features of CNM have been associated with mutations in the skeletal muscle ryanodine receptor (RYR1) and the hJUMPY (MTMR14) genes.Diagnosis is based on typical histopathological findings on muscle biopsy in combination with suggestive clinical features; muscle magnetic resonance imaging may complement clinical assessment and inform genetic testing in cases with equivocal features. Genetic counselling should be offered to all patients and families in whom a diagnosis of CNM has been made.The main differential diagnoses include congenital myotonic dystrophy and other conditions with severe neonatal hypotonia.Management of CNM is mainly supportive, based on a multidisciplinary approach. Whereas the X-linked form due to MTM1 mutations is often fatal in infancy, dominant forms due to DNM2 mutations and some cases of the recessive BIN1-related form appear to be associated with an overall more favourable prognosis.</rdfs:comment>
+<name>Orphanet J Rare Dis</name>
+<volume>3</volume>
+<pages>26</pages>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/citations/22752422">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Journal_Citation"/>
+<title>Samaritan myopathy, an ultimately benign congenital myopathy, is caused by a RYR1 mutation.</title>
+<author>Bohm J.</author>
+<author>Leshinsky-Silver E.</author>
+<author>Vassilopoulos S.</author>
+<author>Le Gras S.</author>
+<author>Lerman-Sagie T.</author>
+<author>Ginzberg M.</author>
+<author>Jost B.</author>
+<author>Lev D.</author>
+<author>Laporte J.</author>
+<skos:exactMatch rdf:resource="http://purl.uniprot.org/pubmed/22752422"/>
+<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/22752422"/>
+<dcterms:identifier>doi:10.1007/s00401-012-1007-3</dcterms:identifier>
+<date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2012</date>
+<rdfs:comment>Congenital myopathies describe a group of inherited muscle disorders with neonatal or infantile onset typically associated with muscle weakness, respiratory involvement and delayed motor milestones. We previously reported a novel congenital myopathy in an inbred Samaritan family. All patients displayed severe neonatal hypotonia and respiratory distress, and unlike other congenital myopathies, a constantly improving health status. As clinical and pathological data did not point to preferential candidate genes, we performed exome sequencing complemented by linkage analysis to identify the mutation causing the benign Samaritan congenital myopathy. We identified the homozygous p.Tyr1088Cys mutation in RYR1, encoding the skeletal muscle ryanodine receptor. This sarcoplasmic reticulum calcium channel is a key regulator of excitation-contraction coupling (ECC). Western blot and immunohistofluorescence revealed a significant decrease of the RYR1 protein level and an abnormal organization of skeletal muscle triad markers as caveolin-3, dysferlin and amphiphysin 2. RYR1 mutations are associated with different myopathies and malignant hyperthermia susceptibility. The index patient had mild hyperthermia following anesthesia, indicating that the inbred Samaritan population might be a risk group for this disorder. Our results suggest an aberrant ECC as the primary cause of this disease, and broaden the clinical consequences of RYR1 defects.</rdfs:comment>
+<name>Acta Neuropathol.</name>
+<volume>124</volume>
+<pages>575-581</pages>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/citations/23294764">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Journal_Citation"/>
+<title>Human congenital myopathy actin mutants cause myopathy and alter Z-disc structure in Drosophila flight muscle.</title>
+<author>Sevdali M.</author>
+<author>Kumar V.</author>
+<author>Peckham M.</author>
+<author>Sparrow J.</author>
+<skos:exactMatch rdf:resource="http://purl.uniprot.org/pubmed/23294764"/>
+<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/23294764"/>
+<dcterms:identifier>doi:10.1016/j.nmd.2012.11.013</dcterms:identifier>
+<date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2013</date>
+<rdfs:comment>Over 190 mutations in the human skeletal muscle α-actin gene, ACTA1 cause congenital actin myopathies. We transgenically expressed six different mutant actins, G15R, I136M, D154N, V163L, V163M and D292V in Drosophila indirect flight muscles and investigated their effects in flies that express one wild type and one mutant actin copy. All the flies were flightless, and the IFMs showed incomplete Z-discs, disorganised actin filaments and 'zebra bodies'. No differences in levels of sarcomeric protein expression were observed, but tropomodulin staining was somewhat disrupted in D164N, V163L, G15R and V163M heterozygotes. A single copy of D292V mutant actin rescued the hypercontractile phenotypes caused by TnI and TnT mutants, suggesting that the D292V mutation interferes with thin filament regulation. Our results show that expression of actin mutations homologous to those in humans in the indirect flight muscles of Drosophila disrupt sarcomere organisation, with somewhat similar phenotypes to those observed in humans. Using Drosophila to study actin mutations may help aid our understanding of congential myopathies caused by actin mutations.</rdfs:comment>
+<name>Neuromuscul. Disord.</name>
+<volume>23</volume>
+<pages>243-255</pages>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/citations/14724127">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Journal_Citation"/>
+<title>Desmin myopathy.</title>
+<author>Goldfarb L.G.</author>
+<author>Vicart P.</author>
+<author>Goebel H.H.</author>
+<author>Dalakas M.C.</author>
+<skos:exactMatch rdf:resource="http://purl.uniprot.org/pubmed/14724127"/>
+<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/14724127"/>
+<dcterms:identifier>doi:10.1093/brain/awh033</dcterms:identifier>
+<date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2004</date>
+<rdfs:comment>Desmin myopathy is a recently identified disease associated with mutations in desmin or alphaB-crystallin. Typically, the illness presents with lower limb muscle weakness slowly spreading to involve truncal, neck-flexor, facial, bulbar and respiratory muscles. Skeletal myopathy is often combined with cardiomyopathy manifested by conduction blocks and arrhythmias resulting in premature sudden death. Sections of the affected skeletal and cardiac muscles show abnormal fibre areas containing amorphous eosinophilic deposits seen as granular or granulofilamentous material on electron microscopic examination. Immuno-staining for desmin is positive in each region containing abnormal structures. The inheritance pattern in familial desmin myopathy is autosomal dominant or autosomal recessive, but many cases have no family history. At least some, and probably most, non-familial desmin myopathy cases are associated with de novo desmin mutations. Age of disease onset and rate of progression may vary depending on the type of inheritance and location of the causative mutation. Multiple mutations have been identified in the desmin gene: point substitutions, insertion, small in-frame deletions and a larger exon-skipping deletion. The majority of these mutations are located in conserved alpha-helical segments of desmin. Many of the missense mutations result in changing the original amino acid into proline, which is known as a helix breaker. Studies of transfected cell cultures indicate that mutant desmin is assembly-incompetent and able to disrupt a pre-existing filamentous network in dominant-negative fashion. Disease-associated desmin mutations in humans or transgenic mice cause accumulation of chimeric intracellular aggregates containing desmin and other cytoskeletal proteins. alphaB-crystallin serves in the muscle as a chaperone preventing desmin aggregation under various forms of stress. If mutated, alphaB-crystallin may cause a myopathy similar to those resulting from desmin mutations. Routine genetic testing of patients for mutations in desmin and alphaB-crystallin genes is now available and necessary for establishing an accurate diagnosis and providing appropriate genetic counselling. Better understanding of disease pathogenesis would stimulate research focused on developing specific treatments for these conditions.</rdfs:comment>
+<name>Brain</name>
+<volume>127</volume>
+<pages>723-734</pages>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/citations/22540328">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Journal_Citation"/>
+<title>Aquaporin-4 expression in distal myopathy with rimmed vacuoles.</title>
+<author>Hoshi A.</author>
+<author>Yamamoto T.</author>
+<author>Kikuchi S.</author>
+<author>Soeda T.</author>
+<author>Shimizu K.</author>
+<author>Ugawa Y.</author>
+<skos:exactMatch rdf:resource="http://purl.uniprot.org/pubmed/22540328"/>
+<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/22540328"/>
+<dcterms:identifier>doi:10.1186/1471-2377-12-22</dcterms:identifier>
+<date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2012</date>
+<rdfs:comment>BACKGROUND: Distal myopathy with rimmed vacuoles/hereditary inclusion body myopathy is clinically characterized by the early involvement of distal leg muscles. The striking pathological features of the myopathy are muscle fibers with rimmed vacuoles. To date, the role of aquaporin-4 water channel in distal myopathy with rimmed vacuoles/hereditary inclusion body myopathy has not been studied. CASE PRESENTATION: Here, we studied the expression of aquaporin-4 in muscle fibers of a patient with distal myopathy with rimmed vacuoles/hereditary inclusion body myopathy. Immunohistochemical and immunofluorescence analyses showed that sarcolemmal aquaporin-4 immunoreactivity was reduced in many muscle fibers of the patient. However, the intensity of aquaporin-4 staining was markedly increased at rimmed vacuoles or its surrounding areas and in some muscle fibers. The fast-twitch type 2 fibers were predominantly involved with the strong aquaporin-4-positive rimmed vacuoles and TAR-DNA-binding protein-43 aggregations. Rimmed vacuoles with strong aquaporin-4 expression seen in the distal myopathy with rimmed vacuoles/hereditary inclusion body myopathy patient were not found in control muscles without evidence of neuromuscular disorders and the other disease-controls. CONCLUSIONS: Aquaporin-4 might be crucial in determining the survival or degeneration of fast-twitch type 2 fibers in distal myopathy with rimmed vacuoles/hereditary inclusion body myopathy.</rdfs:comment>
+<name>BMC Neurol</name>
+<volume>12</volume>
+<pages>22</pages>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/citations/21964252">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Journal_Citation"/>
+<title>Progressive myopathy in an inducible mouse model of oculopharyngeal muscular dystrophy.</title>
+<author>Mankodi A.</author>
+<author>Wheeler T.M.</author>
+<author>Shetty R.</author>
+<author>Salceies K.M.</author>
+<author>Becher M.W.</author>
+<author>Thornton C.A.</author>
+<skos:exactMatch rdf:resource="http://purl.uniprot.org/pubmed/21964252"/>
+<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/21964252"/>
+<dcterms:identifier>doi:10.1016/j.nbd.2011.09.010</dcterms:identifier>
+<date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2012</date>
+<rdfs:comment>The genetic basis of oculopharyngeal muscular dystrophy (OPMD) is a short expansion of a polyalanine tract (normal allele: 10 alanines, mutant allele: 11-17 alanines) in the nuclear polyadenylate binding protein PABPN1 which is essential for controlling poly(A) tail length in messenger RNA. Mutant PABPN1 forms nuclear inclusions in OPMD muscle. To investigate the pathogenic role of mutant PABPN1 in vivo, we generated a ligand-inducible transgenic mouse model by using the mifepristone-inducible gene expression system. Induction of ubiquitous expression of mutant PABPN1 resulted in skeletal and cardiac myopathy. Histological changes of degenerative myopathy were preceded by nuclear inclusions of insoluble PABPN1. Downregulation of mutant PABPN1 expression attenuated the myopathy and reduced the nuclear burden of insoluble PABPN1. These results support association between mutant PABPN1 accumulation and degenerative myopathy in mice. Resolution of myopathy in mice suggests that the disease process in OPMD patients may be treatable.</rdfs:comment>
+<name>Neurobiol. Dis.</name>
+<volume>45</volume>
+<pages>539-546</pages>
+</rdf:Description>
+<rdf:Description rdf:about="http://purl.uniprot.org/citations/22521714">
+<rdf:type rdf:resource="http://purl.uniprot.org/core/Journal_Citation"/>
+<title>New phenotype and pathology features in MYH7-related distal myopathy.</title>
+<author>Tasca G.</author>
+<author>Ricci E.</author>
+<author>Penttila S.</author>
+<author>Monforte M.</author>
+<author>Giglio V.</author>
+<author>Ottaviani P.</author>
+<author>Camastra G.</author>
+<author>Silvestri G.</author>
+<author>Udd B.</author>
+<skos:exactMatch rdf:resource="http://purl.uniprot.org/pubmed/22521714"/>
+<owl:sameAs rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/22521714"/>
+<dcterms:identifier>doi:10.1016/j.nmd.2012.03.003</dcterms:identifier>
+<date rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2012</date>
+<rdfs:comment>Laing distal myopathy is an autosomal dominant disease due to mutations in the gene encoding for the human slow-β myosin heavy chain, MYH7. Most reports describe it as a mild, early onset myopathy with involvement usually restricted to foot extensors, hand finger extensors and neck flexors, and unspecific findings on muscle biopsy. We identified the first two Italian families with Laing distal myopathy, harboring two novel mutations in the MYH7 gene and performed clinical, neurophysiological, pathological, muscle MRI and cardiological investigations on affected members from the two families. Subjects from one family presented a moderate-severe phenotype, with proximal together with distal involvement and even loss of ambulation at advanced age. One patient displayed atypical muscle biopsy findings including cytoplasmic bodies and myofibrillar myopathy-like features. Affected members from the second family shared a very mild phenotype, with weakness largely limited to long toe and foot extensors and/or late onset. No patient showed any sign of heart involvement. Our study significantly broadens the clinical and pathological spectrum of Laing distal myopathy. We suggest that MYH7 screening should be considered in undiagnosed late-onset distal myopathy or cytoplasmic body myopathy patients.</rdfs:comment>
+<name>Neuromuscul. Disord.</name>
+<volume>22</volume>
+<pages>640-647</pages>
+</rdf:Description>
+</rdf:RDF>

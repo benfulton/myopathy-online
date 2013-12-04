@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% set active_page = "proteins" %}
+{% block title %}Proteins{% endblock %}
+<p>Enter a search term</p>
+{% block body %}
+<ul>
+{% for item in results %}
+        <li><a href="{{item[1]}}">{{item[0]}}</a></li>
+{% endfor %}
+</ul>
+{% endblock %}
+
