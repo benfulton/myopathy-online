@@ -13,12 +13,13 @@ Released   : 20131026
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title></title>
+<title>Myopathy Online</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
 <link href="/static/default.css" rel="stylesheet" type="text/css" media="all" />
 <link href="/static/fonts.css" rel="stylesheet" type="text/css" media="all" />
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 <!--[if IE 6]>
 <link href="default_ie6.css" rel="stylesheet" type="text/css" />
 <![endif]-->
@@ -60,7 +61,7 @@ Released   : 20131026
 		<div id="content">
 			<div class="post">
 <h2>{% block title %}Myopathy Online{% endblock %}</h2>
-				<p><img src="static/images/img03.jpg" alt="" class="image image-full" /></p>
+				<p><img src="/static/images/img03.jpg" alt="" class="image image-full" /></p>
 {% block body %}{% endblock %}
 			</div>
 			<div class="post" style="display:none">
@@ -71,25 +72,60 @@ Released   : 20131026
 				<p>Pellentesque pede. Donec pulvinar ullamcorper metus. In eu odio at lectus pulvinar mollis. Vestibulum sem magna, elementum ut, vestibulum eu, facilisis quis, arcu. Mauris a dolor. Nulla facilisi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed blandit. Phasellus pellentesque, ante nec iaculis dapibus, eros justo auctor lectus, a lobortis lorem mauris quis nunc. Pellentesque pede. Donec pulvinar ullamcorper metus. In eu odio at lectus pulvinar mollis. </p>
 			</div>
 		</div>
-		<div id="sidebar1" style="display:none">
-			<div>
-				<h2> mattis condimentum</h2>
+		<div id="sidebar1">
+            <div>
+                Search<br />
+                <input type="text" />
+            </div>
+			<div class="ontology">
+				<h2>Ontology</h2>
 				<ul class="style2">
-					<li class="first">
-						<h3><a href="#">Maecenas luctus lectus</a></h3>
-						<p><a href="#">Quisque dictum integer nisl risus,  convallis,  congue, and nibh.</a></p>
+					<li>
+                        <a href="#">Drugs</a>
+                        <ul>
+                            <li>Dutasteride</li>
+                            <li>Eplerenone</li>
+                            <li>Gamma Globulin</li>
+                            <li>Gentamicin</li>
+                            <li>ManNAc</li>
+                            <li>Methimazole</li>
+                            <li>Placebo</li>
+                            <li>Rituximab</li>
+                        </ul>
 					</li>
 					<li>
-						<h3><a href="#">Integer gravida nibh</a></h3>
-						<p><a href="#">Quisque dictum integer nisl risus, sagittis, rutrum id, congue, and nibh.</a></p>
+                        <a href="#">Genomes</a>
 					</li>
 					<li>
-						<h3><a href="#">Fusce ultrices fringilla</a></h3>
-						<p><a href="#">Quisque dictum  nisl risus, sagittis convallis, rutrum id, congue nibh.</a></p>
+                        <a href="#">Journals</a>
 					</li>
 					<li>
-						<h3><a href="#">Integer gravida nibh</a></h3>
-						<p><a href="#">Quisque dictum risus, sagittis convallis, rutrum  congue, and nibh.</a></p>
+                        <a href="#">Myopathy</a>
+                        <ul>
+                            <li>Acquired</li>
+                                <ul>
+                                    <li>Common Muscle Cramps & Stiffness</li>
+                                    <li>Tetany</li>
+                                </ul>
+                            <li>Inherited</li>
+                                <ul>
+                                    <li>Congenital Myopathies</li>
+                                    <li>Dermatomyosities</li>
+                                    <li>familialPeriodicParalysis</li>
+                                    <li>glycogenStorageDiseasesOfMuscle</li>
+                                    <li>mitochondrialMyopathies</li>
+                                    <li>muscularDystrophies</li>
+                                    <li>myoglobinurias</li>
+                                    <li>myositisOssificans</li>
+                                    <li>polymyositis&amp;inclusionBodyMyositis&amp;relatedMyopathies</li>
+                                </ul>
+                        </ul>
+					</li>
+					<li>
+                        <a href="#">Proteins</a>
+					</li>
+					<li>
+                        <a href="#">Side Effects</a>
 					</li>
 				</ul>
 				<a href="#" class="button">Read More</a> </div>
@@ -130,5 +166,14 @@ Released   : 20131026
 <div id="footer">
 	<p>Copyright (c) 2013 myopathy-online. All rights reserved. Design by <a href="http://www.freecsstemplates.org/" rel="nofollow">FreeCSSTemplates.org</a>. Photos by <a href="http://fotogrph.com/">Fotogrph</a>. Code by <a href="http://benfulton.net">Ben Fulton</a></p>
 </div>
+<script type="text/javascript">
+    $( document ).ready(function(){
+       $(".ontology a").click(function(){
+            $(this).parent().children().toggle();
+            $(this).toggle();
+            return false;
+       });
+    });
+</script>
 </body>
 </html>

@@ -5,7 +5,7 @@
 {% block body %}
 <ul>
 {% for item in results %}
-        <li><a href="{{item[1]}}">{{item[0]}}</a></li>
+        <li><a href={{ "/article/%s" % item[1].split('/')[-1] }}>{{item[0]}}</a></li>
 {% endfor %}
 </ul>
 {% endblock %}

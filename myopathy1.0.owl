@@ -1,0 +1,370 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/bu/ontologies/2013/11/untitled-ontology-7"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/bu/ontologies/2013/11/untitled-ontology-7">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Dutasteride"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gamma_Globulin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gentamicin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ManNAc"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Placebo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rituximab"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#acquired"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#commonMuscleCramps&amp;Stiffness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#congenitalMyopathies"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dermatomyosities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#drugs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#eplerenone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#familialPeriodicParalysis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#genomes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#glycogenStorageDiseasesOfMuscle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#inherited"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#journals"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#methimazole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#mitochondrialMyopathies"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#muscularDystrophies"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#myoglobinurias"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#myopathy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#myositisOssificans"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#polymyositis&amp;inclusionBodyMyositis&amp;relatedMyopathies"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#proteins"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sideEffect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#tetany"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ActOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#becauseOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#introduce"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAffectedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCausedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isIntroducedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSynthesizedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isTreatedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#resultIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#synthesize"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#treat"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Dutasteride"/>
+        <Class IRI="#drugs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gamma_Globulin"/>
+        <Class IRI="#drugs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gentamicin"/>
+        <Class IRI="#drugs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ManNAc"/>
+        <Class IRI="#drugs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Placebo"/>
+        <Class IRI="#drugs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rituximab"/>
+        <Class IRI="#drugs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#acquired"/>
+        <Class IRI="#myopathy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#commonMuscleCramps&amp;Stiffness"/>
+        <Class IRI="#acquired"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#congenitalMyopathies"/>
+        <Class IRI="#inherited"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dermatomyosities"/>
+        <Class IRI="#inherited"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#eplerenone"/>
+        <Class IRI="#drugs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#familialPeriodicParalysis"/>
+        <Class IRI="#inherited"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#glycogenStorageDiseasesOfMuscle"/>
+        <Class IRI="#inherited"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#inherited"/>
+        <Class IRI="#myopathy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#methimazole"/>
+        <Class IRI="#drugs"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mitochondrialMyopathies"/>
+        <Class IRI="#inherited"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#muscularDystrophies"/>
+        <Class IRI="#inherited"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#myoglobinurias"/>
+        <Class IRI="#inherited"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#myositisOssificans"/>
+        <Class IRI="#inherited"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#polymyositis&amp;inclusionBodyMyositis&amp;relatedMyopathies"/>
+        <Class IRI="#inherited"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#tetany"/>
+        <Class IRI="#acquired"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#acquired"/>
+        <Class IRI="#inherited"/>
+    </DisjointClasses>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isAffectedBy"/>
+        <ObjectProperty IRI="#ActOn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#resultIn"/>
+        <ObjectProperty IRI="#becauseOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has"/>
+        <ObjectProperty IRI="#isCausedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#introduce"/>
+        <ObjectProperty IRI="#isIntroducedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isSynthesizedBy"/>
+        <ObjectProperty IRI="#synthesize"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#treat"/>
+        <ObjectProperty IRI="#isTreatedBy"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ActOn"/>
+        <Class IRI="#drugs"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#becauseOf"/>
+        <Class IRI="#myopathy"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has"/>
+        <Class IRI="#drugs"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#introduce"/>
+        <Class IRI="#journals"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAffectedBy"/>
+        <Class IRI="#proteins"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCausedBy"/>
+        <Class IRI="#sideEffect"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isIntroducedBy"/>
+        <Class IRI="#drugs"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isIntroducedBy"/>
+        <Class IRI="#myopathy"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSynthesizedBy"/>
+        <Class IRI="#proteins"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isTreatedBy"/>
+        <Class IRI="#myopathy"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#resultIn"/>
+        <Class IRI="#genomes"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#resultIn"/>
+        <Class IRI="#proteins"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#synthesize"/>
+        <Class IRI="#genomes"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#treat"/>
+        <Class IRI="#drugs"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ActOn"/>
+        <Class IRI="#proteins"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#becauseOf"/>
+        <Class IRI="#genomes"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#becauseOf"/>
+        <Class IRI="#proteins"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has"/>
+        <Class IRI="#sideEffect"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#introduce"/>
+        <Class IRI="#drugs"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#introduce"/>
+        <Class IRI="#myopathy"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAffectedBy"/>
+        <Class IRI="#drugs"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isCausedBy"/>
+        <Class IRI="#drugs"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isIntroducedBy"/>
+        <Class IRI="#journals"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSynthesizedBy"/>
+        <Class IRI="#genomes"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isTreatedBy"/>
+        <Class IRI="#drugs"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#resultIn"/>
+        <Class IRI="#myopathy"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#synthesize"/>
+        <Class IRI="#proteins"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#treat"/>
+        <Class IRI="#myopathy"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

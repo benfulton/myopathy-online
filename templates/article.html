@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% set active_page = "article" %}
+
+{% block title %}{{ article["title"] }}{% endblock %}
+
+{% block body %}
+{{ article["comment"]  }}
+<p>pmid: {{ article["pmid"] }}</p>
+<p>authors: {{ ", ".join(article["authors"]) }}</p>
+<h4>Additional References</h4>
+<a href="http://www.uniprot.org/citations/{{ article["pmid"]}}">uniprot</a>
+{% endblock %}
+

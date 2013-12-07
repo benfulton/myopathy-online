@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% set active_page = "protein" %}
+
+{% block title %}{{ mnemonic }}{% endblock %}
+
+{% block body %}
+{% for item in results %}
+       {{ item[0] }}
+<h4>Additional References</h4>
+<a href="{{item[1]}}">uniprot</a>
+{% endfor %}
+{% endblock %}
+
