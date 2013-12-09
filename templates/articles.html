@@ -3,6 +3,8 @@
 {% block title %}Articles{% endblock %}
 <p>Enter a search term</p>
 {% block body %}
+<a href="/articles/page/{{ page-1 if page > 1 else 1 }}"><<</a>
+<a href="/articles/page/{{ page+1 }}" style="float:right">>></a>
 <ul>
 {% for item in results %}
         <li><a href={{ "/article/%s" % item[1].split('/')[-1] }}>{{item[0]}}</a></li>
