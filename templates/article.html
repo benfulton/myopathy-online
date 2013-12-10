@@ -6,7 +6,11 @@
 {% block body %}
 {{ article["comment"]  }}
 <p>pmid: {{ article["pmid"] }}</p>
-<p>authors: {{ ", ".join(article["authors"]) }}</p>
+<p>authors: {% for author in article["authors"]  %}
+    <a href="/articles/author/{{ author }}">{{ author }}</a>,&nbsp;
+    {% endfor %}
+</p>
+<p>Originally appearing in <a href="/articles/journal/{{ article["journal"] }}">{{ article["journal"] }}</a></p>
 <h4>Additional References</h4>
 <a href="http://www.uniprot.org/citations/{{ article["pmid"]}}">uniprot</a>
 {% endblock %}

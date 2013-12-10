@@ -1,0 +1,2292 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://myopathy-online.herokuapp.com/ontology"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://myopathy-online.herokuapp.com/ontology">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Chr01"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chr02"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chr03"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chr04"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chr05"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chr06"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chr07"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chr08"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chr09"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chr10"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chr11"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chr12"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chr13"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chr14"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chr15"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chr16"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chr17"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chr18"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chr19"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chr20"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chr21"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chr22"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChrX"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChrY"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#acquired"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#article"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#commonMuscleCramps&amp;Stiffness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#congenitalMyopathies"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dermatomyosities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#drugs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#familialPeriodicParalysis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#genomes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#glycogenStorageDiseasesOfMuscle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#inherited"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#mitochondrialMyopathies"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#muscularDystrophies"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#myoglobinurias"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#myopathy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#myositisOssificans"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#neuromyotonia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#polymyositis&amp;inclusionBodyMyositis&amp;relatedMyopathies"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#proteins"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sideEffect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#stiff-manSyndrome"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#tetany"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ActOn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#becauseOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#has"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#introduce"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAffectedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCausedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isIntroducedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSynthesizedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isTreatedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#resultIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#synthesize"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#treat"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#abstract"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#author"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#journal"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#title"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#yearPublished"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ACTA1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CFL2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#COL6A2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#COL6A3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CRYAB"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DES"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DYSF"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dutasteride"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GNE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gamma_Globulin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Gentamicin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MATR3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MTM1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MYH2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MYH7"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MYOT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ManNAc"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#N-acetylmannosamine_kinase"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NEB"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Placebo"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RYR1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rituximab"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TNNT1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TPM2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TPM3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VMA21"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#actin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#bethlemMyopathy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#calpainopathy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#catecholaminergicPolymorphicVentricularTachycardia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#centralCoreMyopathy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#centronuclearMyopathy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cofilin2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#collagen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#collagenTypeVI-relatedDisorders"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#congenitalFiber-typeDisproportion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#crystallin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#desmin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#distalArthrogryposis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#distalMuscularDystrophy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dmd-associatedDilatedCardiomyopathy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#dysferlin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#eplerenone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#familialHypertrophicCardiomyopathy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#familialRestrictiveCardiomyopathy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#glucosamine(UDP-N-acetyl)-2-epimerase"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#hypertrophicCardiomyopathy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#hypertrophyOfBreast"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#limb-girdleMuscularDystrophy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#limb-girdleMuscularDystrophyType1a"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#limb-girdleMuscularDystrophyType2b"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#limb-girdleMuscularDystrophyType2g"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#matrin_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#methimazole"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#muscularDystrophy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#myofibrillarMyopathy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#myopathyCongenital"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#myosin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#myositis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#myotilin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#myotilinopathy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#myotonicDystrophy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#myotubularin_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#nebulin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#nemalineMyopathy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#neuromuscularDisease"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#neuropathy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#noonanSyndrome"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#polymyositis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ryanodine_receptor_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#spheroidBodyMyopathy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#tropomyosin_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#tropomyosin_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#troponin_T_type_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ullrichCongenitalMuscularDystrophy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#vacuolar_H+-ATPase"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Chr01"/>
+        <Class IRI="#genomes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chr02"/>
+        <Class IRI="#genomes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chr03"/>
+        <Class IRI="#genomes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chr04"/>
+        <Class IRI="#genomes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chr05"/>
+        <Class IRI="#genomes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chr06"/>
+        <Class IRI="#genomes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chr07"/>
+        <Class IRI="#genomes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chr08"/>
+        <Class IRI="#genomes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chr09"/>
+        <Class IRI="#genomes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chr10"/>
+        <Class IRI="#genomes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chr11"/>
+        <Class IRI="#genomes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chr12"/>
+        <Class IRI="#genomes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chr13"/>
+        <Class IRI="#genomes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chr14"/>
+        <Class IRI="#genomes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chr15"/>
+        <Class IRI="#genomes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chr16"/>
+        <Class IRI="#genomes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chr17"/>
+        <Class IRI="#genomes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chr18"/>
+        <Class IRI="#genomes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chr19"/>
+        <Class IRI="#genomes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chr20"/>
+        <Class IRI="#genomes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chr21"/>
+        <Class IRI="#genomes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chr22"/>
+        <Class IRI="#genomes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChrX"/>
+        <Class IRI="#genomes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChrY"/>
+        <Class IRI="#genomes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#acquired"/>
+        <Class IRI="#myopathy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#commonMuscleCramps&amp;Stiffness"/>
+        <Class IRI="#acquired"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#congenitalMyopathies"/>
+        <Class IRI="#inherited"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dermatomyosities"/>
+        <Class IRI="#inherited"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#familialPeriodicParalysis"/>
+        <Class IRI="#inherited"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#glycogenStorageDiseasesOfMuscle"/>
+        <Class IRI="#inherited"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#inherited"/>
+        <Class IRI="#myopathy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mitochondrialMyopathies"/>
+        <Class IRI="#inherited"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#muscularDystrophies"/>
+        <Class IRI="#inherited"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#myoglobinurias"/>
+        <Class IRI="#inherited"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#myositisOssificans"/>
+        <Class IRI="#inherited"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#neuromyotonia"/>
+        <Class IRI="#inherited"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#polymyositis&amp;inclusionBodyMyositis&amp;relatedMyopathies"/>
+        <Class IRI="#inherited"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#stiff-manSyndrome"/>
+        <Class IRI="#inherited"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#tetany"/>
+        <Class IRI="#acquired"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Chr01"/>
+        <Class IRI="#Chr02"/>
+        <Class IRI="#Chr03"/>
+        <Class IRI="#Chr04"/>
+        <Class IRI="#Chr05"/>
+        <Class IRI="#Chr06"/>
+        <Class IRI="#Chr07"/>
+        <Class IRI="#Chr08"/>
+        <Class IRI="#Chr09"/>
+        <Class IRI="#Chr10"/>
+        <Class IRI="#Chr11"/>
+        <Class IRI="#Chr12"/>
+        <Class IRI="#Chr13"/>
+        <Class IRI="#Chr14"/>
+        <Class IRI="#Chr15"/>
+        <Class IRI="#Chr16"/>
+        <Class IRI="#Chr17"/>
+        <Class IRI="#Chr18"/>
+        <Class IRI="#Chr19"/>
+        <Class IRI="#Chr20"/>
+        <Class IRI="#Chr21"/>
+        <Class IRI="#Chr22"/>
+        <Class IRI="#ChrX"/>
+        <Class IRI="#ChrY"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#acquired"/>
+        <Class IRI="#inherited"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Chr01"/>
+        <NamedIndividual IRI="#ACTA1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chr14"/>
+        <NamedIndividual IRI="#CFL2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chr21"/>
+        <NamedIndividual IRI="#COL6A2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chr02"/>
+        <NamedIndividual IRI="#COL6A3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chr11"/>
+        <NamedIndividual IRI="#CRYAB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chr02"/>
+        <NamedIndividual IRI="#DES"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chr02"/>
+        <NamedIndividual IRI="#DYSF"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#drugs"/>
+        <NamedIndividual IRI="#Dutasteride"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chr09"/>
+        <NamedIndividual IRI="#GNE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#drugs"/>
+        <NamedIndividual IRI="#Gamma_Globulin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#drugs"/>
+        <NamedIndividual IRI="#Gentamicin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chr05"/>
+        <NamedIndividual IRI="#MATR3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChrX"/>
+        <NamedIndividual IRI="#MTM1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chr17"/>
+        <NamedIndividual IRI="#MYH2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chr14"/>
+        <NamedIndividual IRI="#MYH7"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chr05"/>
+        <NamedIndividual IRI="#MYOT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#drugs"/>
+        <NamedIndividual IRI="#ManNAc"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#proteins"/>
+        <NamedIndividual IRI="#N-acetylmannosamine_kinase"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chr02"/>
+        <NamedIndividual IRI="#NEB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#drugs"/>
+        <NamedIndividual IRI="#Placebo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chr19"/>
+        <NamedIndividual IRI="#RYR1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#drugs"/>
+        <NamedIndividual IRI="#Rituximab"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chr19"/>
+        <NamedIndividual IRI="#TNNT1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chr09"/>
+        <NamedIndividual IRI="#TPM2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Chr01"/>
+        <NamedIndividual IRI="#TPM3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChrX"/>
+        <NamedIndividual IRI="#VMA21"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#proteins"/>
+        <NamedIndividual IRI="#actin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#congenitalMyopathies"/>
+        <NamedIndividual IRI="#bethlemMyopathy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#muscularDystrophies"/>
+        <NamedIndividual IRI="#calpainopathy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#dermatomyosities"/>
+        <NamedIndividual IRI="#catecholaminergicPolymorphicVentricularTachycardia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#congenitalMyopathies"/>
+        <NamedIndividual IRI="#centralCoreMyopathy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#congenitalMyopathies"/>
+        <NamedIndividual IRI="#centronuclearMyopathy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#proteins"/>
+        <NamedIndividual IRI="#cofilin2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#proteins"/>
+        <NamedIndividual IRI="#collagen"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#polymyositis&amp;inclusionBodyMyositis&amp;relatedMyopathies"/>
+        <NamedIndividual IRI="#collagenTypeVI-relatedDisorders"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#congenitalMyopathies"/>
+        <NamedIndividual IRI="#congenitalFiber-typeDisproportion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#proteins"/>
+        <NamedIndividual IRI="#crystallin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#proteins"/>
+        <NamedIndividual IRI="#desmin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#congenitalMyopathies"/>
+        <NamedIndividual IRI="#distalArthrogryposis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#muscularDystrophies"/>
+        <NamedIndividual IRI="#distalMuscularDystrophy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#dermatomyosities"/>
+        <NamedIndividual IRI="#dmd-associatedDilatedCardiomyopathy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#proteins"/>
+        <NamedIndividual IRI="#dysferlin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#drugs"/>
+        <NamedIndividual IRI="#eplerenone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#dermatomyosities"/>
+        <NamedIndividual IRI="#familialHypertrophicCardiomyopathy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#dermatomyosities"/>
+        <NamedIndividual IRI="#familialRestrictiveCardiomyopathy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#proteins"/>
+        <NamedIndividual IRI="#glucosamine(UDP-N-acetyl)-2-epimerase"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#dermatomyosities"/>
+        <NamedIndividual IRI="#hypertrophicCardiomyopathy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#dermatomyosities"/>
+        <NamedIndividual IRI="#hypertrophyOfBreast"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#muscularDystrophies"/>
+        <NamedIndividual IRI="#limb-girdleMuscularDystrophy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#muscularDystrophies"/>
+        <NamedIndividual IRI="#limb-girdleMuscularDystrophyType1a"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#muscularDystrophies"/>
+        <NamedIndividual IRI="#limb-girdleMuscularDystrophyType2b"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#muscularDystrophies"/>
+        <NamedIndividual IRI="#limb-girdleMuscularDystrophyType2g"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#proteins"/>
+        <NamedIndividual IRI="#matrin_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#drugs"/>
+        <NamedIndividual IRI="#methimazole"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#muscularDystrophies"/>
+        <NamedIndividual IRI="#muscularDystrophy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#congenitalMyopathies"/>
+        <NamedIndividual IRI="#myofibrillarMyopathy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#congenitalMyopathies"/>
+        <NamedIndividual IRI="#myopathyCongenital"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#proteins"/>
+        <NamedIndividual IRI="#myosin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#dermatomyosities"/>
+        <NamedIndividual IRI="#myositis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#proteins"/>
+        <NamedIndividual IRI="#myotilin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#muscularDystrophies"/>
+        <NamedIndividual IRI="#myotilinopathy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#muscularDystrophies"/>
+        <NamedIndividual IRI="#myotonicDystrophy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#proteins"/>
+        <NamedIndividual IRI="#myotubularin_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#proteins"/>
+        <NamedIndividual IRI="#nebulin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#congenitalMyopathies"/>
+        <NamedIndividual IRI="#nemalineMyopathy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#neuromyotonia"/>
+        <NamedIndividual IRI="#neuromuscularDisease"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#neuromyotonia"/>
+        <NamedIndividual IRI="#neuropathy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#congenitalMyopathies"/>
+        <NamedIndividual IRI="#noonanSyndrome"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#polymyositis&amp;inclusionBodyMyositis&amp;relatedMyopathies"/>
+        <NamedIndividual IRI="#polymyositis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#proteins"/>
+        <NamedIndividual IRI="#ryanodine_receptor_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#congenitalMyopathies"/>
+        <NamedIndividual IRI="#spheroidBodyMyopathy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#proteins"/>
+        <NamedIndividual IRI="#tropomyosin_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#proteins"/>
+        <NamedIndividual IRI="#tropomyosin_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#proteins"/>
+        <NamedIndividual IRI="#troponin_T_type_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#muscularDystrophies"/>
+        <NamedIndividual IRI="#ullrichCongenitalMuscularDystrophy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#proteins"/>
+        <NamedIndividual IRI="#vacuolar_H+-ATPase"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#becauseOf"/>
+            <Class IRI="#genomes"/>
+        </ObjectSomeValuesFrom>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/bu/ontologies/2013/11/untitled-ontology-7#genid29019601353001"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#becauseOf"/>
+            <Class IRI="#genomes"/>
+        </ObjectSomeValuesFrom>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/bu/ontologies/2013/11/untitled-ontology-7#genid30148120627673"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#becauseOf"/>
+            <Class IRI="#genomes"/>
+        </ObjectSomeValuesFrom>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/bu/ontologies/2013/11/untitled-ontology-7#genid34124986686327"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#ACTA1"/>
+        <NamedIndividual IRI="#congenitalFiber-typeDisproportion"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#ACTA1"/>
+        <NamedIndividual IRI="#hypertrophyOfBreast"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#ACTA1"/>
+        <NamedIndividual IRI="#nemalineMyopathy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#ACTA1"/>
+        <NamedIndividual IRI="#neuromuscularDisease"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#ACTA1"/>
+        <NamedIndividual IRI="#myopathyCongenital"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#synthesize"/>
+        <NamedIndividual IRI="#ACTA1"/>
+        <NamedIndividual IRI="#actin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#CFL2"/>
+        <NamedIndividual IRI="#nemalineMyopathy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#CFL2"/>
+        <NamedIndividual IRI="#distalArthrogryposis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#synthesize"/>
+        <NamedIndividual IRI="#CFL2"/>
+        <NamedIndividual IRI="#cofilin2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#COL6A2"/>
+        <NamedIndividual IRI="#collagenTypeVI-relatedDisorders"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#COL6A2"/>
+        <NamedIndividual IRI="#neuropathy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#COL6A2"/>
+        <NamedIndividual IRI="#bethlemMyopathy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#COL6A2"/>
+        <NamedIndividual IRI="#ullrichCongenitalMuscularDystrophy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#synthesize"/>
+        <NamedIndividual IRI="#COL6A2"/>
+        <NamedIndividual IRI="#collagen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#COL6A3"/>
+        <NamedIndividual IRI="#neuropathy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#COL6A3"/>
+        <NamedIndividual IRI="#collagenTypeVI-relatedDisorders"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#COL6A3"/>
+        <NamedIndividual IRI="#ullrichCongenitalMuscularDystrophy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#COL6A3"/>
+        <NamedIndividual IRI="#bethlemMyopathy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#synthesize"/>
+        <NamedIndividual IRI="#COL6A3"/>
+        <NamedIndividual IRI="#collagen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#CRYAB"/>
+        <NamedIndividual IRI="#myofibrillarMyopathy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#CRYAB"/>
+        <NamedIndividual IRI="#dmd-associatedDilatedCardiomyopathy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#CRYAB"/>
+        <NamedIndividual IRI="#neuromuscularDisease"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#CRYAB"/>
+        <NamedIndividual IRI="#noonanSyndrome"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#CRYAB"/>
+        <NamedIndividual IRI="#myotonicDystrophy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#synthesize"/>
+        <NamedIndividual IRI="#CRYAB"/>
+        <NamedIndividual IRI="#crystallin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#DES"/>
+        <NamedIndividual IRI="#myopathyCongenital"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#DES"/>
+        <NamedIndividual IRI="#centralCoreMyopathy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#DES"/>
+        <NamedIndividual IRI="#spheroidBodyMyopathy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#DES"/>
+        <NamedIndividual IRI="#distalMuscularDystrophy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#DES"/>
+        <NamedIndividual IRI="#myofibrillarMyopathy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#DES"/>
+        <NamedIndividual IRI="#dmd-associatedDilatedCardiomyopathy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#DES"/>
+        <NamedIndividual IRI="#centronuclearMyopathy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#DES"/>
+        <NamedIndividual IRI="#familialRestrictiveCardiomyopathy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#DES"/>
+        <NamedIndividual IRI="#noonanSyndrome"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#DES"/>
+        <NamedIndividual IRI="#neuromuscularDisease"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#DES"/>
+        <NamedIndividual IRI="#muscularDystrophy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#DES"/>
+        <NamedIndividual IRI="#neuropathy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#synthesize"/>
+        <NamedIndividual IRI="#DES"/>
+        <NamedIndividual IRI="#desmin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#DYSF"/>
+        <NamedIndividual IRI="#myopathyCongenital"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#DYSF"/>
+        <NamedIndividual IRI="#noonanSyndrome"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#DYSF"/>
+        <NamedIndividual IRI="#limb-girdleMuscularDystrophy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#DYSF"/>
+        <NamedIndividual IRI="#polymyositis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#DYSF"/>
+        <NamedIndividual IRI="#myositis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#DYSF"/>
+        <NamedIndividual IRI="#distalMuscularDystrophy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#DYSF"/>
+        <NamedIndividual IRI="#hypertrophyOfBreast"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#DYSF"/>
+        <NamedIndividual IRI="#limb-girdleMuscularDystrophyType2b"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#DYSF"/>
+        <NamedIndividual IRI="#limb-girdleMuscularDystrophyType1a"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#DYSF"/>
+        <NamedIndividual IRI="#muscularDystrophy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#DYSF"/>
+        <NamedIndividual IRI="#limb-girdleMuscularDystrophyType2g"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#DYSF"/>
+        <NamedIndividual IRI="#calpainopathy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#synthesize"/>
+        <NamedIndividual IRI="#DYSF"/>
+        <NamedIndividual IRI="#dysferlin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#GNE"/>
+        <NamedIndividual IRI="#distalMuscularDystrophy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#GNE"/>
+        <NamedIndividual IRI="#muscularDystrophy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#GNE"/>
+        <NamedIndividual IRI="#neuromuscularDisease"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#synthesize"/>
+        <NamedIndividual IRI="#GNE"/>
+        <NamedIndividual IRI="#glucosamine(UDP-N-acetyl)-2-epimerase"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#synthesize"/>
+        <NamedIndividual IRI="#GNE"/>
+        <NamedIndividual IRI="#N-acetylmannosamine_kinase"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#synthesize"/>
+        <NamedIndividual IRI="#MATR3"/>
+        <NamedIndividual IRI="#matrin_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#MTM1"/>
+        <NamedIndividual IRI="#myotonicDystrophy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#MTM1"/>
+        <NamedIndividual IRI="#myopathyCongenital"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#MTM1"/>
+        <NamedIndividual IRI="#centronuclearMyopathy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#MTM1"/>
+        <NamedIndividual IRI="#neuropathy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#MTM1"/>
+        <NamedIndividual IRI="#neuromuscularDisease"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#synthesize"/>
+        <NamedIndividual IRI="#MTM1"/>
+        <NamedIndividual IRI="#myotubularin_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#MYH2"/>
+        <NamedIndividual IRI="#distalArthrogryposis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#synthesize"/>
+        <NamedIndividual IRI="#MYH2"/>
+        <NamedIndividual IRI="#myosin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#MYH7"/>
+        <NamedIndividual IRI="#myopathyCongenital"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#MYH7"/>
+        <NamedIndividual IRI="#myotonicDystrophy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#MYH7"/>
+        <NamedIndividual IRI="#familialHypertrophicCardiomyopathy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#MYH7"/>
+        <NamedIndividual IRI="#familialRestrictiveCardiomyopathy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#MYH7"/>
+        <NamedIndividual IRI="#noonanSyndrome"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#MYH7"/>
+        <NamedIndividual IRI="#hypertrophicCardiomyopathy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#MYH7"/>
+        <NamedIndividual IRI="#dmd-associatedDilatedCardiomyopathy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#MYH7"/>
+        <NamedIndividual IRI="#hypertrophyOfBreast"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#MYH7"/>
+        <NamedIndividual IRI="#distalMuscularDystrophy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#MYH7"/>
+        <NamedIndividual IRI="#catecholaminergicPolymorphicVentricularTachycardia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#synthesize"/>
+        <NamedIndividual IRI="#MYH7"/>
+        <NamedIndividual IRI="#myosin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#MYOT"/>
+        <NamedIndividual IRI="#calpainopathy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#MYOT"/>
+        <NamedIndividual IRI="#muscularDystrophy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#MYOT"/>
+        <NamedIndividual IRI="#spheroidBodyMyopathy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#MYOT"/>
+        <NamedIndividual IRI="#centralCoreMyopathy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#MYOT"/>
+        <NamedIndividual IRI="#noonanSyndrome"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#MYOT"/>
+        <NamedIndividual IRI="#limb-girdleMuscularDystrophyType2g"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#MYOT"/>
+        <NamedIndividual IRI="#neuropathy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#MYOT"/>
+        <NamedIndividual IRI="#distalMuscularDystrophy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#MYOT"/>
+        <NamedIndividual IRI="#myotilinopathy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#MYOT"/>
+        <NamedIndividual IRI="#limb-girdleMuscularDystrophyType2b"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#MYOT"/>
+        <NamedIndividual IRI="#neuromuscularDisease"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#MYOT"/>
+        <NamedIndividual IRI="#limb-girdleMuscularDystrophy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#MYOT"/>
+        <NamedIndividual IRI="#limb-girdleMuscularDystrophyType1a"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#MYOT"/>
+        <NamedIndividual IRI="#hypertrophyOfBreast"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#synthesize"/>
+        <NamedIndividual IRI="#MYOT"/>
+        <NamedIndividual IRI="#myotilin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSynthesizedBy"/>
+        <NamedIndividual IRI="#N-acetylmannosamine_kinase"/>
+        <NamedIndividual IRI="#GNE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#NEB"/>
+        <NamedIndividual IRI="#neuropathy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#NEB"/>
+        <NamedIndividual IRI="#muscularDystrophy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#NEB"/>
+        <NamedIndividual IRI="#centralCoreMyopathy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#NEB"/>
+        <NamedIndividual IRI="#myositis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#NEB"/>
+        <NamedIndividual IRI="#nemalineMyopathy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#NEB"/>
+        <NamedIndividual IRI="#myopathyCongenital"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#synthesize"/>
+        <NamedIndividual IRI="#NEB"/>
+        <NamedIndividual IRI="#nebulin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#RYR1"/>
+        <NamedIndividual IRI="#dmd-associatedDilatedCardiomyopathy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#RYR1"/>
+        <NamedIndividual IRI="#myotonicDystrophy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#RYR1"/>
+        <NamedIndividual IRI="#noonanSyndrome"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#RYR1"/>
+        <NamedIndividual IRI="#myositis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#RYR1"/>
+        <NamedIndividual IRI="#centralCoreMyopathy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#RYR1"/>
+        <NamedIndividual IRI="#centronuclearMyopathy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#RYR1"/>
+        <NamedIndividual IRI="#catecholaminergicPolymorphicVentricularTachycardia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#synthesize"/>
+        <NamedIndividual IRI="#RYR1"/>
+        <NamedIndividual IRI="#ryanodine_receptor_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#TNNT1"/>
+        <NamedIndividual IRI="#nemalineMyopathy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#synthesize"/>
+        <NamedIndividual IRI="#TNNT1"/>
+        <NamedIndividual IRI="#troponin_T_type_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#TPM2"/>
+        <NamedIndividual IRI="#nemalineMyopathy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#TPM2"/>
+        <NamedIndividual IRI="#distalArthrogryposis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#synthesize"/>
+        <NamedIndividual IRI="#TPM2"/>
+        <NamedIndividual IRI="#tropomyosin_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#TPM3"/>
+        <NamedIndividual IRI="#hypertrophicCardiomyopathy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#TPM3"/>
+        <NamedIndividual IRI="#nemalineMyopathy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#resultIn"/>
+        <NamedIndividual IRI="#TPM3"/>
+        <NamedIndividual IRI="#distalArthrogryposis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#synthesize"/>
+        <NamedIndividual IRI="#TPM3"/>
+        <NamedIndividual IRI="#tropomyosin_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#synthesize"/>
+        <NamedIndividual IRI="#VMA21"/>
+        <NamedIndividual IRI="#vacuolar_H+-ATPase"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSynthesizedBy"/>
+        <NamedIndividual IRI="#actin"/>
+        <NamedIndividual IRI="#ACTA1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#bethlemMyopathy"/>
+        <NamedIndividual IRI="#COL6A2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#bethlemMyopathy"/>
+        <NamedIndividual IRI="#COL6A3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#calpainopathy"/>
+        <NamedIndividual IRI="#MYOT"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#calpainopathy"/>
+        <NamedIndividual IRI="#DYSF"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#catecholaminergicPolymorphicVentricularTachycardia"/>
+        <NamedIndividual IRI="#RYR1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#catecholaminergicPolymorphicVentricularTachycardia"/>
+        <NamedIndividual IRI="#MYH7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#centralCoreMyopathy"/>
+        <NamedIndividual IRI="#RYR1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#centralCoreMyopathy"/>
+        <NamedIndividual IRI="#MYOT"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#centralCoreMyopathy"/>
+        <NamedIndividual IRI="#NEB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#centralCoreMyopathy"/>
+        <NamedIndividual IRI="#DES"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#centronuclearMyopathy"/>
+        <NamedIndividual IRI="#RYR1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#centronuclearMyopathy"/>
+        <NamedIndividual IRI="#MTM1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#centronuclearMyopathy"/>
+        <NamedIndividual IRI="#DES"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSynthesizedBy"/>
+        <NamedIndividual IRI="#cofilin2"/>
+        <NamedIndividual IRI="#CFL2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSynthesizedBy"/>
+        <NamedIndividual IRI="#collagen"/>
+        <NamedIndividual IRI="#COL6A3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSynthesizedBy"/>
+        <NamedIndividual IRI="#collagen"/>
+        <NamedIndividual IRI="#COL6A2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#collagenTypeVI-relatedDisorders"/>
+        <NamedIndividual IRI="#COL6A2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#collagenTypeVI-relatedDisorders"/>
+        <NamedIndividual IRI="#COL6A3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#congenitalFiber-typeDisproportion"/>
+        <NamedIndividual IRI="#ACTA1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSynthesizedBy"/>
+        <NamedIndividual IRI="#crystallin"/>
+        <NamedIndividual IRI="#CRYAB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSynthesizedBy"/>
+        <NamedIndividual IRI="#desmin"/>
+        <NamedIndividual IRI="#DES"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#distalArthrogryposis"/>
+        <NamedIndividual IRI="#TPM3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#distalArthrogryposis"/>
+        <NamedIndividual IRI="#MYH2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#distalArthrogryposis"/>
+        <NamedIndividual IRI="#TPM2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#distalArthrogryposis"/>
+        <NamedIndividual IRI="#CFL2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#distalMuscularDystrophy"/>
+        <NamedIndividual IRI="#MYH7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#distalMuscularDystrophy"/>
+        <NamedIndividual IRI="#MYOT"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#distalMuscularDystrophy"/>
+        <NamedIndividual IRI="#GNE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#distalMuscularDystrophy"/>
+        <NamedIndividual IRI="#DES"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#distalMuscularDystrophy"/>
+        <NamedIndividual IRI="#DYSF"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#dmd-associatedDilatedCardiomyopathy"/>
+        <NamedIndividual IRI="#RYR1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#dmd-associatedDilatedCardiomyopathy"/>
+        <NamedIndividual IRI="#DES"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#dmd-associatedDilatedCardiomyopathy"/>
+        <NamedIndividual IRI="#CRYAB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#dmd-associatedDilatedCardiomyopathy"/>
+        <NamedIndividual IRI="#MYH7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSynthesizedBy"/>
+        <NamedIndividual IRI="#dysferlin"/>
+        <NamedIndividual IRI="#DYSF"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#familialHypertrophicCardiomyopathy"/>
+        <NamedIndividual IRI="#MYH7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#familialRestrictiveCardiomyopathy"/>
+        <NamedIndividual IRI="#DES"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#familialRestrictiveCardiomyopathy"/>
+        <NamedIndividual IRI="#MYH7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSynthesizedBy"/>
+        <NamedIndividual IRI="#glucosamine(UDP-N-acetyl)-2-epimerase"/>
+        <NamedIndividual IRI="#GNE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#hypertrophicCardiomyopathy"/>
+        <NamedIndividual IRI="#MYH7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#hypertrophicCardiomyopathy"/>
+        <NamedIndividual IRI="#TPM3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#hypertrophyOfBreast"/>
+        <NamedIndividual IRI="#DYSF"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#hypertrophyOfBreast"/>
+        <NamedIndividual IRI="#ACTA1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#hypertrophyOfBreast"/>
+        <NamedIndividual IRI="#MYH7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#hypertrophyOfBreast"/>
+        <NamedIndividual IRI="#CRYAB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#limb-girdleMuscularDystrophy"/>
+        <NamedIndividual IRI="#DYSF"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#limb-girdleMuscularDystrophy"/>
+        <NamedIndividual IRI="#MYOT"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#limb-girdleMuscularDystrophyType1a"/>
+        <NamedIndividual IRI="#DYSF"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#limb-girdleMuscularDystrophyType1a"/>
+        <NamedIndividual IRI="#MYOT"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#limb-girdleMuscularDystrophyType2b"/>
+        <NamedIndividual IRI="#MYOT"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#limb-girdleMuscularDystrophyType2b"/>
+        <NamedIndividual IRI="#DYSF"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#limb-girdleMuscularDystrophyType2g"/>
+        <NamedIndividual IRI="#DYSF"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#limb-girdleMuscularDystrophyType2g"/>
+        <NamedIndividual IRI="#MYOT"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSynthesizedBy"/>
+        <NamedIndividual IRI="#matrin_3"/>
+        <NamedIndividual IRI="#MATR3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#muscularDystrophy"/>
+        <NamedIndividual IRI="#MYOT"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#muscularDystrophy"/>
+        <NamedIndividual IRI="#NEB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#muscularDystrophy"/>
+        <NamedIndividual IRI="#COL6A2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#muscularDystrophy"/>
+        <NamedIndividual IRI="#GNE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#muscularDystrophy"/>
+        <NamedIndividual IRI="#DYSF"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#muscularDystrophy"/>
+        <NamedIndividual IRI="#DES"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#myofibrillarMyopathy"/>
+        <NamedIndividual IRI="#CRYAB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#myofibrillarMyopathy"/>
+        <NamedIndividual IRI="#DES"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#myopathyCongenital"/>
+        <NamedIndividual IRI="#ACTA1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#myopathyCongenital"/>
+        <NamedIndividual IRI="#MTM1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#myopathyCongenital"/>
+        <NamedIndividual IRI="#NEB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#myopathyCongenital"/>
+        <NamedIndividual IRI="#DYSF"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#myopathyCongenital"/>
+        <NamedIndividual IRI="#MYH7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#myopathyCongenital"/>
+        <NamedIndividual IRI="#DES"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSynthesizedBy"/>
+        <NamedIndividual IRI="#myosin"/>
+        <NamedIndividual IRI="#MYH7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSynthesizedBy"/>
+        <NamedIndividual IRI="#myosin"/>
+        <NamedIndividual IRI="#MYH2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#myositis"/>
+        <NamedIndividual IRI="#RYR1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#myositis"/>
+        <NamedIndividual IRI="#NEB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#myositis"/>
+        <NamedIndividual IRI="#DYSF"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSynthesizedBy"/>
+        <NamedIndividual IRI="#myotilin"/>
+        <NamedIndividual IRI="#MYOT"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#myotilinopathy"/>
+        <NamedIndividual IRI="#MYOT"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#myotonicDystrophy"/>
+        <NamedIndividual IRI="#CRYAB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#myotonicDystrophy"/>
+        <NamedIndividual IRI="#RYR1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#myotonicDystrophy"/>
+        <NamedIndividual IRI="#MTM1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#myotonicDystrophy"/>
+        <NamedIndividual IRI="#MYH7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSynthesizedBy"/>
+        <NamedIndividual IRI="#myotubularin_1"/>
+        <NamedIndividual IRI="#MTM1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSynthesizedBy"/>
+        <NamedIndividual IRI="#nebulin"/>
+        <NamedIndividual IRI="#NEB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#nemalineMyopathy"/>
+        <NamedIndividual IRI="#TPM2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#nemalineMyopathy"/>
+        <NamedIndividual IRI="#TNNT1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#nemalineMyopathy"/>
+        <NamedIndividual IRI="#TPM3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#nemalineMyopathy"/>
+        <NamedIndividual IRI="#CFL2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#nemalineMyopathy"/>
+        <NamedIndividual IRI="#NEB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#nemalineMyopathy"/>
+        <NamedIndividual IRI="#ACTA1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#neuromuscularDisease"/>
+        <NamedIndividual IRI="#CRYAB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#neuromuscularDisease"/>
+        <NamedIndividual IRI="#MTM1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#neuromuscularDisease"/>
+        <NamedIndividual IRI="#DES"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#neuromuscularDisease"/>
+        <NamedIndividual IRI="#MYOT"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#neuromuscularDisease"/>
+        <NamedIndividual IRI="#ACTA1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#neuromuscularDisease"/>
+        <NamedIndividual IRI="#GNE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#neuropathy"/>
+        <NamedIndividual IRI="#NEB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#neuropathy"/>
+        <NamedIndividual IRI="#DES"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#neuropathy"/>
+        <NamedIndividual IRI="#MTM1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#neuropathy"/>
+        <NamedIndividual IRI="#COL6A3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#neuropathy"/>
+        <NamedIndividual IRI="#COL6A2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#neuropathy"/>
+        <NamedIndividual IRI="#MYOT"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#noonanSyndrome"/>
+        <NamedIndividual IRI="#DYSF"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#noonanSyndrome"/>
+        <NamedIndividual IRI="#CRYAB"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#noonanSyndrome"/>
+        <NamedIndividual IRI="#RYR1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#noonanSyndrome"/>
+        <NamedIndividual IRI="#MYOT"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#noonanSyndrome"/>
+        <NamedIndividual IRI="#DES"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#noonanSyndrome"/>
+        <NamedIndividual IRI="#MYH7"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#polymyositis"/>
+        <NamedIndividual IRI="#DYSF"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSynthesizedBy"/>
+        <NamedIndividual IRI="#ryanodine_receptor_1"/>
+        <NamedIndividual IRI="#RYR1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#spheroidBodyMyopathy"/>
+        <NamedIndividual IRI="#MYOT"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#spheroidBodyMyopathy"/>
+        <NamedIndividual IRI="#DES"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSynthesizedBy"/>
+        <NamedIndividual IRI="#tropomyosin_2"/>
+        <NamedIndividual IRI="#TPM2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#synthesize"/>
+        <NamedIndividual IRI="#tropomyosin_3"/>
+        <NamedIndividual IRI="#TPM3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSynthesizedBy"/>
+        <NamedIndividual IRI="#troponin_T_type_1"/>
+        <NamedIndividual IRI="#TNNT1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#ullrichCongenitalMuscularDystrophy"/>
+        <NamedIndividual IRI="#COL6A3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#becauseOf"/>
+        <NamedIndividual IRI="#ullrichCongenitalMuscularDystrophy"/>
+        <NamedIndividual IRI="#COL6A2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isSynthesizedBy"/>
+        <NamedIndividual IRI="#vacuolar_H+-ATPase"/>
+        <NamedIndividual IRI="#VMA21"/>
+    </ObjectPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isAffectedBy"/>
+        <ObjectProperty IRI="#ActOn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#resultIn"/>
+        <ObjectProperty IRI="#becauseOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#has"/>
+        <ObjectProperty IRI="#isCausedBy"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isIntroducedBy"/>
+        <ObjectProperty IRI="#introduce"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isSynthesizedBy"/>
+        <ObjectProperty IRI="#synthesize"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isTreatedBy"/>
+        <ObjectProperty IRI="#treat"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ActOn"/>
+        <Class IRI="#drugs"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#becauseOf"/>
+        <Class IRI="#myopathy"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#has"/>
+        <Class IRI="#drugs"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAffectedBy"/>
+        <Class IRI="#proteins"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCausedBy"/>
+        <Class IRI="#sideEffect"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isIntroducedBy"/>
+        <Class IRI="#drugs"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isIntroducedBy"/>
+        <Class IRI="#myopathy"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSynthesizedBy"/>
+        <Class IRI="#proteins"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isTreatedBy"/>
+        <Class IRI="#myopathy"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#resultIn"/>
+        <Class IRI="#genomes"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#resultIn"/>
+        <Class IRI="#proteins"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#synthesize"/>
+        <Class IRI="#genomes"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#treat"/>
+        <Class IRI="#drugs"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ActOn"/>
+        <Class IRI="#proteins"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#becauseOf"/>
+        <Class IRI="#genomes"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#becauseOf"/>
+        <Class IRI="#proteins"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#has"/>
+        <Class IRI="#sideEffect"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#introduce"/>
+        <Class IRI="#drugs"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#introduce"/>
+        <Class IRI="#myopathy"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAffectedBy"/>
+        <Class IRI="#drugs"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isCausedBy"/>
+        <Class IRI="#drugs"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSynthesizedBy"/>
+        <Class IRI="#genomes"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isTreatedBy"/>
+        <Class IRI="#drugs"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#resultIn"/>
+        <Class IRI="#myopathy"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#synthesize"/>
+        <Class IRI="#proteins"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#treat"/>
+        <Class IRI="#myopathy"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#abstract"/>
+        <Class IRI="#article"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#author"/>
+        <Class IRI="#article"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#journal"/>
+        <Class IRI="#article"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#title"/>
+        <Class IRI="#article"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#yearPublished"/>
+        <Class IRI="#article"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#abstract"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#author"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#journal"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#title"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#yearPublished"/>
+        <Datatype abbreviatedIRI="xsd:positiveInteger"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#inherited</IRI>
+        <AnonymousIndividual nodeID="_:http://www.semanticweb.org/bu/ontologies/2013/11/untitled-ontology-7#genid34124986686327"/>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

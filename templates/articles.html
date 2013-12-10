@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% set active_page = "articles" %}
-{% block title %}Articles{% endblock %}
+{% block title %}Articles {{ "(%s)" % author if author else "" }}{% endblock %}
 <p>Enter a search term</p>
 {% block body %}
 <a href="/articles/page/{{ page-1 if page > 1 else 1 }}"><<</a>
