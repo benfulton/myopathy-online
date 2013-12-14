@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% set active_page = "sparql" %}
+
+{% block title %}SPARQL Query{% endblock %}
+
+{% block body %}
+<textarea rows="18" cols="80" name="query" id="query">
+    select distinct ?Concept where {[] a ?Concept} LIMIT 100
+</textarea>
+<input type="submit" value="Run Query"/>
+{% endblock %}
+

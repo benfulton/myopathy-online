@@ -1,0 +1,1522 @@
+@prefix : <http://www.w3.org/2002/07/owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://myopathy-online.herokuapp.com/ontology> .
+
+<http://myopathy-online.herokuapp.com/ontology> rdf:type :Ontology .
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://myopathy-online.herokuapp.com/ontology#ActOn
+
+<http://myopathy-online.herokuapp.com/ontology#ActOn> rdf:type :ObjectProperty ;
+                                                      
+                                                      rdfs:domain <http://myopathy-online.herokuapp.com/ontology#drugs> ;
+                                                      
+                                                      rdfs:range <http://myopathy-online.herokuapp.com/ontology#proteins> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#becauseOf
+
+<http://myopathy-online.herokuapp.com/ontology#becauseOf> rdf:type :ObjectProperty ;
+                                                          
+                                                          rdfs:range <http://myopathy-online.herokuapp.com/ontology#genomes> ;
+                                                          
+                                                          rdfs:domain <http://myopathy-online.herokuapp.com/ontology#myopathy> ;
+                                                          
+                                                          rdfs:range <http://myopathy-online.herokuapp.com/ontology#proteins> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#has
+
+<http://myopathy-online.herokuapp.com/ontology#has> rdf:type :ObjectProperty ;
+                                                    
+                                                    rdfs:domain <http://myopathy-online.herokuapp.com/ontology#drugs> ;
+                                                    
+                                                    :inverseOf <http://myopathy-online.herokuapp.com/ontology#isCausedBy> ;
+                                                    
+                                                    rdfs:range <http://myopathy-online.herokuapp.com/ontology#sideEffect> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#introduce
+
+<http://myopathy-online.herokuapp.com/ontology#introduce> rdf:type :ObjectProperty ;
+                                                          
+                                                          rdfs:range <http://myopathy-online.herokuapp.com/ontology#drugs> ,
+                                                                     <http://myopathy-online.herokuapp.com/ontology#myopathy> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#isAffectedBy
+
+<http://myopathy-online.herokuapp.com/ontology#isAffectedBy> rdf:type :ObjectProperty ;
+                                                             
+                                                             :inverseOf <http://myopathy-online.herokuapp.com/ontology#ActOn> ;
+                                                             
+                                                             rdfs:range <http://myopathy-online.herokuapp.com/ontology#drugs> ;
+                                                             
+                                                             rdfs:domain <http://myopathy-online.herokuapp.com/ontology#proteins> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#isCausedBy
+
+<http://myopathy-online.herokuapp.com/ontology#isCausedBy> rdf:type :ObjectProperty ;
+                                                           
+                                                           rdfs:range <http://myopathy-online.herokuapp.com/ontology#drugs> ;
+                                                           
+                                                           rdfs:domain <http://myopathy-online.herokuapp.com/ontology#sideEffect> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#isIntroducedBy
+
+<http://myopathy-online.herokuapp.com/ontology#isIntroducedBy> rdf:type :ObjectProperty ;
+                                                               
+                                                               rdfs:domain <http://myopathy-online.herokuapp.com/ontology#drugs> ;
+                                                               
+                                                               :inverseOf <http://myopathy-online.herokuapp.com/ontology#introduce> ;
+                                                               
+                                                               rdfs:domain <http://myopathy-online.herokuapp.com/ontology#myopathy> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#isSynthesizedBy
+
+<http://myopathy-online.herokuapp.com/ontology#isSynthesizedBy> rdf:type :ObjectProperty ;
+                                                                
+                                                                rdfs:range <http://myopathy-online.herokuapp.com/ontology#genomes> ;
+                                                                
+                                                                rdfs:domain <http://myopathy-online.herokuapp.com/ontology#proteins> ;
+                                                                
+                                                                :inverseOf <http://myopathy-online.herokuapp.com/ontology#synthesize> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#isTreatedBy
+
+<http://myopathy-online.herokuapp.com/ontology#isTreatedBy> rdf:type :ObjectProperty ;
+                                                            
+                                                            rdfs:range <http://myopathy-online.herokuapp.com/ontology#drugs> ;
+                                                            
+                                                            rdfs:domain <http://myopathy-online.herokuapp.com/ontology#myopathy> ;
+                                                            
+                                                            :inverseOf <http://myopathy-online.herokuapp.com/ontology#treat> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#referencedBy
+
+<http://myopathy-online.herokuapp.com/ontology#referencedBy> rdf:type :ObjectProperty ;
+                                                             
+                                                             rdfs:range <http://myopathy-online.herokuapp.com/ontology#article> ;
+                                                             
+                                                             rdfs:domain <http://myopathy-online.herokuapp.com/ontology#myopathy> ,
+                                                                         <http://myopathy-online.herokuapp.com/ontology#proteins> ;
+                                                             
+                                                             :inverseOf <http://myopathy-online.herokuapp.com/ontology#references> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#references
+
+<http://myopathy-online.herokuapp.com/ontology#references> rdf:type :ObjectProperty ;
+                                                           
+                                                           rdfs:domain <http://myopathy-online.herokuapp.com/ontology#article> ;
+                                                           
+                                                           rdfs:range <http://myopathy-online.herokuapp.com/ontology#myopathy> ,
+                                                                      <http://myopathy-online.herokuapp.com/ontology#proteins> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#resultIn
+
+<http://myopathy-online.herokuapp.com/ontology#resultIn> rdf:type :ObjectProperty ;
+                                                         
+                                                         :inverseOf <http://myopathy-online.herokuapp.com/ontology#becauseOf> ;
+                                                         
+                                                         rdfs:domain <http://myopathy-online.herokuapp.com/ontology#genomes> ;
+                                                         
+                                                         rdfs:range <http://myopathy-online.herokuapp.com/ontology#myopathy> ;
+                                                         
+                                                         rdfs:domain <http://myopathy-online.herokuapp.com/ontology#proteins> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#synthesize
+
+<http://myopathy-online.herokuapp.com/ontology#synthesize> rdf:type :ObjectProperty ;
+                                                           
+                                                           rdfs:domain <http://myopathy-online.herokuapp.com/ontology#genomes> ;
+                                                           
+                                                           rdfs:range <http://myopathy-online.herokuapp.com/ontology#proteins> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#treat
+
+<http://myopathy-online.herokuapp.com/ontology#treat> rdf:type :ObjectProperty ;
+                                                      
+                                                      rdfs:domain <http://myopathy-online.herokuapp.com/ontology#drugs> ;
+                                                      
+                                                      rdfs:range <http://myopathy-online.herokuapp.com/ontology#myopathy> .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://myopathy-online.herokuapp.com/ontology#abstract
+
+<http://myopathy-online.herokuapp.com/ontology#abstract> rdf:type :DatatypeProperty ;
+                                                         
+                                                         rdfs:domain <http://myopathy-online.herokuapp.com/ontology#article> ;
+                                                         
+                                                         rdfs:range xsd:string .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#author
+
+<http://myopathy-online.herokuapp.com/ontology#author> rdf:type :DatatypeProperty ;
+                                                       
+                                                       rdfs:domain <http://myopathy-online.herokuapp.com/ontology#article> ;
+                                                       
+                                                       rdfs:range xsd:string .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#journal
+
+<http://myopathy-online.herokuapp.com/ontology#journal> rdf:type :DatatypeProperty ;
+                                                        
+                                                        rdfs:domain <http://myopathy-online.herokuapp.com/ontology#article> ;
+                                                        
+                                                        rdfs:range xsd:string .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#title
+
+<http://myopathy-online.herokuapp.com/ontology#title> rdf:type :DatatypeProperty ;
+                                                      
+                                                      rdfs:domain <http://myopathy-online.herokuapp.com/ontology#article> ;
+                                                      
+                                                      rdfs:range xsd:string .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#yearPublished
+
+<http://myopathy-online.herokuapp.com/ontology#yearPublished> rdf:type :DatatypeProperty ;
+                                                              
+                                                              rdfs:domain <http://myopathy-online.herokuapp.com/ontology#article> ;
+                                                              
+                                                              rdfs:range xsd:positiveInteger .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://myopathy-online.herokuapp.com/ontology#Chr01
+
+<http://myopathy-online.herokuapp.com/ontology#Chr01> rdf:type :Class ;
+                                                      
+                                                      rdfs:subClassOf <http://myopathy-online.herokuapp.com/ontology#genomes> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#Chr02
+
+<http://myopathy-online.herokuapp.com/ontology#Chr02> rdf:type :Class ;
+                                                      
+                                                      rdfs:subClassOf <http://myopathy-online.herokuapp.com/ontology#genomes> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#Chr03
+
+<http://myopathy-online.herokuapp.com/ontology#Chr03> rdf:type :Class ;
+                                                      
+                                                      rdfs:subClassOf <http://myopathy-online.herokuapp.com/ontology#genomes> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#Chr04
+
+<http://myopathy-online.herokuapp.com/ontology#Chr04> rdf:type :Class ;
+                                                      
+                                                      rdfs:subClassOf <http://myopathy-online.herokuapp.com/ontology#genomes> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#Chr05
+
+<http://myopathy-online.herokuapp.com/ontology#Chr05> rdf:type :Class ;
+                                                      
+                                                      rdfs:subClassOf <http://myopathy-online.herokuapp.com/ontology#genomes> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#Chr06
+
+<http://myopathy-online.herokuapp.com/ontology#Chr06> rdf:type :Class ;
+                                                      
+                                                      rdfs:subClassOf <http://myopathy-online.herokuapp.com/ontology#genomes> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#Chr07
+
+<http://myopathy-online.herokuapp.com/ontology#Chr07> rdf:type :Class ;
+                                                      
+                                                      rdfs:subClassOf <http://myopathy-online.herokuapp.com/ontology#genomes> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#Chr08
+
+<http://myopathy-online.herokuapp.com/ontology#Chr08> rdf:type :Class ;
+                                                      
+                                                      rdfs:subClassOf <http://myopathy-online.herokuapp.com/ontology#genomes> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#Chr09
+
+<http://myopathy-online.herokuapp.com/ontology#Chr09> rdf:type :Class ;
+                                                      
+                                                      rdfs:subClassOf <http://myopathy-online.herokuapp.com/ontology#genomes> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#Chr10
+
+<http://myopathy-online.herokuapp.com/ontology#Chr10> rdf:type :Class ;
+                                                      
+                                                      rdfs:subClassOf <http://myopathy-online.herokuapp.com/ontology#genomes> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#Chr11
+
+<http://myopathy-online.herokuapp.com/ontology#Chr11> rdf:type :Class ;
+                                                      
+                                                      rdfs:subClassOf <http://myopathy-online.herokuapp.com/ontology#genomes> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#Chr12
+
+<http://myopathy-online.herokuapp.com/ontology#Chr12> rdf:type :Class ;
+                                                      
+                                                      rdfs:subClassOf <http://myopathy-online.herokuapp.com/ontology#genomes> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#Chr13
+
+<http://myopathy-online.herokuapp.com/ontology#Chr13> rdf:type :Class ;
+                                                      
+                                                      rdfs:subClassOf <http://myopathy-online.herokuapp.com/ontology#genomes> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#Chr14
+
+<http://myopathy-online.herokuapp.com/ontology#Chr14> rdf:type :Class ;
+                                                      
+                                                      rdfs:subClassOf <http://myopathy-online.herokuapp.com/ontology#genomes> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#Chr15
+
+<http://myopathy-online.herokuapp.com/ontology#Chr15> rdf:type :Class ;
+                                                      
+                                                      rdfs:subClassOf <http://myopathy-online.herokuapp.com/ontology#genomes> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#Chr16
+
+<http://myopathy-online.herokuapp.com/ontology#Chr16> rdf:type :Class ;
+                                                      
+                                                      rdfs:subClassOf <http://myopathy-online.herokuapp.com/ontology#genomes> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#Chr17
+
+<http://myopathy-online.herokuapp.com/ontology#Chr17> rdf:type :Class ;
+                                                      
+                                                      rdfs:subClassOf <http://myopathy-online.herokuapp.com/ontology#genomes> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#Chr18
+
+<http://myopathy-online.herokuapp.com/ontology#Chr18> rdf:type :Class ;
+                                                      
+                                                      rdfs:subClassOf <http://myopathy-online.herokuapp.com/ontology#genomes> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#Chr19
+
+<http://myopathy-online.herokuapp.com/ontology#Chr19> rdf:type :Class ;
+                                                      
+                                                      rdfs:subClassOf <http://myopathy-online.herokuapp.com/ontology#genomes> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#Chr20
+
+<http://myopathy-online.herokuapp.com/ontology#Chr20> rdf:type :Class ;
+                                                      
+                                                      rdfs:subClassOf <http://myopathy-online.herokuapp.com/ontology#genomes> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#Chr21
+
+<http://myopathy-online.herokuapp.com/ontology#Chr21> rdf:type :Class ;
+                                                      
+                                                      rdfs:subClassOf <http://myopathy-online.herokuapp.com/ontology#genomes> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#Chr22
+
+<http://myopathy-online.herokuapp.com/ontology#Chr22> rdf:type :Class ;
+                                                      
+                                                      rdfs:subClassOf <http://myopathy-online.herokuapp.com/ontology#genomes> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#ChrX
+
+<http://myopathy-online.herokuapp.com/ontology#ChrX> rdf:type :Class ;
+                                                     
+                                                     rdfs:subClassOf <http://myopathy-online.herokuapp.com/ontology#genomes> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#ChrY
+
+<http://myopathy-online.herokuapp.com/ontology#ChrY> rdf:type :Class ;
+                                                     
+                                                     rdfs:subClassOf <http://myopathy-online.herokuapp.com/ontology#genomes> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#acquired
+
+<http://myopathy-online.herokuapp.com/ontology#acquired> rdf:type :Class ;
+                                                         
+                                                         rdfs:subClassOf <http://myopathy-online.herokuapp.com/ontology#myopathy> ;
+                                                         
+                                                         :disjointWith <http://myopathy-online.herokuapp.com/ontology#inherited> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#article
+
+<http://myopathy-online.herokuapp.com/ontology#article> rdf:type :Class .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#commonMuscleCramps&Stiffness
+
+<http://myopathy-online.herokuapp.com/ontology#commonMuscleCramps&Stiffness> rdf:type :Class ;
+                                                                             
+                                                                             rdfs:subClassOf <http://myopathy-online.herokuapp.com/ontology#acquired> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#congenitalMyopathies
+
+<http://myopathy-online.herokuapp.com/ontology#congenitalMyopathies> rdf:type :Class ;
+                                                                     
+                                                                     rdfs:subClassOf <http://myopathy-online.herokuapp.com/ontology#inherited> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#dermatomyosities
+
+<http://myopathy-online.herokuapp.com/ontology#dermatomyosities> rdf:type :Class ;
+                                                                 
+                                                                 rdfs:subClassOf <http://myopathy-online.herokuapp.com/ontology#inherited> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#drugs
+
+<http://myopathy-online.herokuapp.com/ontology#drugs> rdf:type :Class .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#familialPeriodicParalysis
+
+<http://myopathy-online.herokuapp.com/ontology#familialPeriodicParalysis> rdf:type :Class ;
+                                                                          
+                                                                          rdfs:subClassOf <http://myopathy-online.herokuapp.com/ontology#inherited> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#genomes
+
+<http://myopathy-online.herokuapp.com/ontology#genomes> rdf:type :Class .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#glycogenStorageDiseasesOfMuscle
+
+<http://myopathy-online.herokuapp.com/ontology#glycogenStorageDiseasesOfMuscle> rdf:type :Class ;
+                                                                                
+                                                                                rdfs:subClassOf <http://myopathy-online.herokuapp.com/ontology#inherited> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#inherited
+
+<http://myopathy-online.herokuapp.com/ontology#inherited> rdf:type :Class ;
+                                                          
+                                                          rdfs:subClassOf <http://myopathy-online.herokuapp.com/ontology#myopathy> ;
+                                                          
+                                                          rdfs:comment [ rdf:type [ rdf:type :Restriction ;
+                                                                                    :onProperty <http://myopathy-online.herokuapp.com/ontology#becauseOf> ;
+                                                                                    :someValuesFrom <http://myopathy-online.herokuapp.com/ontology#genomes>
+                                                                                  ]
+                                                                       ] .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#mitochondrialMyopathies
+
+<http://myopathy-online.herokuapp.com/ontology#mitochondrialMyopathies> rdf:type :Class ;
+                                                                        
+                                                                        rdfs:subClassOf <http://myopathy-online.herokuapp.com/ontology#inherited> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#muscularDystrophies
+
+<http://myopathy-online.herokuapp.com/ontology#muscularDystrophies> rdf:type :Class ;
+                                                                    
+                                                                    rdfs:subClassOf <http://myopathy-online.herokuapp.com/ontology#inherited> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#myoglobinurias
+
+<http://myopathy-online.herokuapp.com/ontology#myoglobinurias> rdf:type :Class ;
+                                                               
+                                                               rdfs:subClassOf <http://myopathy-online.herokuapp.com/ontology#inherited> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#myopathy
+
+<http://myopathy-online.herokuapp.com/ontology#myopathy> rdf:type :Class .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#myositisOssificans
+
+<http://myopathy-online.herokuapp.com/ontology#myositisOssificans> rdf:type :Class ;
+                                                                   
+                                                                   rdfs:subClassOf <http://myopathy-online.herokuapp.com/ontology#inherited> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#neuromyotonia
+
+<http://myopathy-online.herokuapp.com/ontology#neuromyotonia> rdf:type :Class ;
+                                                              
+                                                              rdfs:subClassOf <http://myopathy-online.herokuapp.com/ontology#inherited> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#polymyositis&inclusionBodyMyositis&relatedMyopathies
+
+<http://myopathy-online.herokuapp.com/ontology#polymyositis&inclusionBodyMyositis&relatedMyopathies> rdf:type :Class ;
+                                                                                                     
+                                                                                                     rdfs:subClassOf <http://myopathy-online.herokuapp.com/ontology#inherited> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#proteins
+
+<http://myopathy-online.herokuapp.com/ontology#proteins> rdf:type :Class .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#sideEffect
+
+<http://myopathy-online.herokuapp.com/ontology#sideEffect> rdf:type :Class .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#stiff-manSyndrome
+
+<http://myopathy-online.herokuapp.com/ontology#stiff-manSyndrome> rdf:type :Class ;
+                                                                  
+                                                                  rdfs:subClassOf <http://myopathy-online.herokuapp.com/ontology#inherited> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#tetany
+
+<http://myopathy-online.herokuapp.com/ontology#tetany> rdf:type :Class ;
+                                                       
+                                                       rdfs:subClassOf <http://myopathy-online.herokuapp.com/ontology#acquired> .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://myopathy-online.herokuapp.com/ontology#ACTA1
+
+<http://myopathy-online.herokuapp.com/ontology#ACTA1> rdf:type <http://myopathy-online.herokuapp.com/ontology#Chr01> ,
+                                                               :NamedIndividual ;
+                                                      
+                                                      <http://myopathy-online.herokuapp.com/ontology#synthesize> <http://myopathy-online.herokuapp.com/ontology#actin> ;
+                                                      
+                                                      <http://myopathy-online.herokuapp.com/ontology#resultIn> <http://myopathy-online.herokuapp.com/ontology#congenitalFiber-typeDisproportion> ,
+                                                                                                               <http://myopathy-online.herokuapp.com/ontology#hypertrophyOfBreast> ,
+                                                                                                               <http://myopathy-online.herokuapp.com/ontology#myopathyCongenital> ,
+                                                                                                               <http://myopathy-online.herokuapp.com/ontology#nemalineMyopathy> ,
+                                                                                                               <http://myopathy-online.herokuapp.com/ontology#neuromuscularDisease> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#CFL2
+
+<http://myopathy-online.herokuapp.com/ontology#CFL2> rdf:type <http://myopathy-online.herokuapp.com/ontology#Chr14> ,
+                                                              :NamedIndividual ;
+                                                     
+                                                     <http://myopathy-online.herokuapp.com/ontology#synthesize> <http://myopathy-online.herokuapp.com/ontology#cofilin2> ;
+                                                     
+                                                     <http://myopathy-online.herokuapp.com/ontology#resultIn> <http://myopathy-online.herokuapp.com/ontology#distalArthrogryposis> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#nemalineMyopathy> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#COL6A2
+
+<http://myopathy-online.herokuapp.com/ontology#COL6A2> rdf:type <http://myopathy-online.herokuapp.com/ontology#Chr21> ,
+                                                                :NamedIndividual ;
+                                                       
+                                                       <http://myopathy-online.herokuapp.com/ontology#resultIn> <http://myopathy-online.herokuapp.com/ontology#bethlemMyopathy> ;
+                                                       
+                                                       <http://myopathy-online.herokuapp.com/ontology#synthesize> <http://myopathy-online.herokuapp.com/ontology#collagen> ;
+                                                       
+                                                       <http://myopathy-online.herokuapp.com/ontology#resultIn> <http://myopathy-online.herokuapp.com/ontology#collagenTypeVI-relatedDisorders> ,
+                                                                                                                <http://myopathy-online.herokuapp.com/ontology#neuropathy> ,
+                                                                                                                <http://myopathy-online.herokuapp.com/ontology#ullrichCongenitalMuscularDystrophy> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#COL6A3
+
+<http://myopathy-online.herokuapp.com/ontology#COL6A3> rdf:type <http://myopathy-online.herokuapp.com/ontology#Chr02> ,
+                                                                :NamedIndividual ;
+                                                       
+                                                       <http://myopathy-online.herokuapp.com/ontology#resultIn> <http://myopathy-online.herokuapp.com/ontology#bethlemMyopathy> ;
+                                                       
+                                                       <http://myopathy-online.herokuapp.com/ontology#synthesize> <http://myopathy-online.herokuapp.com/ontology#collagen> ;
+                                                       
+                                                       <http://myopathy-online.herokuapp.com/ontology#resultIn> <http://myopathy-online.herokuapp.com/ontology#collagenTypeVI-relatedDisorders> ,
+                                                                                                                <http://myopathy-online.herokuapp.com/ontology#neuropathy> ,
+                                                                                                                <http://myopathy-online.herokuapp.com/ontology#ullrichCongenitalMuscularDystrophy> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#CRYAB
+
+<http://myopathy-online.herokuapp.com/ontology#CRYAB> rdf:type <http://myopathy-online.herokuapp.com/ontology#Chr11> ,
+                                                               :NamedIndividual ;
+                                                      
+                                                      <http://myopathy-online.herokuapp.com/ontology#synthesize> <http://myopathy-online.herokuapp.com/ontology#crystallin> ;
+                                                      
+                                                      <http://myopathy-online.herokuapp.com/ontology#resultIn> <http://myopathy-online.herokuapp.com/ontology#dmd-associatedDilatedCardiomyopathy> ,
+                                                                                                               <http://myopathy-online.herokuapp.com/ontology#myofibrillarMyopathy> ,
+                                                                                                               <http://myopathy-online.herokuapp.com/ontology#myotonicDystrophy> ,
+                                                                                                               <http://myopathy-online.herokuapp.com/ontology#neuromuscularDisease> ,
+                                                                                                               <http://myopathy-online.herokuapp.com/ontology#noonanSyndrome> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#DES
+
+<http://myopathy-online.herokuapp.com/ontology#DES> rdf:type <http://myopathy-online.herokuapp.com/ontology#Chr02> ,
+                                                             :NamedIndividual ;
+                                                    
+                                                    <http://myopathy-online.herokuapp.com/ontology#resultIn> <http://myopathy-online.herokuapp.com/ontology#centralCoreMyopathy> ,
+                                                                                                             <http://myopathy-online.herokuapp.com/ontology#centronuclearMyopathy> ;
+                                                    
+                                                    <http://myopathy-online.herokuapp.com/ontology#synthesize> <http://myopathy-online.herokuapp.com/ontology#desmin> ;
+                                                    
+                                                    <http://myopathy-online.herokuapp.com/ontology#resultIn> <http://myopathy-online.herokuapp.com/ontology#distalMuscularDystrophy> ,
+                                                                                                             <http://myopathy-online.herokuapp.com/ontology#dmd-associatedDilatedCardiomyopathy> ,
+                                                                                                             <http://myopathy-online.herokuapp.com/ontology#familialRestrictiveCardiomyopathy> ,
+                                                                                                             <http://myopathy-online.herokuapp.com/ontology#muscularDystrophy> ,
+                                                                                                             <http://myopathy-online.herokuapp.com/ontology#myofibrillarMyopathy> ,
+                                                                                                             <http://myopathy-online.herokuapp.com/ontology#myopathyCongenital> ,
+                                                                                                             <http://myopathy-online.herokuapp.com/ontology#neuromuscularDisease> ,
+                                                                                                             <http://myopathy-online.herokuapp.com/ontology#neuropathy> ,
+                                                                                                             <http://myopathy-online.herokuapp.com/ontology#noonanSyndrome> ,
+                                                                                                             <http://myopathy-online.herokuapp.com/ontology#spheroidBodyMyopathy> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#DYSF
+
+<http://myopathy-online.herokuapp.com/ontology#DYSF> rdf:type <http://myopathy-online.herokuapp.com/ontology#Chr02> ,
+                                                              :NamedIndividual ;
+                                                     
+                                                     <http://myopathy-online.herokuapp.com/ontology#resultIn> <http://myopathy-online.herokuapp.com/ontology#calpainopathy> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#distalMuscularDystrophy> ;
+                                                     
+                                                     <http://myopathy-online.herokuapp.com/ontology#synthesize> <http://myopathy-online.herokuapp.com/ontology#dysferlin> ;
+                                                     
+                                                     <http://myopathy-online.herokuapp.com/ontology#resultIn> <http://myopathy-online.herokuapp.com/ontology#hypertrophyOfBreast> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#limb-girdleMuscularDystrophy> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#limb-girdleMuscularDystrophyType1a> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#limb-girdleMuscularDystrophyType2b> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#limb-girdleMuscularDystrophyType2g> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#muscularDystrophy> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#myopathyCongenital> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#myositis> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#noonanSyndrome> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#polymyositis> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#Dutasteride
+
+<http://myopathy-online.herokuapp.com/ontology#Dutasteride> rdf:type <http://myopathy-online.herokuapp.com/ontology#drugs> ,
+                                                                     :NamedIndividual .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#GNE
+
+<http://myopathy-online.herokuapp.com/ontology#GNE> rdf:type <http://myopathy-online.herokuapp.com/ontology#Chr09> ,
+                                                             :NamedIndividual ;
+                                                    
+                                                    <http://myopathy-online.herokuapp.com/ontology#synthesize> <http://myopathy-online.herokuapp.com/ontology#N-acetylmannosamine_kinase> ;
+                                                    
+                                                    <http://myopathy-online.herokuapp.com/ontology#resultIn> <http://myopathy-online.herokuapp.com/ontology#distalMuscularDystrophy> ;
+                                                    
+                                                    <http://myopathy-online.herokuapp.com/ontology#synthesize> <http://myopathy-online.herokuapp.com/ontology#glucosamine(UDP-N-acetyl)-2-epimerase> ;
+                                                    
+                                                    <http://myopathy-online.herokuapp.com/ontology#resultIn> <http://myopathy-online.herokuapp.com/ontology#muscularDystrophy> ,
+                                                                                                             <http://myopathy-online.herokuapp.com/ontology#neuromuscularDisease> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#Gamma_Globulin
+
+<http://myopathy-online.herokuapp.com/ontology#Gamma_Globulin> rdf:type <http://myopathy-online.herokuapp.com/ontology#drugs> ,
+                                                                        :NamedIndividual .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#Gentamicin
+
+<http://myopathy-online.herokuapp.com/ontology#Gentamicin> rdf:type <http://myopathy-online.herokuapp.com/ontology#drugs> ,
+                                                                    :NamedIndividual .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#MATR3
+
+<http://myopathy-online.herokuapp.com/ontology#MATR3> rdf:type <http://myopathy-online.herokuapp.com/ontology#Chr05> ,
+                                                               :NamedIndividual ;
+                                                      
+                                                      <http://myopathy-online.herokuapp.com/ontology#synthesize> <http://myopathy-online.herokuapp.com/ontology#matrin_3> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#MTM1
+
+<http://myopathy-online.herokuapp.com/ontology#MTM1> rdf:type <http://myopathy-online.herokuapp.com/ontology#ChrX> ,
+                                                              :NamedIndividual ;
+                                                     
+                                                     <http://myopathy-online.herokuapp.com/ontology#resultIn> <http://myopathy-online.herokuapp.com/ontology#centronuclearMyopathy> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#myopathyCongenital> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#myotonicDystrophy> ;
+                                                     
+                                                     <http://myopathy-online.herokuapp.com/ontology#synthesize> <http://myopathy-online.herokuapp.com/ontology#myotubularin_1> ;
+                                                     
+                                                     <http://myopathy-online.herokuapp.com/ontology#resultIn> <http://myopathy-online.herokuapp.com/ontology#neuromuscularDisease> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#neuropathy> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#MYH2
+
+<http://myopathy-online.herokuapp.com/ontology#MYH2> rdf:type <http://myopathy-online.herokuapp.com/ontology#Chr17> ,
+                                                              :NamedIndividual ;
+                                                     
+                                                     <http://myopathy-online.herokuapp.com/ontology#resultIn> <http://myopathy-online.herokuapp.com/ontology#distalArthrogryposis> ;
+                                                     
+                                                     <http://myopathy-online.herokuapp.com/ontology#synthesize> <http://myopathy-online.herokuapp.com/ontology#myosin> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#MYH7
+
+<http://myopathy-online.herokuapp.com/ontology#MYH7> rdf:type <http://myopathy-online.herokuapp.com/ontology#Chr14> ,
+                                                              :NamedIndividual ;
+                                                     
+                                                     <http://myopathy-online.herokuapp.com/ontology#resultIn> <http://myopathy-online.herokuapp.com/ontology#catecholaminergicPolymorphicVentricularTachycardia> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#distalMuscularDystrophy> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#dmd-associatedDilatedCardiomyopathy> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#familialHypertrophicCardiomyopathy> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#familialRestrictiveCardiomyopathy> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#hypertrophicCardiomyopathy> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#hypertrophyOfBreast> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#myopathyCongenital> ;
+                                                     
+                                                     <http://myopathy-online.herokuapp.com/ontology#synthesize> <http://myopathy-online.herokuapp.com/ontology#myosin> ;
+                                                     
+                                                     <http://myopathy-online.herokuapp.com/ontology#resultIn> <http://myopathy-online.herokuapp.com/ontology#myotonicDystrophy> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#noonanSyndrome> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#MYOT
+
+<http://myopathy-online.herokuapp.com/ontology#MYOT> rdf:type <http://myopathy-online.herokuapp.com/ontology#Chr05> ,
+                                                              :NamedIndividual ;
+                                                     
+                                                     <http://myopathy-online.herokuapp.com/ontology#resultIn> <http://myopathy-online.herokuapp.com/ontology#calpainopathy> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#centralCoreMyopathy> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#distalMuscularDystrophy> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#hypertrophyOfBreast> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#limb-girdleMuscularDystrophy> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#limb-girdleMuscularDystrophyType1a> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#limb-girdleMuscularDystrophyType2b> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#limb-girdleMuscularDystrophyType2g> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#muscularDystrophy> ;
+                                                     
+                                                     <http://myopathy-online.herokuapp.com/ontology#synthesize> <http://myopathy-online.herokuapp.com/ontology#myotilin> ;
+                                                     
+                                                     <http://myopathy-online.herokuapp.com/ontology#resultIn> <http://myopathy-online.herokuapp.com/ontology#myotilinopathy> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#neuromuscularDisease> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#neuropathy> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#noonanSyndrome> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#spheroidBodyMyopathy> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#ManNAc
+
+<http://myopathy-online.herokuapp.com/ontology#ManNAc> rdf:type <http://myopathy-online.herokuapp.com/ontology#drugs> ,
+                                                                :NamedIndividual .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#N-acetylmannosamine_kinase
+
+<http://myopathy-online.herokuapp.com/ontology#N-acetylmannosamine_kinase> rdf:type <http://myopathy-online.herokuapp.com/ontology#proteins> ,
+                                                                                    :NamedIndividual ;
+                                                                           
+                                                                           <http://myopathy-online.herokuapp.com/ontology#isSynthesizedBy> <http://myopathy-online.herokuapp.com/ontology#GNE> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#NEB
+
+<http://myopathy-online.herokuapp.com/ontology#NEB> rdf:type <http://myopathy-online.herokuapp.com/ontology#Chr02> ,
+                                                             :NamedIndividual ;
+                                                    
+                                                    <http://myopathy-online.herokuapp.com/ontology#resultIn> <http://myopathy-online.herokuapp.com/ontology#centralCoreMyopathy> ,
+                                                                                                             <http://myopathy-online.herokuapp.com/ontology#muscularDystrophy> ,
+                                                                                                             <http://myopathy-online.herokuapp.com/ontology#myopathyCongenital> ,
+                                                                                                             <http://myopathy-online.herokuapp.com/ontology#myositis> ;
+                                                    
+                                                    <http://myopathy-online.herokuapp.com/ontology#synthesize> <http://myopathy-online.herokuapp.com/ontology#nebulin> ;
+                                                    
+                                                    <http://myopathy-online.herokuapp.com/ontology#resultIn> <http://myopathy-online.herokuapp.com/ontology#nemalineMyopathy> ,
+                                                                                                             <http://myopathy-online.herokuapp.com/ontology#neuropathy> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#Placebo
+
+<http://myopathy-online.herokuapp.com/ontology#Placebo> rdf:type <http://myopathy-online.herokuapp.com/ontology#drugs> ,
+                                                                 :NamedIndividual .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#RYR1
+
+<http://myopathy-online.herokuapp.com/ontology#RYR1> rdf:type <http://myopathy-online.herokuapp.com/ontology#Chr19> ,
+                                                              :NamedIndividual ;
+                                                     
+                                                     <http://myopathy-online.herokuapp.com/ontology#resultIn> <http://myopathy-online.herokuapp.com/ontology#catecholaminergicPolymorphicVentricularTachycardia> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#centralCoreMyopathy> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#centronuclearMyopathy> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#dmd-associatedDilatedCardiomyopathy> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#myositis> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#myotonicDystrophy> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#noonanSyndrome> ;
+                                                     
+                                                     <http://myopathy-online.herokuapp.com/ontology#synthesize> <http://myopathy-online.herokuapp.com/ontology#ryanodine_receptor_1> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#Rituximab
+
+<http://myopathy-online.herokuapp.com/ontology#Rituximab> rdf:type <http://myopathy-online.herokuapp.com/ontology#drugs> ,
+                                                                   :NamedIndividual .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#TNNT1
+
+<http://myopathy-online.herokuapp.com/ontology#TNNT1> rdf:type <http://myopathy-online.herokuapp.com/ontology#Chr19> ,
+                                                               :NamedIndividual ;
+                                                      
+                                                      <http://myopathy-online.herokuapp.com/ontology#resultIn> <http://myopathy-online.herokuapp.com/ontology#nemalineMyopathy> ;
+                                                      
+                                                      <http://myopathy-online.herokuapp.com/ontology#synthesize> <http://myopathy-online.herokuapp.com/ontology#troponin_T_type_1> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#TPM2
+
+<http://myopathy-online.herokuapp.com/ontology#TPM2> rdf:type <http://myopathy-online.herokuapp.com/ontology#Chr09> ,
+                                                              :NamedIndividual ;
+                                                     
+                                                     <http://myopathy-online.herokuapp.com/ontology#resultIn> <http://myopathy-online.herokuapp.com/ontology#distalArthrogryposis> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#nemalineMyopathy> ;
+                                                     
+                                                     <http://myopathy-online.herokuapp.com/ontology#synthesize> <http://myopathy-online.herokuapp.com/ontology#tropomyosin_2> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#TPM3
+
+<http://myopathy-online.herokuapp.com/ontology#TPM3> rdf:type <http://myopathy-online.herokuapp.com/ontology#Chr01> ,
+                                                              :NamedIndividual ;
+                                                     
+                                                     <http://myopathy-online.herokuapp.com/ontology#resultIn> <http://myopathy-online.herokuapp.com/ontology#distalArthrogryposis> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#hypertrophicCardiomyopathy> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#nemalineMyopathy> ;
+                                                     
+                                                     <http://myopathy-online.herokuapp.com/ontology#synthesize> <http://myopathy-online.herokuapp.com/ontology#tropomyosin_3> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#VMA21
+
+<http://myopathy-online.herokuapp.com/ontology#VMA21> rdf:type <http://myopathy-online.herokuapp.com/ontology#ChrX> ,
+                                                               :NamedIndividual ;
+                                                      
+                                                      <http://myopathy-online.herokuapp.com/ontology#synthesize> <http://myopathy-online.herokuapp.com/ontology#vacuolar_H+-ATPase> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#actin
+
+<http://myopathy-online.herokuapp.com/ontology#actin> rdf:type <http://myopathy-online.herokuapp.com/ontology#proteins> ,
+                                                               :NamedIndividual ;
+                                                      
+                                                      <http://myopathy-online.herokuapp.com/ontology#isSynthesizedBy> <http://myopathy-online.herokuapp.com/ontology#ACTA1> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#bethlemMyopathy
+
+<http://myopathy-online.herokuapp.com/ontology#bethlemMyopathy> rdf:type <http://myopathy-online.herokuapp.com/ontology#congenitalMyopathies> ,
+                                                                         :NamedIndividual ;
+                                                                
+                                                                <http://myopathy-online.herokuapp.com/ontology#becauseOf> <http://myopathy-online.herokuapp.com/ontology#COL6A2> ,
+                                                                                                                          <http://myopathy-online.herokuapp.com/ontology#COL6A3> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#calpainopathy
+
+<http://myopathy-online.herokuapp.com/ontology#calpainopathy> rdf:type <http://myopathy-online.herokuapp.com/ontology#muscularDystrophies> ,
+                                                                       :NamedIndividual ;
+                                                              
+                                                              <http://myopathy-online.herokuapp.com/ontology#becauseOf> <http://myopathy-online.herokuapp.com/ontology#DYSF> ,
+                                                                                                                        <http://myopathy-online.herokuapp.com/ontology#MYOT> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#catecholaminergicPolymorphicVentricularTachycardia
+
+<http://myopathy-online.herokuapp.com/ontology#catecholaminergicPolymorphicVentricularTachycardia> rdf:type <http://myopathy-online.herokuapp.com/ontology#dermatomyosities> ,
+                                                                                                            :NamedIndividual ;
+                                                                                                   
+                                                                                                   <http://myopathy-online.herokuapp.com/ontology#becauseOf> <http://myopathy-online.herokuapp.com/ontology#MYH7> ,
+                                                                                                                                                             <http://myopathy-online.herokuapp.com/ontology#RYR1> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#centralCoreMyopathy
+
+<http://myopathy-online.herokuapp.com/ontology#centralCoreMyopathy> rdf:type <http://myopathy-online.herokuapp.com/ontology#congenitalMyopathies> ,
+                                                                             :NamedIndividual ;
+                                                                    
+                                                                    <http://myopathy-online.herokuapp.com/ontology#becauseOf> <http://myopathy-online.herokuapp.com/ontology#DES> ,
+                                                                                                                              <http://myopathy-online.herokuapp.com/ontology#MYOT> ,
+                                                                                                                              <http://myopathy-online.herokuapp.com/ontology#NEB> ,
+                                                                                                                              <http://myopathy-online.herokuapp.com/ontology#RYR1> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#centronuclearMyopathy
+
+<http://myopathy-online.herokuapp.com/ontology#centronuclearMyopathy> rdf:type <http://myopathy-online.herokuapp.com/ontology#congenitalMyopathies> ,
+                                                                               :NamedIndividual ;
+                                                                      
+                                                                      <http://myopathy-online.herokuapp.com/ontology#becauseOf> <http://myopathy-online.herokuapp.com/ontology#DES> ,
+                                                                                                                                <http://myopathy-online.herokuapp.com/ontology#MTM1> ,
+                                                                                                                                <http://myopathy-online.herokuapp.com/ontology#RYR1> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#cofilin2
+
+<http://myopathy-online.herokuapp.com/ontology#cofilin2> rdf:type <http://myopathy-online.herokuapp.com/ontology#proteins> ,
+                                                                  :NamedIndividual ;
+                                                         
+                                                         <http://myopathy-online.herokuapp.com/ontology#isSynthesizedBy> <http://myopathy-online.herokuapp.com/ontology#CFL2> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#collagen
+
+<http://myopathy-online.herokuapp.com/ontology#collagen> rdf:type <http://myopathy-online.herokuapp.com/ontology#proteins> ,
+                                                                  :NamedIndividual ;
+                                                         
+                                                         <http://myopathy-online.herokuapp.com/ontology#isSynthesizedBy> <http://myopathy-online.herokuapp.com/ontology#COL6A2> ,
+                                                                                                                         <http://myopathy-online.herokuapp.com/ontology#COL6A3> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#collagenTypeVI-relatedDisorders
+
+<http://myopathy-online.herokuapp.com/ontology#collagenTypeVI-relatedDisorders> rdf:type <http://myopathy-online.herokuapp.com/ontology#polymyositis&inclusionBodyMyositis&relatedMyopathies> ,
+                                                                                         :NamedIndividual ;
+                                                                                
+                                                                                <http://myopathy-online.herokuapp.com/ontology#becauseOf> <http://myopathy-online.herokuapp.com/ontology#COL6A2> ,
+                                                                                                                                          <http://myopathy-online.herokuapp.com/ontology#COL6A3> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#congenitalFiber-typeDisproportion
+
+<http://myopathy-online.herokuapp.com/ontology#congenitalFiber-typeDisproportion> rdf:type <http://myopathy-online.herokuapp.com/ontology#congenitalMyopathies> ,
+                                                                                           :NamedIndividual ;
+                                                                                  
+                                                                                  <http://myopathy-online.herokuapp.com/ontology#becauseOf> <http://myopathy-online.herokuapp.com/ontology#ACTA1> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#crystallin
+
+<http://myopathy-online.herokuapp.com/ontology#crystallin> rdf:type <http://myopathy-online.herokuapp.com/ontology#proteins> ,
+                                                                    :NamedIndividual ;
+                                                           
+                                                           <http://myopathy-online.herokuapp.com/ontology#isSynthesizedBy> <http://myopathy-online.herokuapp.com/ontology#CRYAB> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#desmin
+
+<http://myopathy-online.herokuapp.com/ontology#desmin> rdf:type <http://myopathy-online.herokuapp.com/ontology#proteins> ,
+                                                                :NamedIndividual ;
+                                                       
+                                                       <http://myopathy-online.herokuapp.com/ontology#isSynthesizedBy> <http://myopathy-online.herokuapp.com/ontology#DES> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#distalArthrogryposis
+
+<http://myopathy-online.herokuapp.com/ontology#distalArthrogryposis> rdf:type <http://myopathy-online.herokuapp.com/ontology#congenitalMyopathies> ,
+                                                                              :NamedIndividual ;
+                                                                     
+                                                                     <http://myopathy-online.herokuapp.com/ontology#becauseOf> <http://myopathy-online.herokuapp.com/ontology#CFL2> ,
+                                                                                                                               <http://myopathy-online.herokuapp.com/ontology#MYH2> ,
+                                                                                                                               <http://myopathy-online.herokuapp.com/ontology#TPM2> ,
+                                                                                                                               <http://myopathy-online.herokuapp.com/ontology#TPM3> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#distalMuscularDystrophy
+
+<http://myopathy-online.herokuapp.com/ontology#distalMuscularDystrophy> rdf:type <http://myopathy-online.herokuapp.com/ontology#muscularDystrophies> ,
+                                                                                 :NamedIndividual ;
+                                                                        
+                                                                        <http://myopathy-online.herokuapp.com/ontology#becauseOf> <http://myopathy-online.herokuapp.com/ontology#DES> ,
+                                                                                                                                  <http://myopathy-online.herokuapp.com/ontology#DYSF> ,
+                                                                                                                                  <http://myopathy-online.herokuapp.com/ontology#GNE> ,
+                                                                                                                                  <http://myopathy-online.herokuapp.com/ontology#MYH7> ,
+                                                                                                                                  <http://myopathy-online.herokuapp.com/ontology#MYOT> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#dmd-associatedDilatedCardiomyopathy
+
+<http://myopathy-online.herokuapp.com/ontology#dmd-associatedDilatedCardiomyopathy> rdf:type <http://myopathy-online.herokuapp.com/ontology#dermatomyosities> ,
+                                                                                             :NamedIndividual ;
+                                                                                    
+                                                                                    <http://myopathy-online.herokuapp.com/ontology#becauseOf> <http://myopathy-online.herokuapp.com/ontology#CRYAB> ,
+                                                                                                                                              <http://myopathy-online.herokuapp.com/ontology#DES> ,
+                                                                                                                                              <http://myopathy-online.herokuapp.com/ontology#MYH7> ,
+                                                                                                                                              <http://myopathy-online.herokuapp.com/ontology#RYR1> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#dysferlin
+
+<http://myopathy-online.herokuapp.com/ontology#dysferlin> rdf:type <http://myopathy-online.herokuapp.com/ontology#proteins> ,
+                                                                   :NamedIndividual ;
+                                                          
+                                                          <http://myopathy-online.herokuapp.com/ontology#isSynthesizedBy> <http://myopathy-online.herokuapp.com/ontology#DYSF> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#eplerenone
+
+<http://myopathy-online.herokuapp.com/ontology#eplerenone> rdf:type <http://myopathy-online.herokuapp.com/ontology#drugs> ,
+                                                                    :NamedIndividual .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#familialHypertrophicCardiomyopathy
+
+<http://myopathy-online.herokuapp.com/ontology#familialHypertrophicCardiomyopathy> rdf:type <http://myopathy-online.herokuapp.com/ontology#dermatomyosities> ,
+                                                                                            :NamedIndividual ;
+                                                                                   
+                                                                                   <http://myopathy-online.herokuapp.com/ontology#becauseOf> <http://myopathy-online.herokuapp.com/ontology#MYH7> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#familialRestrictiveCardiomyopathy
+
+<http://myopathy-online.herokuapp.com/ontology#familialRestrictiveCardiomyopathy> rdf:type <http://myopathy-online.herokuapp.com/ontology#dermatomyosities> ,
+                                                                                           :NamedIndividual ;
+                                                                                  
+                                                                                  <http://myopathy-online.herokuapp.com/ontology#becauseOf> <http://myopathy-online.herokuapp.com/ontology#DES> ,
+                                                                                                                                            <http://myopathy-online.herokuapp.com/ontology#MYH7> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#glucosamine(UDP-N-acetyl)-2-epimerase
+
+<http://myopathy-online.herokuapp.com/ontology#glucosamine(UDP-N-acetyl)-2-epimerase> rdf:type <http://myopathy-online.herokuapp.com/ontology#proteins> ,
+                                                                                               :NamedIndividual ;
+                                                                                      
+                                                                                      <http://myopathy-online.herokuapp.com/ontology#isSynthesizedBy> <http://myopathy-online.herokuapp.com/ontology#GNE> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#hypertrophicCardiomyopathy
+
+<http://myopathy-online.herokuapp.com/ontology#hypertrophicCardiomyopathy> rdf:type <http://myopathy-online.herokuapp.com/ontology#dermatomyosities> ,
+                                                                                    :NamedIndividual ;
+                                                                           
+                                                                           <http://myopathy-online.herokuapp.com/ontology#becauseOf> <http://myopathy-online.herokuapp.com/ontology#MYH7> ,
+                                                                                                                                     <http://myopathy-online.herokuapp.com/ontology#TPM3> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#hypertrophyOfBreast
+
+<http://myopathy-online.herokuapp.com/ontology#hypertrophyOfBreast> rdf:type <http://myopathy-online.herokuapp.com/ontology#dermatomyosities> ,
+                                                                             :NamedIndividual ;
+                                                                    
+                                                                    <http://myopathy-online.herokuapp.com/ontology#becauseOf> <http://myopathy-online.herokuapp.com/ontology#ACTA1> ,
+                                                                                                                              <http://myopathy-online.herokuapp.com/ontology#CRYAB> ,
+                                                                                                                              <http://myopathy-online.herokuapp.com/ontology#DYSF> ,
+                                                                                                                              <http://myopathy-online.herokuapp.com/ontology#MYH7> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#limb-girdleMuscularDystrophy
+
+<http://myopathy-online.herokuapp.com/ontology#limb-girdleMuscularDystrophy> rdf:type <http://myopathy-online.herokuapp.com/ontology#muscularDystrophies> ,
+                                                                                      :NamedIndividual ;
+                                                                             
+                                                                             <http://myopathy-online.herokuapp.com/ontology#becauseOf> <http://myopathy-online.herokuapp.com/ontology#DYSF> ,
+                                                                                                                                       <http://myopathy-online.herokuapp.com/ontology#MYOT> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#limb-girdleMuscularDystrophyType1a
+
+<http://myopathy-online.herokuapp.com/ontology#limb-girdleMuscularDystrophyType1a> rdf:type <http://myopathy-online.herokuapp.com/ontology#muscularDystrophies> ,
+                                                                                            :NamedIndividual ;
+                                                                                   
+                                                                                   <http://myopathy-online.herokuapp.com/ontology#becauseOf> <http://myopathy-online.herokuapp.com/ontology#DYSF> ,
+                                                                                                                                             <http://myopathy-online.herokuapp.com/ontology#MYOT> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#limb-girdleMuscularDystrophyType2b
+
+<http://myopathy-online.herokuapp.com/ontology#limb-girdleMuscularDystrophyType2b> rdf:type <http://myopathy-online.herokuapp.com/ontology#muscularDystrophies> ,
+                                                                                            :NamedIndividual ;
+                                                                                   
+                                                                                   <http://myopathy-online.herokuapp.com/ontology#becauseOf> <http://myopathy-online.herokuapp.com/ontology#DYSF> ,
+                                                                                                                                             <http://myopathy-online.herokuapp.com/ontology#MYOT> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#limb-girdleMuscularDystrophyType2g
+
+<http://myopathy-online.herokuapp.com/ontology#limb-girdleMuscularDystrophyType2g> rdf:type <http://myopathy-online.herokuapp.com/ontology#muscularDystrophies> ,
+                                                                                            :NamedIndividual ;
+                                                                                   
+                                                                                   <http://myopathy-online.herokuapp.com/ontology#becauseOf> <http://myopathy-online.herokuapp.com/ontology#DYSF> ,
+                                                                                                                                             <http://myopathy-online.herokuapp.com/ontology#MYOT> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#matrin_3
+
+<http://myopathy-online.herokuapp.com/ontology#matrin_3> rdf:type <http://myopathy-online.herokuapp.com/ontology#proteins> ,
+                                                                  :NamedIndividual ;
+                                                         
+                                                         <http://myopathy-online.herokuapp.com/ontology#isSynthesizedBy> <http://myopathy-online.herokuapp.com/ontology#MATR3> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#methimazole
+
+<http://myopathy-online.herokuapp.com/ontology#methimazole> rdf:type <http://myopathy-online.herokuapp.com/ontology#drugs> ,
+                                                                     :NamedIndividual .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#muscularDystrophy
+
+<http://myopathy-online.herokuapp.com/ontology#muscularDystrophy> rdf:type <http://myopathy-online.herokuapp.com/ontology#muscularDystrophies> ,
+                                                                           :NamedIndividual ;
+                                                                  
+                                                                  <http://myopathy-online.herokuapp.com/ontology#becauseOf> <http://myopathy-online.herokuapp.com/ontology#COL6A2> ,
+                                                                                                                            <http://myopathy-online.herokuapp.com/ontology#DES> ,
+                                                                                                                            <http://myopathy-online.herokuapp.com/ontology#DYSF> ,
+                                                                                                                            <http://myopathy-online.herokuapp.com/ontology#GNE> ,
+                                                                                                                            <http://myopathy-online.herokuapp.com/ontology#MYOT> ,
+                                                                                                                            <http://myopathy-online.herokuapp.com/ontology#NEB> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#myofibrillarMyopathy
+
+<http://myopathy-online.herokuapp.com/ontology#myofibrillarMyopathy> rdf:type <http://myopathy-online.herokuapp.com/ontology#congenitalMyopathies> ,
+                                                                              :NamedIndividual ;
+                                                                     
+                                                                     <http://myopathy-online.herokuapp.com/ontology#becauseOf> <http://myopathy-online.herokuapp.com/ontology#CRYAB> ,
+                                                                                                                               <http://myopathy-online.herokuapp.com/ontology#DES> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#myopathyCongenital
+
+<http://myopathy-online.herokuapp.com/ontology#myopathyCongenital> rdf:type <http://myopathy-online.herokuapp.com/ontology#congenitalMyopathies> ,
+                                                                            :NamedIndividual ;
+                                                                   
+                                                                   <http://myopathy-online.herokuapp.com/ontology#becauseOf> <http://myopathy-online.herokuapp.com/ontology#ACTA1> ,
+                                                                                                                             <http://myopathy-online.herokuapp.com/ontology#DES> ,
+                                                                                                                             <http://myopathy-online.herokuapp.com/ontology#DYSF> ,
+                                                                                                                             <http://myopathy-online.herokuapp.com/ontology#MTM1> ,
+                                                                                                                             <http://myopathy-online.herokuapp.com/ontology#MYH7> ,
+                                                                                                                             <http://myopathy-online.herokuapp.com/ontology#NEB> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#myosin
+
+<http://myopathy-online.herokuapp.com/ontology#myosin> rdf:type <http://myopathy-online.herokuapp.com/ontology#proteins> ,
+                                                                :NamedIndividual ;
+                                                       
+                                                       <http://myopathy-online.herokuapp.com/ontology#isSynthesizedBy> <http://myopathy-online.herokuapp.com/ontology#MYH2> ,
+                                                                                                                       <http://myopathy-online.herokuapp.com/ontology#MYH7> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#myositis
+
+<http://myopathy-online.herokuapp.com/ontology#myositis> rdf:type <http://myopathy-online.herokuapp.com/ontology#dermatomyosities> ,
+                                                                  :NamedIndividual ;
+                                                         
+                                                         <http://myopathy-online.herokuapp.com/ontology#becauseOf> <http://myopathy-online.herokuapp.com/ontology#DYSF> ,
+                                                                                                                   <http://myopathy-online.herokuapp.com/ontology#NEB> ,
+                                                                                                                   <http://myopathy-online.herokuapp.com/ontology#RYR1> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#myotilin
+
+<http://myopathy-online.herokuapp.com/ontology#myotilin> rdf:type <http://myopathy-online.herokuapp.com/ontology#proteins> ,
+                                                                  :NamedIndividual ;
+                                                         
+                                                         <http://myopathy-online.herokuapp.com/ontology#isSynthesizedBy> <http://myopathy-online.herokuapp.com/ontology#MYOT> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#myotilinopathy
+
+<http://myopathy-online.herokuapp.com/ontology#myotilinopathy> rdf:type <http://myopathy-online.herokuapp.com/ontology#muscularDystrophies> ,
+                                                                        :NamedIndividual ;
+                                                               
+                                                               <http://myopathy-online.herokuapp.com/ontology#becauseOf> <http://myopathy-online.herokuapp.com/ontology#MYOT> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#myotonicDystrophy
+
+<http://myopathy-online.herokuapp.com/ontology#myotonicDystrophy> rdf:type <http://myopathy-online.herokuapp.com/ontology#muscularDystrophies> ,
+                                                                           :NamedIndividual ;
+                                                                  
+                                                                  <http://myopathy-online.herokuapp.com/ontology#becauseOf> <http://myopathy-online.herokuapp.com/ontology#CRYAB> ,
+                                                                                                                            <http://myopathy-online.herokuapp.com/ontology#MTM1> ,
+                                                                                                                            <http://myopathy-online.herokuapp.com/ontology#MYH7> ,
+                                                                                                                            <http://myopathy-online.herokuapp.com/ontology#RYR1> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#myotubularin_1
+
+<http://myopathy-online.herokuapp.com/ontology#myotubularin_1> rdf:type <http://myopathy-online.herokuapp.com/ontology#proteins> ,
+                                                                        :NamedIndividual ;
+                                                               
+                                                               <http://myopathy-online.herokuapp.com/ontology#isSynthesizedBy> <http://myopathy-online.herokuapp.com/ontology#MTM1> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#nebulin
+
+<http://myopathy-online.herokuapp.com/ontology#nebulin> rdf:type <http://myopathy-online.herokuapp.com/ontology#proteins> ,
+                                                                 :NamedIndividual ;
+                                                        
+                                                        <http://myopathy-online.herokuapp.com/ontology#isSynthesizedBy> <http://myopathy-online.herokuapp.com/ontology#NEB> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#nemalineMyopathy
+
+<http://myopathy-online.herokuapp.com/ontology#nemalineMyopathy> rdf:type <http://myopathy-online.herokuapp.com/ontology#congenitalMyopathies> ,
+                                                                          :NamedIndividual ;
+                                                                 
+                                                                 <http://myopathy-online.herokuapp.com/ontology#becauseOf> <http://myopathy-online.herokuapp.com/ontology#ACTA1> ,
+                                                                                                                           <http://myopathy-online.herokuapp.com/ontology#CFL2> ,
+                                                                                                                           <http://myopathy-online.herokuapp.com/ontology#NEB> ,
+                                                                                                                           <http://myopathy-online.herokuapp.com/ontology#TNNT1> ,
+                                                                                                                           <http://myopathy-online.herokuapp.com/ontology#TPM2> ,
+                                                                                                                           <http://myopathy-online.herokuapp.com/ontology#TPM3> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#neuromuscularDisease
+
+<http://myopathy-online.herokuapp.com/ontology#neuromuscularDisease> rdf:type <http://myopathy-online.herokuapp.com/ontology#neuromyotonia> ,
+                                                                              :NamedIndividual ;
+                                                                     
+                                                                     <http://myopathy-online.herokuapp.com/ontology#becauseOf> <http://myopathy-online.herokuapp.com/ontology#ACTA1> ,
+                                                                                                                               <http://myopathy-online.herokuapp.com/ontology#CRYAB> ,
+                                                                                                                               <http://myopathy-online.herokuapp.com/ontology#DES> ,
+                                                                                                                               <http://myopathy-online.herokuapp.com/ontology#GNE> ,
+                                                                                                                               <http://myopathy-online.herokuapp.com/ontology#MTM1> ,
+                                                                                                                               <http://myopathy-online.herokuapp.com/ontology#MYOT> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#neuropathy
+
+<http://myopathy-online.herokuapp.com/ontology#neuropathy> rdf:type <http://myopathy-online.herokuapp.com/ontology#neuromyotonia> ,
+                                                                    :NamedIndividual ;
+                                                           
+                                                           <http://myopathy-online.herokuapp.com/ontology#becauseOf> <http://myopathy-online.herokuapp.com/ontology#COL6A2> ,
+                                                                                                                     <http://myopathy-online.herokuapp.com/ontology#COL6A3> ,
+                                                                                                                     <http://myopathy-online.herokuapp.com/ontology#DES> ,
+                                                                                                                     <http://myopathy-online.herokuapp.com/ontology#MTM1> ,
+                                                                                                                     <http://myopathy-online.herokuapp.com/ontology#MYOT> ,
+                                                                                                                     <http://myopathy-online.herokuapp.com/ontology#NEB> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#noonanSyndrome
+
+<http://myopathy-online.herokuapp.com/ontology#noonanSyndrome> rdf:type <http://myopathy-online.herokuapp.com/ontology#congenitalMyopathies> ,
+                                                                        :NamedIndividual ;
+                                                               
+                                                               <http://myopathy-online.herokuapp.com/ontology#becauseOf> <http://myopathy-online.herokuapp.com/ontology#CRYAB> ,
+                                                                                                                         <http://myopathy-online.herokuapp.com/ontology#DES> ,
+                                                                                                                         <http://myopathy-online.herokuapp.com/ontology#DYSF> ,
+                                                                                                                         <http://myopathy-online.herokuapp.com/ontology#MYH7> ,
+                                                                                                                         <http://myopathy-online.herokuapp.com/ontology#MYOT> ,
+                                                                                                                         <http://myopathy-online.herokuapp.com/ontology#RYR1> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#polymyositis
+
+<http://myopathy-online.herokuapp.com/ontology#polymyositis> rdf:type <http://myopathy-online.herokuapp.com/ontology#polymyositis&inclusionBodyMyositis&relatedMyopathies> ,
+                                                                      :NamedIndividual ;
+                                                             
+                                                             <http://myopathy-online.herokuapp.com/ontology#becauseOf> <http://myopathy-online.herokuapp.com/ontology#DYSF> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#ryanodine_receptor_1
+
+<http://myopathy-online.herokuapp.com/ontology#ryanodine_receptor_1> rdf:type <http://myopathy-online.herokuapp.com/ontology#proteins> ,
+                                                                              :NamedIndividual ;
+                                                                     
+                                                                     <http://myopathy-online.herokuapp.com/ontology#isSynthesizedBy> <http://myopathy-online.herokuapp.com/ontology#RYR1> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#spheroidBodyMyopathy
+
+<http://myopathy-online.herokuapp.com/ontology#spheroidBodyMyopathy> rdf:type <http://myopathy-online.herokuapp.com/ontology#congenitalMyopathies> ,
+                                                                              :NamedIndividual ;
+                                                                     
+                                                                     <http://myopathy-online.herokuapp.com/ontology#becauseOf> <http://myopathy-online.herokuapp.com/ontology#DES> ,
+                                                                                                                               <http://myopathy-online.herokuapp.com/ontology#MYOT> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#tropomyosin_2
+
+<http://myopathy-online.herokuapp.com/ontology#tropomyosin_2> rdf:type <http://myopathy-online.herokuapp.com/ontology#proteins> ,
+                                                                       :NamedIndividual ;
+                                                              
+                                                              <http://myopathy-online.herokuapp.com/ontology#isSynthesizedBy> <http://myopathy-online.herokuapp.com/ontology#TPM2> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#tropomyosin_3
+
+<http://myopathy-online.herokuapp.com/ontology#tropomyosin_3> rdf:type <http://myopathy-online.herokuapp.com/ontology#proteins> ,
+                                                                       :NamedIndividual ;
+                                                              
+                                                              <http://myopathy-online.herokuapp.com/ontology#synthesize> <http://myopathy-online.herokuapp.com/ontology#TPM3> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#troponin_T_type_1
+
+<http://myopathy-online.herokuapp.com/ontology#troponin_T_type_1> rdf:type <http://myopathy-online.herokuapp.com/ontology#proteins> ,
+                                                                           :NamedIndividual ;
+                                                                  
+                                                                  <http://myopathy-online.herokuapp.com/ontology#isSynthesizedBy> <http://myopathy-online.herokuapp.com/ontology#TNNT1> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#ullrichCongenitalMuscularDystrophy
+
+<http://myopathy-online.herokuapp.com/ontology#ullrichCongenitalMuscularDystrophy> rdf:type <http://myopathy-online.herokuapp.com/ontology#muscularDystrophies> ,
+                                                                                            :NamedIndividual ;
+                                                                                   
+                                                                                   <http://myopathy-online.herokuapp.com/ontology#becauseOf> <http://myopathy-online.herokuapp.com/ontology#COL6A2> ,
+                                                                                                                                             <http://myopathy-online.herokuapp.com/ontology#COL6A3> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#vacuolar_H+-ATPase
+
+<http://myopathy-online.herokuapp.com/ontology#vacuolar_H+-ATPase> rdf:type <http://myopathy-online.herokuapp.com/ontology#proteins> ,
+                                                                            :NamedIndividual ;
+                                                                   
+                                                                   <http://myopathy-online.herokuapp.com/ontology#isSynthesizedBy> <http://myopathy-online.herokuapp.com/ontology#VMA21> .
+
+
+
+[ rdf:type [ rdf:type :Restriction ;
+             :onProperty <http://myopathy-online.herokuapp.com/ontology#becauseOf> ;
+             :someValuesFrom <http://myopathy-online.herokuapp.com/ontology#genomes>
+           ]
+] .
+[ rdf:type [ rdf:type :Restriction ;
+             :onProperty <http://myopathy-online.herokuapp.com/ontology#becauseOf> ;
+             :someValuesFrom <http://myopathy-online.herokuapp.com/ontology#genomes>
+           ]
+] .
+
+
+#################################################################
+#
+#    General axioms
+#
+#################################################################
+
+
+[ rdf:type :AllDisjointClasses ;
+  :members ( <http://myopathy-online.herokuapp.com/ontology#Chr01>
+             <http://myopathy-online.herokuapp.com/ontology#Chr02>
+             <http://myopathy-online.herokuapp.com/ontology#Chr03>
+             <http://myopathy-online.herokuapp.com/ontology#Chr04>
+             <http://myopathy-online.herokuapp.com/ontology#Chr05>
+             <http://myopathy-online.herokuapp.com/ontology#Chr06>
+             <http://myopathy-online.herokuapp.com/ontology#Chr07>
+             <http://myopathy-online.herokuapp.com/ontology#Chr08>
+             <http://myopathy-online.herokuapp.com/ontology#Chr09>
+             <http://myopathy-online.herokuapp.com/ontology#Chr10>
+             <http://myopathy-online.herokuapp.com/ontology#Chr11>
+             <http://myopathy-online.herokuapp.com/ontology#Chr12>
+             <http://myopathy-online.herokuapp.com/ontology#Chr13>
+             <http://myopathy-online.herokuapp.com/ontology#Chr14>
+             <http://myopathy-online.herokuapp.com/ontology#Chr15>
+             <http://myopathy-online.herokuapp.com/ontology#Chr16>
+             <http://myopathy-online.herokuapp.com/ontology#Chr17>
+             <http://myopathy-online.herokuapp.com/ontology#Chr18>
+             <http://myopathy-online.herokuapp.com/ontology#Chr19>
+             <http://myopathy-online.herokuapp.com/ontology#Chr20>
+             <http://myopathy-online.herokuapp.com/ontology#Chr21>
+             <http://myopathy-online.herokuapp.com/ontology#Chr22>
+             <http://myopathy-online.herokuapp.com/ontology#ChrX>
+             <http://myopathy-online.herokuapp.com/ontology#ChrY>
+           )
+] .
+
+
+
+
+###  Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net
+

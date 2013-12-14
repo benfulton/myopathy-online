@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% set active_page = "gene" %}
+
+{% block title %}{{ mnemonic }}{% endblock %}
+
+{% block body %}
+    <h3>Related Diseases</h3>
+<ul>
+{% for item in results %}
+    {% if "resultIn" in item[2]  %}
+        <li><a href="/disease/{{item[0].split('#')[1]}}">{{item[0].split('#')[1]}}</a></li>
+    {% endif %}
+{% endfor %}
+</ul>
+{% endblock %}
+

@@ -48,8 +48,9 @@ Released   : 20131026
 			<ul>
 {% set navigation_bar = [
     ('/', 'homepage', 'Homepage'),
+    ('/articles/page/1', 'articles', 'Articles'),
+    ('/diseases', 'diseases', 'Diseases'),
     ('/proteins', 'proteins', 'Proteins'),
-    ('/articles/page/1', 'articles', 'Articles')
 ] -%}
 {% for href, id, caption in navigation_bar %}
   <li{% if id == active_page %} class="current_page_item"{% endif%}>

@@ -1,14 +1,14 @@
 {% extends "base.html" %}
-{% set active_page = "protein" %}
+{% set active_page = "disease" %}
 
 {% block title %}{{ mnemonic }}{% endblock %}
 
 {% block body %}
-<h3>Genes</h3>
-    <p>Genes known to be associated with this protein</p>
+<h3>Causes</h3>
+    <p>Genes that are known to be related to this disease</p>
     <ul>
 {% for item in results %}
-    {% if "isSynthesizedBy" in item[0]  %}
+    {% if "becauseOf" in item[0]  %}
        <li><a href="/gene/{{item[1].split('#')[1]}}">{{item[1].split('#')[1]}}</a></li>
     {% endif %}
 {% endfor %}
