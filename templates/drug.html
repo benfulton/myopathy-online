@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% set active_page = "drug" %}
+
+{% block title %}{{ mnemonic }}{% endblock %}
+
+{% block body %}
+<h3>Diseases</h3>
+    <p>Diseases that may be treated by this drug</p>
+    <ul>
+{% for item in results %}
+    {% if "treat" in item[0]  %}
+       <li><a href="/disease/{{item[1].split('#')[1]}}">{{item[1].split('#')[1]}}</a></li>
+    {% endif %}
+{% endfor %}
+    </ul>
+<h3>Potential Side Effects</h3>
+    <ul>
+{% for item in results %}
+    {% if "has" in item[0]  %}
+        <li>{{ item[1].split('#')[1] }}</li>
+    {% endif %}
+{% endfor %}
+    </ul>
+{% endblock %}
+

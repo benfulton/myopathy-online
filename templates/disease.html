@@ -13,5 +13,14 @@
     {% endif %}
 {% endfor %}
     </ul>
+<h3>Treatments</h3>
+    <p>Drugs that may be used in the treatment of this disease</p>
+    <ul>
+{% for item in results %}
+    {% if "isTreatedBy" in item[0]  %}
+       <li><a href="/drug/{{item[1].split('#')[1]}}">{{item[1].split('#')[1]}}</a></li>
+    {% endif %}
+{% endfor %}
+    </ul>
 {% endblock %}
 

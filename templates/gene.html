@@ -7,8 +7,8 @@
     <h3>Related Diseases</h3>
 <ul>
 {% for item in results %}
-    {% if "resultIn" in item[2]  %}
-        <li><a href="/disease/{{item[0].split('#')[1]}}">{{item[0].split('#')[1]}}</a></li>
+    {% if "resultIn" in item[0]  %}
+        <li><a href="/disease/{{item[1].split('#')[1]}}">{{item[1].split('#')[1]}}</a></li>
     {% endif %}
 {% endfor %}
 </ul>

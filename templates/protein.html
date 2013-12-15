@@ -13,5 +13,21 @@
     {% endif %}
 {% endfor %}
     </ul>
+<h3>Drugs</h3>
+    <p>Drugs that are known to affect the expression level of this protein</p>
+    <ul>
+{% for item in results %}
+    {% if "actOn" in item[0]  %}
+        <li><a href="/drug/{{item[1].split('/')[-1]}}">{{item[0]}}</a></li>
+    {% endif %}
+{% endfor %}
+    </ul>
+<h3>Articles</h3>
+    <p>Literature references to this protein</p>
+    <ul>
+{% for item in articles %}
+    <li><a href="/article/{{item[1].split('/')[-1]}}">{{item[0]}}</a></li>
+{% endfor %}
+    </ul>
 {% endblock %}
 

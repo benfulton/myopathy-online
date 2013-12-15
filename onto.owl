@@ -117,30 +117,6 @@
 
 
 
-###  http://myopathy-online.herokuapp.com/ontology#referencedBy
-
-<http://myopathy-online.herokuapp.com/ontology#referencedBy> rdf:type :ObjectProperty ;
-                                                             
-                                                             rdfs:range <http://myopathy-online.herokuapp.com/ontology#article> ;
-                                                             
-                                                             rdfs:domain <http://myopathy-online.herokuapp.com/ontology#myopathy> ,
-                                                                         <http://myopathy-online.herokuapp.com/ontology#proteins> ;
-                                                             
-                                                             :inverseOf <http://myopathy-online.herokuapp.com/ontology#references> .
-
-
-
-###  http://myopathy-online.herokuapp.com/ontology#references
-
-<http://myopathy-online.herokuapp.com/ontology#references> rdf:type :ObjectProperty ;
-                                                           
-                                                           rdfs:domain <http://myopathy-online.herokuapp.com/ontology#article> ;
-                                                           
-                                                           rdfs:range <http://myopathy-online.herokuapp.com/ontology#myopathy> ,
-                                                                      <http://myopathy-online.herokuapp.com/ontology#proteins> .
-
-
-
 ###  http://myopathy-online.herokuapp.com/ontology#resultIn
 
 <http://myopathy-online.herokuapp.com/ontology#resultIn> rdf:type :ObjectProperty ;
@@ -728,8 +704,7 @@
 
 ###  http://myopathy-online.herokuapp.com/ontology#Dutasteride
 
-<http://myopathy-online.herokuapp.com/ontology#Dutasteride> rdf:type <http://myopathy-online.herokuapp.com/ontology#drugs> ,
-                                                                     :NamedIndividual .
+<http://myopathy-online.herokuapp.com/ontology#Dutasteride> rdf:type :NamedIndividual .
 
 
 
@@ -751,15 +726,30 @@
 
 ###  http://myopathy-online.herokuapp.com/ontology#Gamma_Globulin
 
-<http://myopathy-online.herokuapp.com/ontology#Gamma_Globulin> rdf:type <http://myopathy-online.herokuapp.com/ontology#drugs> ,
-                                                                        :NamedIndividual .
+<http://myopathy-online.herokuapp.com/ontology#Gamma_Globulin> rdf:type :NamedIndividual .
 
 
 
 ###  http://myopathy-online.herokuapp.com/ontology#Gentamicin
 
-<http://myopathy-online.herokuapp.com/ontology#Gentamicin> rdf:type <http://myopathy-online.herokuapp.com/ontology#drugs> ,
-                                                                    :NamedIndividual .
+<http://myopathy-online.herokuapp.com/ontology#Gentamicin> rdf:type :NamedIndividual .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#ImmuneGlobulin
+
+<http://myopathy-online.herokuapp.com/ontology#ImmuneGlobulin> rdf:type <http://myopathy-online.herokuapp.com/ontology#drugs> ,
+                                                                        :NamedIndividual ;
+                                                               
+                                                               <http://myopathy-online.herokuapp.com/ontology#ActOn> <http://myopathy-online.herokuapp.com/ontology#N-acetylmannosamine_kinase> ;
+                                                               
+                                                               <http://myopathy-online.herokuapp.com/ontology#has> <http://myopathy-online.herokuapp.com/ontology#chills> ,
+                                                                                                                   <http://myopathy-online.herokuapp.com/ontology#cough> ,
+                                                                                                                   <http://myopathy-online.herokuapp.com/ontology#fever> ;
+                                                               
+                                                               <http://myopathy-online.herokuapp.com/ontology#treat> <http://myopathy-online.herokuapp.com/ontology#neuromuscularDisease> ;
+                                                               
+                                                               <http://myopathy-online.herokuapp.com/ontology#has> <http://myopathy-online.herokuapp.com/ontology#noisyBreathing> .
 
 
 
@@ -848,7 +838,11 @@
 ###  http://myopathy-online.herokuapp.com/ontology#ManNAc
 
 <http://myopathy-online.herokuapp.com/ontology#ManNAc> rdf:type <http://myopathy-online.herokuapp.com/ontology#drugs> ,
-                                                                :NamedIndividual .
+                                                                :NamedIndividual ;
+                                                       
+                                                       <http://myopathy-online.herokuapp.com/ontology#ActOn> <http://myopathy-online.herokuapp.com/ontology#N-acetylmannosamine_kinase> ;
+                                                       
+                                                       <http://myopathy-online.herokuapp.com/ontology#treat> <http://myopathy-online.herokuapp.com/ontology#polymyositis> .
 
 
 
@@ -857,7 +851,11 @@
 <http://myopathy-online.herokuapp.com/ontology#N-acetylmannosamine_kinase> rdf:type <http://myopathy-online.herokuapp.com/ontology#proteins> ,
                                                                                     :NamedIndividual ;
                                                                            
-                                                                           <http://myopathy-online.herokuapp.com/ontology#isSynthesizedBy> <http://myopathy-online.herokuapp.com/ontology#GNE> .
+                                                                           <http://myopathy-online.herokuapp.com/ontology#isSynthesizedBy> <http://myopathy-online.herokuapp.com/ontology#GNE> ;
+                                                                           
+                                                                           <http://myopathy-online.herokuapp.com/ontology#isAffectedBy> <http://myopathy-online.herokuapp.com/ontology#ImmuneGlobulin> ,
+                                                                                                                                        <http://myopathy-online.herokuapp.com/ontology#ManNAc> ,
+                                                                                                                                        <http://myopathy-online.herokuapp.com/ontology#NPC-09> .
 
 
 
@@ -878,10 +876,20 @@
 
 
 
+###  http://myopathy-online.herokuapp.com/ontology#NPC-09
+
+<http://myopathy-online.herokuapp.com/ontology#NPC-09> rdf:type <http://myopathy-online.herokuapp.com/ontology#drugs> ,
+                                                                :NamedIndividual ;
+                                                       
+                                                       <http://myopathy-online.herokuapp.com/ontology#ActOn> <http://myopathy-online.herokuapp.com/ontology#N-acetylmannosamine_kinase> ;
+                                                       
+                                                       <http://myopathy-online.herokuapp.com/ontology#treat> <http://myopathy-online.herokuapp.com/ontology#distalMuscularDystrophy> .
+
+
+
 ###  http://myopathy-online.herokuapp.com/ontology#Placebo
 
-<http://myopathy-online.herokuapp.com/ontology#Placebo> rdf:type <http://myopathy-online.herokuapp.com/ontology#drugs> ,
-                                                                 :NamedIndividual .
+<http://myopathy-online.herokuapp.com/ontology#Placebo> rdf:type :NamedIndividual .
 
 
 
@@ -905,7 +913,22 @@
 ###  http://myopathy-online.herokuapp.com/ontology#Rituximab
 
 <http://myopathy-online.herokuapp.com/ontology#Rituximab> rdf:type <http://myopathy-online.herokuapp.com/ontology#drugs> ,
-                                                                   :NamedIndividual .
+                                                                   :NamedIndividual ;
+                                                          
+                                                          <http://myopathy-online.herokuapp.com/ontology#has> <http://myopathy-online.herokuapp.com/ontology#bleedingGums> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#blurredVision> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#chestPain> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#chills> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#dryMouth> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#fever> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#headache> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#itching> ;
+                                                          
+                                                          <http://myopathy-online.herokuapp.com/ontology#treat> <http://myopathy-online.herokuapp.com/ontology#myositis> ;
+                                                          
+                                                          <http://myopathy-online.herokuapp.com/ontology#has> <http://myopathy-online.herokuapp.com/ontology#paleSkin> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#soreThroat> ,
+                                                                                                              <http://myopathy-online.herokuapp.com/ontology#sweating> .
 
 
 
@@ -945,6 +968,15 @@
 
 
 
+###  http://myopathy-online.herokuapp.com/ontology#ThiocticAcid
+
+<http://myopathy-online.herokuapp.com/ontology#ThiocticAcid> rdf:type <http://myopathy-online.herokuapp.com/ontology#drugs> ,
+                                                                      :NamedIndividual ;
+                                                             
+                                                             <http://myopathy-online.herokuapp.com/ontology#treat> <http://myopathy-online.herokuapp.com/ontology#mitochondrialMyopathy> .
+
+
+
 ###  http://myopathy-online.herokuapp.com/ontology#VMA21
 
 <http://myopathy-online.herokuapp.com/ontology#VMA21> rdf:type <http://myopathy-online.herokuapp.com/ontology#ChrX> ,
@@ -963,6 +995,33 @@
 
 
 
+###  http://myopathy-online.herokuapp.com/ontology#aggression
+
+<http://myopathy-online.herokuapp.com/ontology#aggression> rdf:type <http://myopathy-online.herokuapp.com/ontology#sideEffect> ,
+                                                                    :NamedIndividual ;
+                                                           
+                                                           <http://myopathy-online.herokuapp.com/ontology#isCausedBy> <http://myopathy-online.herokuapp.com/ontology#prednisone> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#anxiety
+
+<http://myopathy-online.herokuapp.com/ontology#anxiety> rdf:type <http://myopathy-online.herokuapp.com/ontology#sideEffect> ,
+                                                                 :NamedIndividual ;
+                                                        
+                                                        <http://myopathy-online.herokuapp.com/ontology#isCausedBy> <http://myopathy-online.herokuapp.com/ontology#prednisone> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#backache
+
+<http://myopathy-online.herokuapp.com/ontology#backache> rdf:type <http://myopathy-online.herokuapp.com/ontology#sideEffect> ,
+                                                                  :NamedIndividual ;
+                                                         
+                                                         <http://myopathy-online.herokuapp.com/ontology#isCausedBy> <http://myopathy-online.herokuapp.com/ontology#methimazole> .
+
+
+
 ###  http://myopathy-online.herokuapp.com/ontology#bethlemMyopathy
 
 <http://myopathy-online.herokuapp.com/ontology#bethlemMyopathy> rdf:type <http://myopathy-online.herokuapp.com/ontology#congenitalMyopathies> ,
@@ -970,6 +1029,24 @@
                                                                 
                                                                 <http://myopathy-online.herokuapp.com/ontology#becauseOf> <http://myopathy-online.herokuapp.com/ontology#COL6A2> ,
                                                                                                                           <http://myopathy-online.herokuapp.com/ontology#COL6A3> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#bleedingGums
+
+<http://myopathy-online.herokuapp.com/ontology#bleedingGums> rdf:type <http://myopathy-online.herokuapp.com/ontology#sideEffect> ,
+                                                                      :NamedIndividual ;
+                                                             
+                                                             <http://myopathy-online.herokuapp.com/ontology#isCausedBy> <http://myopathy-online.herokuapp.com/ontology#Rituximab> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#blurredVision
+
+<http://myopathy-online.herokuapp.com/ontology#blurredVision> rdf:type <http://myopathy-online.herokuapp.com/ontology#sideEffect> ,
+                                                                       :NamedIndividual ;
+                                                              
+                                                              <http://myopathy-online.herokuapp.com/ontology#isCausedBy> <http://myopathy-online.herokuapp.com/ontology#Rituximab> .
 
 
 
@@ -1016,6 +1093,27 @@
 
 
 
+###  http://myopathy-online.herokuapp.com/ontology#chestPain
+
+<http://myopathy-online.herokuapp.com/ontology#chestPain> rdf:type <http://myopathy-online.herokuapp.com/ontology#sideEffect> ,
+                                                                   :NamedIndividual ;
+                                                          
+                                                          <http://myopathy-online.herokuapp.com/ontology#isCausedBy> <http://myopathy-online.herokuapp.com/ontology#Rituximab> ,
+                                                                                                                     <http://myopathy-online.herokuapp.com/ontology#methimazole> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#chills
+
+<http://myopathy-online.herokuapp.com/ontology#chills> rdf:type <http://myopathy-online.herokuapp.com/ontology#sideEffect> ,
+                                                                :NamedIndividual ;
+                                                       
+                                                       <http://myopathy-online.herokuapp.com/ontology#isCausedBy> <http://myopathy-online.herokuapp.com/ontology#ImmuneGlobulin> ,
+                                                                                                                  <http://myopathy-online.herokuapp.com/ontology#Rituximab> ,
+                                                                                                                  <http://myopathy-online.herokuapp.com/ontology#methimazole> .
+
+
+
 ###  http://myopathy-online.herokuapp.com/ontology#cofilin2
 
 <http://myopathy-online.herokuapp.com/ontology#cofilin2> rdf:type <http://myopathy-online.herokuapp.com/ontology#proteins> ,
@@ -1051,6 +1149,16 @@
                                                                                            :NamedIndividual ;
                                                                                   
                                                                                   <http://myopathy-online.herokuapp.com/ontology#becauseOf> <http://myopathy-online.herokuapp.com/ontology#ACTA1> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#cough
+
+<http://myopathy-online.herokuapp.com/ontology#cough> rdf:type <http://myopathy-online.herokuapp.com/ontology#sideEffect> ,
+                                                               :NamedIndividual ;
+                                                      
+                                                      <http://myopathy-online.herokuapp.com/ontology#isCausedBy> <http://myopathy-online.herokuapp.com/ontology#ImmuneGlobulin> ,
+                                                                                                                 <http://myopathy-online.herokuapp.com/ontology#methimazole> .
 
 
 
@@ -1093,7 +1201,9 @@
                                                                                                                                   <http://myopathy-online.herokuapp.com/ontology#DYSF> ,
                                                                                                                                   <http://myopathy-online.herokuapp.com/ontology#GNE> ,
                                                                                                                                   <http://myopathy-online.herokuapp.com/ontology#MYH7> ,
-                                                                                                                                  <http://myopathy-online.herokuapp.com/ontology#MYOT> .
+                                                                                                                                  <http://myopathy-online.herokuapp.com/ontology#MYOT> ;
+                                                                        
+                                                                        <http://myopathy-online.herokuapp.com/ontology#isTreatedBy> <http://myopathy-online.herokuapp.com/ontology#NPC-09> .
 
 
 
@@ -1109,6 +1219,15 @@
 
 
 
+###  http://myopathy-online.herokuapp.com/ontology#dryMouth
+
+<http://myopathy-online.herokuapp.com/ontology#dryMouth> rdf:type <http://myopathy-online.herokuapp.com/ontology#sideEffect> ,
+                                                                  :NamedIndividual ;
+                                                         
+                                                         <http://myopathy-online.herokuapp.com/ontology#isCausedBy> <http://myopathy-online.herokuapp.com/ontology#Rituximab> .
+
+
+
 ###  http://myopathy-online.herokuapp.com/ontology#dysferlin
 
 <http://myopathy-online.herokuapp.com/ontology#dysferlin> rdf:type <http://myopathy-online.herokuapp.com/ontology#proteins> ,
@@ -1120,8 +1239,7 @@
 
 ###  http://myopathy-online.herokuapp.com/ontology#eplerenone
 
-<http://myopathy-online.herokuapp.com/ontology#eplerenone> rdf:type <http://myopathy-online.herokuapp.com/ontology#drugs> ,
-                                                                    :NamedIndividual .
+<http://myopathy-online.herokuapp.com/ontology#eplerenone> rdf:type :NamedIndividual .
 
 
 
@@ -1144,12 +1262,33 @@
 
 
 
+###  http://myopathy-online.herokuapp.com/ontology#fever
+
+<http://myopathy-online.herokuapp.com/ontology#fever> rdf:type <http://myopathy-online.herokuapp.com/ontology#sideEffect> ,
+                                                               :NamedIndividual ;
+                                                      
+                                                      <http://myopathy-online.herokuapp.com/ontology#isCausedBy> <http://myopathy-online.herokuapp.com/ontology#ImmuneGlobulin> ,
+                                                                                                                 <http://myopathy-online.herokuapp.com/ontology#Rituximab> ,
+                                                                                                                 <http://myopathy-online.herokuapp.com/ontology#methimazole> .
+
+
+
 ###  http://myopathy-online.herokuapp.com/ontology#glucosamine(UDP-N-acetyl)-2-epimerase
 
 <http://myopathy-online.herokuapp.com/ontology#glucosamine(UDP-N-acetyl)-2-epimerase> rdf:type <http://myopathy-online.herokuapp.com/ontology#proteins> ,
                                                                                                :NamedIndividual ;
                                                                                       
                                                                                       <http://myopathy-online.herokuapp.com/ontology#isSynthesizedBy> <http://myopathy-online.herokuapp.com/ontology#GNE> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#headache
+
+<http://myopathy-online.herokuapp.com/ontology#headache> rdf:type <http://myopathy-online.herokuapp.com/ontology#sideEffect> ,
+                                                                  :NamedIndividual ;
+                                                         
+                                                         <http://myopathy-online.herokuapp.com/ontology#isCausedBy> <http://myopathy-online.herokuapp.com/ontology#Rituximab> ,
+                                                                                                                    <http://myopathy-online.herokuapp.com/ontology#prednisone> .
 
 
 
@@ -1172,6 +1311,24 @@
                                                                                                                               <http://myopathy-online.herokuapp.com/ontology#CRYAB> ,
                                                                                                                               <http://myopathy-online.herokuapp.com/ontology#DYSF> ,
                                                                                                                               <http://myopathy-online.herokuapp.com/ontology#MYH7> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#irritability
+
+<http://myopathy-online.herokuapp.com/ontology#irritability> rdf:type <http://myopathy-online.herokuapp.com/ontology#sideEffect> ,
+                                                                      :NamedIndividual ;
+                                                             
+                                                             <http://myopathy-online.herokuapp.com/ontology#isCausedBy> <http://myopathy-online.herokuapp.com/ontology#prednisone> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#itching
+
+<http://myopathy-online.herokuapp.com/ontology#itching> rdf:type <http://myopathy-online.herokuapp.com/ontology#sideEffect> ,
+                                                                 :NamedIndividual ;
+                                                        
+                                                        <http://myopathy-online.herokuapp.com/ontology#isCausedBy> <http://myopathy-online.herokuapp.com/ontology#Rituximab> .
 
 
 
@@ -1227,7 +1384,26 @@
 ###  http://myopathy-online.herokuapp.com/ontology#methimazole
 
 <http://myopathy-online.herokuapp.com/ontology#methimazole> rdf:type <http://myopathy-online.herokuapp.com/ontology#drugs> ,
-                                                                     :NamedIndividual .
+                                                                     :NamedIndividual ;
+                                                            
+                                                            <http://myopathy-online.herokuapp.com/ontology#has> <http://myopathy-online.herokuapp.com/ontology#backache> ,
+                                                                                                                <http://myopathy-online.herokuapp.com/ontology#chestPain> ,
+                                                                                                                <http://myopathy-online.herokuapp.com/ontology#chills> ,
+                                                                                                                <http://myopathy-online.herokuapp.com/ontology#cough> ,
+                                                                                                                <http://myopathy-online.herokuapp.com/ontology#fever> ;
+                                                            
+                                                            <http://myopathy-online.herokuapp.com/ontology#treat> <http://myopathy-online.herokuapp.com/ontology#myositis> ;
+                                                            
+                                                            <http://myopathy-online.herokuapp.com/ontology#has> <http://myopathy-online.herokuapp.com/ontology#soreThroat> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#mitochondrialMyopathy
+
+<http://myopathy-online.herokuapp.com/ontology#mitochondrialMyopathy> rdf:type <http://myopathy-online.herokuapp.com/ontology#mitochondrialMyopathies> ,
+                                                                               :NamedIndividual ;
+                                                                      
+                                                                      <http://myopathy-online.herokuapp.com/ontology#isTreatedBy> <http://myopathy-online.herokuapp.com/ontology#ThiocticAcid> .
 
 
 
@@ -1286,7 +1462,11 @@
                                                          
                                                          <http://myopathy-online.herokuapp.com/ontology#becauseOf> <http://myopathy-online.herokuapp.com/ontology#DYSF> ,
                                                                                                                    <http://myopathy-online.herokuapp.com/ontology#NEB> ,
-                                                                                                                   <http://myopathy-online.herokuapp.com/ontology#RYR1> .
+                                                                                                                   <http://myopathy-online.herokuapp.com/ontology#RYR1> ;
+                                                         
+                                                         <http://myopathy-online.herokuapp.com/ontology#isTreatedBy> <http://myopathy-online.herokuapp.com/ontology#Rituximab> ,
+                                                                                                                     <http://myopathy-online.herokuapp.com/ontology#methimazole> ,
+                                                                                                                     <http://myopathy-online.herokuapp.com/ontology#prednisone> .
 
 
 
@@ -1352,6 +1532,15 @@
 
 
 
+###  http://myopathy-online.herokuapp.com/ontology#nervousness
+
+<http://myopathy-online.herokuapp.com/ontology#nervousness> rdf:type <http://myopathy-online.herokuapp.com/ontology#sideEffect> ,
+                                                                     :NamedIndividual ;
+                                                            
+                                                            <http://myopathy-online.herokuapp.com/ontology#isCausedBy> <http://myopathy-online.herokuapp.com/ontology#prednisone> .
+
+
+
 ###  http://myopathy-online.herokuapp.com/ontology#neuromuscularDisease
 
 <http://myopathy-online.herokuapp.com/ontology#neuromuscularDisease> rdf:type <http://myopathy-online.herokuapp.com/ontology#neuromyotonia> ,
@@ -1360,8 +1549,11 @@
                                                                      <http://myopathy-online.herokuapp.com/ontology#becauseOf> <http://myopathy-online.herokuapp.com/ontology#ACTA1> ,
                                                                                                                                <http://myopathy-online.herokuapp.com/ontology#CRYAB> ,
                                                                                                                                <http://myopathy-online.herokuapp.com/ontology#DES> ,
-                                                                                                                               <http://myopathy-online.herokuapp.com/ontology#GNE> ,
-                                                                                                                               <http://myopathy-online.herokuapp.com/ontology#MTM1> ,
+                                                                                                                               <http://myopathy-online.herokuapp.com/ontology#GNE> ;
+                                                                     
+                                                                     <http://myopathy-online.herokuapp.com/ontology#isTreatedBy> <http://myopathy-online.herokuapp.com/ontology#ImmuneGlobulin> ;
+                                                                     
+                                                                     <http://myopathy-online.herokuapp.com/ontology#becauseOf> <http://myopathy-online.herokuapp.com/ontology#MTM1> ,
                                                                                                                                <http://myopathy-online.herokuapp.com/ontology#MYOT> .
 
 
@@ -1380,6 +1572,16 @@
 
 
 
+###  http://myopathy-online.herokuapp.com/ontology#noisyBreathing
+
+<http://myopathy-online.herokuapp.com/ontology#noisyBreathing> rdf:type <http://myopathy-online.herokuapp.com/ontology#sideEffect> ,
+                                                                        :NamedIndividual ;
+                                                               
+                                                               <http://myopathy-online.herokuapp.com/ontology#isCausedBy> <http://myopathy-online.herokuapp.com/ontology#ImmuneGlobulin> ,
+                                                                                                                          <http://myopathy-online.herokuapp.com/ontology#prednisone> .
+
+
+
 ###  http://myopathy-online.herokuapp.com/ontology#noonanSyndrome
 
 <http://myopathy-online.herokuapp.com/ontology#noonanSyndrome> rdf:type <http://myopathy-online.herokuapp.com/ontology#congenitalMyopathies> ,
@@ -1394,12 +1596,45 @@
 
 
 
+###  http://myopathy-online.herokuapp.com/ontology#paleSkin
+
+<http://myopathy-online.herokuapp.com/ontology#paleSkin> rdf:type <http://myopathy-online.herokuapp.com/ontology#sideEffect> ,
+                                                                  :NamedIndividual ;
+                                                         
+                                                         <http://myopathy-online.herokuapp.com/ontology#isCausedBy> <http://myopathy-online.herokuapp.com/ontology#Rituximab> .
+
+
+
 ###  http://myopathy-online.herokuapp.com/ontology#polymyositis
 
 <http://myopathy-online.herokuapp.com/ontology#polymyositis> rdf:type <http://myopathy-online.herokuapp.com/ontology#polymyositis&inclusionBodyMyositis&relatedMyopathies> ,
                                                                       :NamedIndividual ;
                                                              
-                                                             <http://myopathy-online.herokuapp.com/ontology#becauseOf> <http://myopathy-online.herokuapp.com/ontology#DYSF> .
+                                                             <http://myopathy-online.herokuapp.com/ontology#becauseOf> <http://myopathy-online.herokuapp.com/ontology#DYSF> ;
+                                                             
+                                                             <http://myopathy-online.herokuapp.com/ontology#isTreatedBy> <http://myopathy-online.herokuapp.com/ontology#ManNAc> ,
+                                                                                                                         <http://myopathy-online.herokuapp.com/ontology#prednisone> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#prednisone
+
+<http://myopathy-online.herokuapp.com/ontology#prednisone> rdf:type <http://myopathy-online.herokuapp.com/ontology#drugs> ,
+                                                                    :NamedIndividual ;
+                                                           
+                                                           <http://myopathy-online.herokuapp.com/ontology#has> <http://myopathy-online.herokuapp.com/ontology#aggression> ,
+                                                                                                               <http://myopathy-online.herokuapp.com/ontology#anxiety> ,
+                                                                                                               <http://myopathy-online.herokuapp.com/ontology#headache> ,
+                                                                                                               <http://myopathy-online.herokuapp.com/ontology#irritability> ;
+                                                           
+                                                           <http://myopathy-online.herokuapp.com/ontology#treat> <http://myopathy-online.herokuapp.com/ontology#myositis> ;
+                                                           
+                                                           <http://myopathy-online.herokuapp.com/ontology#has> <http://myopathy-online.herokuapp.com/ontology#nervousness> ,
+                                                                                                               <http://myopathy-online.herokuapp.com/ontology#noisyBreathing> ;
+                                                           
+                                                           <http://myopathy-online.herokuapp.com/ontology#treat> <http://myopathy-online.herokuapp.com/ontology#polymyositis> ;
+                                                           
+                                                           <http://myopathy-online.herokuapp.com/ontology#has> <http://myopathy-online.herokuapp.com/ontology#weightGain> .
 
 
 
@@ -1412,6 +1647,16 @@
 
 
 
+###  http://myopathy-online.herokuapp.com/ontology#soreThroat
+
+<http://myopathy-online.herokuapp.com/ontology#soreThroat> rdf:type <http://myopathy-online.herokuapp.com/ontology#sideEffect> ,
+                                                                    :NamedIndividual ;
+                                                           
+                                                           <http://myopathy-online.herokuapp.com/ontology#isCausedBy> <http://myopathy-online.herokuapp.com/ontology#Rituximab> ,
+                                                                                                                      <http://myopathy-online.herokuapp.com/ontology#methimazole> .
+
+
+
 ###  http://myopathy-online.herokuapp.com/ontology#spheroidBodyMyopathy
 
 <http://myopathy-online.herokuapp.com/ontology#spheroidBodyMyopathy> rdf:type <http://myopathy-online.herokuapp.com/ontology#congenitalMyopathies> ,
@@ -1419,6 +1664,15 @@
                                                                      
                                                                      <http://myopathy-online.herokuapp.com/ontology#becauseOf> <http://myopathy-online.herokuapp.com/ontology#DES> ,
                                                                                                                                <http://myopathy-online.herokuapp.com/ontology#MYOT> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#sweating
+
+<http://myopathy-online.herokuapp.com/ontology#sweating> rdf:type <http://myopathy-online.herokuapp.com/ontology#sideEffect> ,
+                                                                  :NamedIndividual ;
+                                                         
+                                                         <http://myopathy-online.herokuapp.com/ontology#isCausedBy> <http://myopathy-online.herokuapp.com/ontology#Rituximab> .
 
 
 
@@ -1465,6 +1719,15 @@
                                                                             :NamedIndividual ;
                                                                    
                                                                    <http://myopathy-online.herokuapp.com/ontology#isSynthesizedBy> <http://myopathy-online.herokuapp.com/ontology#VMA21> .
+
+
+
+###  http://myopathy-online.herokuapp.com/ontology#weightGain
+
+<http://myopathy-online.herokuapp.com/ontology#weightGain> rdf:type <http://myopathy-online.herokuapp.com/ontology#sideEffect> ,
+                                                                    :NamedIndividual ;
+                                                           
+                                                           <http://myopathy-online.herokuapp.com/ontology#isCausedBy> <http://myopathy-online.herokuapp.com/ontology#prednisone> .
 
 
 

@@ -38,15 +38,18 @@ def hello():
 def proteins():
     q = """select ?x  where { ?x a myo:proteins } order by ?x"""
     r = load_ontology().query(pref2 + q)
+
     return render_template('proteins.html', results=r)
 
 @app.route('/protein/<mnemonic>')
 def protein(mnemonic):
     q = """select ?x ?y where { myo:%s ?x ?y }"""
     r = load_ontology().query(pref2 + q % mnemonic)
-    for x in r:
+    q2 = """select ?title ?cite where { myo:%s myo:ReferencedIn ?cite. ?cite <http://myopathy-online.herokuapp.com/ontology/title> ?title  }"""
+    articles = load_articles().query(pref2 + q2 % mnemonic)
+    for x in articles:
         print x
-    return render_template('protein.html', results=r, mnemonic=mnemonic)
+    return render_template('protein.html', results=r, articles=articles, mnemonic=mnemonic)
 
 @app.route('/articles/page/<page>')
 def articles(page):
@@ -97,6 +100,22 @@ def article(pmid):
     d = dict(title=list(r)[0][0], authors=[f[1] for f in r], pmid=pmid, comment=list(r)[0][2], journal=list(r)[0][3])
     return render_template('article.html', article= d)
 
+@app.route('/drugs')
+def drugs():
+    q = """select ?drug where { ?drug a <http://myopathy-online.herokuapp.com/ontology#drugs> } order by ?drug"""
+    r = load_ontology().query(q)
+    for p in r:
+        print p
+    return render_template('drugs.html', results=r)
+
+@app.route('/drug/<name>')
+def drug(name):
+    q = """select ?p ?o  where { <http://myopathy-online.herokuapp.com/ontology#%s> ?p ?o } order by ?o"""
+    r = load_ontology().query(pref2 + q % name)
+    for p in r:
+        print p
+    return render_template('drug.html', results=r, mnemonic=name)
+
 @app.route('/ontology')
 def get_ontology():
     with open("myopathy1.2.owl") as f:
@@ -121,18 +140,21 @@ def diseases():
 def disease(mnemonic):
     q = """select ?x ?y where { myo:%s ?x ?y }"""
 
-    print pref + q % mnemonic
-    r = load_ontology().query( pref + q % mnemonic)
-    print "Result count",len(r)
+    print pref2 + q % mnemonic
+    r = load_ontology().query( pref2 + q % mnemonic)
+    for p in r:
+        print p
     return render_template('disease.html', results=r, mnemonic=mnemonic)
 
 @app.route('/gene/<mnemonic>')
 def gene(mnemonic):
-    q = """select ?y ?type ?rel where { myo:%s ?rel ?y. ?y a ?type }"""
+    q = """select ?y ?z where { myo:%s ?y ?z }"""
 
     print pref2 + q % mnemonic
-    r = load_ontology().query( pref + q % mnemonic)
-    print "Result count",len(r)
+    r = load_ontology().query( pref2 + q % mnemonic)
+    for p in r:
+        print p
+
     return render_template('gene.html', results=r, mnemonic=mnemonic)
 
 @app.route('/sparql')
