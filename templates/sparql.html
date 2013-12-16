@@ -4,9 +4,11 @@
 {% block title %}SPARQL Query{% endblock %}
 
 {% block body %}
+<form action="/sparql" method="post">
 <textarea rows="18" cols="80" name="query" id="query">
-    select distinct ?Concept where {[] a ?Concept} LIMIT 100
+select distinct ?Concept where {[] a ?Concept} LIMIT 100
 </textarea>
 <input type="submit" value="Run Query"/>
+</form>
 {% endblock %}
 

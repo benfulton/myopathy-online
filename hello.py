@@ -1,6 +1,6 @@
 import os
 import rdflib
-from flask import Flask, render_template, Request, Response
+from flask import Flask, render_template, request, Response
 
 app = Flask(__name__)
 ontology = None
@@ -121,13 +121,18 @@ def get_ontology():
     with open("myopathy1.2.owl") as f:
         return Response(f.read(), mimetype='application/rdf+xml')
 
-@app.route('/sparql', methods=['POST'])
+@app.route('/sparql', methods=['GET', 'POST'])
 def sparql_results():
-    db = load_articles()
-    q = Request.form['query']
-    db.query(q)
-    return render_template('sparql.html')
-
+    result = None
+    if request.method == 'POST':
+        db = load_ontology() # load_articles()
+        q = request.form['query']
+        result = db.query(q)
+        for r in result:
+            print r
+        return render_template('searchresults.html', result=result)
+    else:
+        return render_template('sparql.html', result=result)
 
 @app.route('/diseases')
 def diseases():
@@ -156,10 +161,6 @@ def gene(mnemonic):
         print p
 
     return render_template('gene.html', results=r, mnemonic=mnemonic)
-
-@app.route('/sparql')
-def sparql():
-    return render_template('sparql.html')
 
 @app.route('/search')
 def search():

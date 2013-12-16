@@ -1,10 +1,15 @@
 {% extends "base.html" %}
 {% block body %}
 <h2>Myopathy search results</h2>
-<ul>
-{% for item in results %}
-        <li>{{item}}</li>
+<table class="sparql-result">
+{% for item in result %}
+        <tr>
+          {%  for i in item %}
+            <td>{{ i }}</td>
+          {% endfor %}
+        </tr>
 {% endfor %}
-</ul>
+</table>
+<a href="/sparql">Try Again</a>
 {% endblock %}
 
