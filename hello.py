@@ -125,12 +125,14 @@ def get_ontology():
 def sparql_results():
     result = None
     if request.method == 'POST':
-        db = load_ontology() # load_articles()
         q = request.form['query']
-        result = db.query(q)
-        for r in result:
-            print r
-        return render_template('searchresults.html', result=result)
+        try:
+            result = load_ontology().query(q)
+            r2 = load_articles().query(q)
+        except Exception as e:
+            return render_template('searchresults.html', error=e)
+        return render_template('searchresults.html', result=list(result) + list(r2))
+
     else:
         return render_template('sparql.html', result=result)
 

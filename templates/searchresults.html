@@ -10,6 +10,12 @@
         </tr>
 {% endfor %}
 </table>
+<p>
+    {%  if error %}
+        <p><img src="/static/images/error.jpg" height="25px" width="25px" alt="error" /> Oops! That query didn't work.</p>
+        {{ error }}
+    {% endif %}
+</p>
 <a href="/sparql">Try Again</a>
 {% endblock %}
 
