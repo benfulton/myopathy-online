@@ -1,10 +1,32 @@
 {% extends "base.html" %}
 {% block body %}
-<h2>Search Myopathy References</h2>
-<p>Enter a search term</p>
-<form action="/searchform.html" method="post">
-<input type="text" name="fname">
-<button type="submit">Run Query</button>
-</form>
+<h2>Myopathy search results</h2>
+<h3>Articles</h3>
+    <ul>
+{% for item in result %}
+    {% if item[1].toPython() == "http://myopathy-online.herokuapp.com/ontology/article" %}
+        <li><a href="/article/{{item[0].split('/')[-1]}}">{{item[0]}}</a></li>
+    {% endif %}
+{% endfor %}
+    </ul>
+<h3>Genes</h3>
+    <ul>
+{% for item in result %}
+    {% if item[1].toPython() == "http://myopathy-online.herokuapp.com/ontology#genomes" or
+          item[2].toPython() == "http://myopathy-online.herokuapp.com/ontology#genomes"  %}
+        <li><a href="/gene/{{item[0].split('#')[-1]}}">{{item[0]}}</a></li>
+    {% endif %}
+{% endfor %}
+    </ul>
+<h3>Others</h3>
+    <ul>
+{% for item in result %}
+    {% if item[1].toPython() != "http://myopathy-online.herokuapp.com/ontology/article" and
+          item[1].toPython() != "http://myopathy-online.herokuapp.com/ontology#genomes" and
+          item[2].toPython() != "http://myopathy-online.herokuapp.com/ontology#genomes"%}
+        <li>{{item[0]}}</li>
+    {% endif %}
+{% endfor %}
+    </ul>
 {% endblock %}
 

@@ -78,9 +78,9 @@ Released   : 20131026
 		</div>
 		<div id="sidebar1">
             <div>
-                Search<br />
-                <input type="text" />
+                <input type="text" id="query" /><input type="button" value="Search" id="search"/>
             </div>
+            <br />
 			<div class="ontology">
 				<h2>Ontology</h2>
 				<ul class="style2">
@@ -179,6 +179,9 @@ Released   : 20131026
             $(this).toggle();
             return false;
        });
+       $("#search").click(function(){
+            document.location = "/search?query=" + $("#query").val();
+        });
     });
 </script>
 </body>

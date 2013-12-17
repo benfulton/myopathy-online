@@ -159,14 +159,21 @@ def gene(mnemonic):
 
     print pref2 + q % mnemonic
     r = load_ontology().query( pref2 + q % mnemonic)
-    for p in r:
-        print p
 
     return render_template('gene.html', results=r, mnemonic=mnemonic)
 
 @app.route('/search')
 def search():
-    return render_template('searchform.html')
+    searchword = request.args.get('query', '')
+    q = """SELECT ?x ?type ?parenttype
+            WHERE
+            { ?x a ?type; ?p ?y .
+              FILTER regex(str(?y), "%s", "i") . ?type rdfs:subClassOf ?parenttype }"""
+    result = load_ontology().query(q % searchword)
+    r2 = load_articles().query(q % searchword)
+    for r in list(result) + list(r2):
+        print r
+    return render_template('searchform.html', query=searchword, result=list(result) + list(r2))
 
 if __name__ == '__main__':
     app.run(debug=True)
