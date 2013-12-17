@@ -10,5 +10,49 @@ select distinct ?Concept where {[] a ?Concept} LIMIT 100
 </textarea>
 <input type="submit" value="Run Query"/>
 </form>
+    <br />
+<a href="#" id="samples" style="font-size: 80%">Sample Queries</a>
+<div id="sample-queries" style="display: none;">
+<span style="font-style: italic">To find the drugs that treat myositis</span>
+<pre style="background-color: GhostWhite">
+prefix rdfs: &lt;http://www.w3/org/2000/01/rdf-schema#&gt;
+prefix onto: &lt;http://myopathy-online.herokuapp.com/ontology#&gt;
+SELECT ?drug
+  WHERE
+{
+  ?drug onto:treat onto:myositis
+}
+</pre>
+<br />
+<span style="font-style: italic">To find the genes whose mutation may result in neuropathy</span>
+<pre style="background-color: GhostWhite">
+prefix rdfs: &lt;http://www.w3/org/2000/01/rdf-schema#&gt;
+prefix onto: &lt;http://myopathy-online.herokuapp.com/ontology#&gt;
+SELECT ?gene
+  WHERE
+{
+  ?gene onto:resultIn onto:neuropathy
+}
+</pre>
+<br />
+<span style="font-style: italic">To find the diseases that may be caused by the mutation of gene ACTA1</span>
+<pre style="background-color: GhostWhite">
+prefix rdfs: &lt;http://www.w3/org/2000/01/rdf-schema#&gt;
+prefix onto: &lt;http://myopathy-online.herokuapp.com/ontology#&gt;
+SELECT ?disease
+  WHERE
+{
+  ?disease onto:becauseOf onto:ACTA1
+}
+</pre>
+</div>
+<script type="text/javascript">
+      $( document ).ready(function(){
+       $("#samples").click(function(){
+            $("#sample-queries").toggle();
+            return false;
+       });
+      });
+</script>
 {% endblock %}
 
